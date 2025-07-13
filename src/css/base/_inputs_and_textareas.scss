@@ -1,0 +1,301 @@
+.input-group {
+    &.is-filled {
+        .input-group__label {
+            background-color: var(--bg);
+            color: var(--dark_grey);
+            font-size: 12px;
+            top: 8px;
+        }
+
+        .input-group__textarea + .input-group__label {
+            padding-top: 8px;
+            top: 2px;
+        }
+
+        &:not(.is-disabled) {
+            &.input-group--datepicker {
+                .input-group__input {
+                    &:focus {
+                        border-radius: 7px 7px 0 0;
+                    }
+                }
+            }
+        }
+
+        &.is-disabled {
+            .input-group__label {
+                color: var(--grey_7);
+
+                .req,
+                .required {
+                    color: var(--grey_7);
+                }
+            }
+        }
+    }
+
+    &.error {
+        .input-group__input {
+            border-color: var(--warning);
+
+            &:focus {
+                border-color: var(--warning);
+            }
+        }
+
+        .input-group__textarea {
+            border-color: var(--warning);
+
+            &:focus {
+                border-color: var(--warning);
+            }
+        }
+    }
+
+    &.is-disabled {
+        .input-group__label {
+            color: var(--grey_7);
+
+            .req,
+            .required {
+                color: var(--grey_7);
+            }
+        }
+
+        .input-group__textarea {
+            border-color: var(--grey_7) !important;
+            background-color: var(--grey_1);
+        }
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__input-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__input {
+        border-radius: 0;
+        border: 2px solid var(--stroke);
+        background-color: var(--bg);
+        color: var(--black);
+        font-size: 15px;
+        font-weight: 400;
+        height: 50px;
+        padding: 24px 16px 10px;
+        transition: background-color 0.3s, border-color 0.3s;
+        width: 100%;
+        @media(min-width: $sm) {
+            height: 56px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 18px;
+            height: 64px;
+            line-height: 1.32;
+        }
+
+        &::-webkit-input-placeholder {
+            color: var(--dark_grey);
+            opacity: 0;
+        }
+
+        &::-moz-placeholder {
+            color: var(--dark_grey);
+            opacity: 0;
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--dark_grey);
+            opacity: 0;
+        }
+
+        &:focus {
+            border-color: var(--black);
+
+            &::-webkit-input-placeholder {
+                opacity: 1;
+            }
+
+            &::-moz-placeholder {
+                opacity: 1;
+            }
+
+            &:-ms-input-placeholder {
+                opacity: 1;
+            }
+
+            & + .input-group__label {
+                color: var(--dark_grey);
+                font-size: 12px;
+                top: 8px;
+            }
+        }
+
+        &:disabled {
+            background-color: var(--grey_1);
+            border-color: var(--grey_7);
+            color: var(--grey_7);
+
+            &::-webkit-input-placeholder {
+                opacity: 0;
+            }
+
+            &::-moz-placeholder {
+                opacity: 0;
+            }
+
+            &:-ms-input-placeholder {
+                opacity: 0;
+            }
+
+            & + .input-group__label {
+                color: var(--grey_7);
+
+                .req,
+                .required {
+                    color: var(--grey_7);
+                }
+            }
+        }
+    }
+
+    &__textarea {
+        @include scrollbar;
+        border-radius: 0;
+        border: 2px solid var(--stroke);
+        background-color: var(--bg);
+        color: var(--black);
+        font-size: 15px;
+        font-weight: 400;
+        height: 120px;
+        margin: 0;
+        padding: 24px 16px 10px;
+        resize: none;
+        transition: background-color 0.3s, border-color 0.3s;
+        width: 100%;
+        @media(min-width: $sm) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 18px;
+            line-height: 1.32;
+        }
+
+        &::-webkit-input-placeholder {
+            color: var(--dark_grey);
+            opacity: 0;
+        }
+
+        &::-moz-placeholder {
+            color: var(--dark_grey);
+            opacity: 0;
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--dark_grey);
+            opacity: 0;
+        }
+
+        &:focus {
+            border-color: var(--black);
+
+            &::-webkit-input-placeholder {
+                opacity: 1;
+            }
+
+            &::-moz-placeholder {
+                opacity: 1;
+            }
+
+            &:-ms-input-placeholder {
+                opacity: 1;
+            }
+
+            & + .input-group__label {
+                color: var(--dark_grey);
+                font-size: 12px;
+                padding-top: 8px;
+                top: 2px;
+            }
+        }
+
+        &:disabled {
+            background-color: var(--grey_1);
+            border-color: var(--grey_7);
+            color: var(--grey_7);
+
+            &::-webkit-input-placeholder {
+                opacity: 0;
+            }
+
+            &::-moz-placeholder {
+                opacity: 0;
+            }
+
+            &:-ms-input-placeholder {
+                opacity: 0;
+            }
+
+            & + .input-group__label {
+                color: var(--grey_7);
+
+                .req,
+                .required {
+                    color: var(--grey_7);
+                }
+            }
+        }
+    }
+
+    &__label {
+        font-size: 15px;
+        left: 2px;
+        line-height: 1.33333;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: absolute;
+        pointer-events: none;
+        transition: all 0.3s;
+        text-overflow: ellipsis;
+        top: 16px;
+        white-space: nowrap;
+        width: calc(100% - 4px);
+        @media(min-width: $sm) {
+            padding-left: 20px;
+            padding-right: 20px;
+            top: 19px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 18px;
+            line-height: 1.32;
+            top: 21px;
+        }
+    }
+}
+
+.error-text {
+    color: var(--warning);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.33333;
+    margin-top: 6px;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+    &:focus {
+        outline: 0;
+    }
+}

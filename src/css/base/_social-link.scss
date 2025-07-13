@@ -1,0 +1,19 @@
+.social-link {
+    @include active-area;
+    color: rgba(#fff, 0.5);
+    display: block;
+    height: 24px;
+    min-width: 24px;
+    position: relative;
+    width: 24px;
+    z-index: 1;
+    @include hover {
+        color: #fff;
+    }
+
+    svg {
+        fill: currentColor;
+        height: 24px;
+        width: 24px;
+    }
+}

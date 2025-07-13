@@ -1,0 +1,129 @@
+.button {
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: var(--black);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: var(--primary_font);
+    font-size: 14px;
+    font-weight: 600;
+    gap: 10px;
+    justify-content: center;
+    line-height: 1.5;
+    min-height: 52px;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+    @media(min-width: $hd) {
+        font-size: 16px;
+        height: 56px;
+    }
+
+    &.disabled,
+    &:disabled,
+    &[data-disabled] {
+        cursor: default;
+        pointer-events: none;
+    }
+
+    &--primary {
+        background-color: var(--beige);
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: #FFE1A1;
+                color: var(--rich_green);
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--border_grey);
+            color: #fff;
+        }
+    }
+
+    &--secondary {
+        background-color: var(--rich_green);
+        color: #fff;
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: var(--leaf_green);
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--border_grey);
+            color: #fff;
+        }
+    }
+
+    &--outline_dark {
+        background-color: transparent;
+        border: 2px solid var(--rich_green);
+        color: var(--black);
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                border-color: var(--leaf_green);
+                color: var(--leaf_green);
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--border_grey);
+            border: none;
+            color: #fff;
+        }
+    }
+
+    &--outline_white {
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                border-color: var(--beige);
+                color: var(--beige);
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--border_grey);
+            border: none;
+            color: #fff;
+        }
+    }
+
+    &--h_40 {
+        height: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    svg {
+        fill: currentColor;
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+    }
+}

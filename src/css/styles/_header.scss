@@ -1,0 +1,103 @@
+.header {
+    background-color: var(--rich_green);
+    color: #fff;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+
+    &.is-out {
+        transform: translateY(-100%);
+    }
+
+    &.is-scrolled {
+        @media(min-width: $hd) {
+            box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
+        }
+        position: fixed;
+        transition: transform 0.2s;
+    }
+
+    &.is-open {
+        & > .container {
+            position: relative;
+            z-index: 11;
+        }
+    }
+
+    &__inner {
+        align-items: center;
+        display: flex;
+        min-height: var(--header_min_height);
+    }
+
+    &__logo {
+        margin-right: 20px;
+        width: 100px;
+        @media(min-width: $md) {
+            margin-right: 30px;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    &__button {
+        @include active-area;
+        @include button-reset;
+        align-items: center;
+        color: #fff;
+        display: flex;
+        gap: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        height: 40px;
+        justify-content: center;
+        min-width: 40px;
+        position: relative;
+        transition: color 0.3s;
+        text-decoration: none;
+        z-index: 1;
+        @include hover {
+            color: var(--beige);
+        }
+
+        span {
+            @media(max-width: $md - 0.02px) {
+                display: none;
+            }
+        }
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+        }
+    }
+
+    &__phone {
+        @media(max-width: $md - 0.02px) {
+            margin-left: auto;
+        }
+    }
+
+    &__menu-opener {
+        @media(min-width: $md) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media(max-width: $md - 0.02px) {
+            order: 4;
+        }
+    }
+
+    .button {
+        margin-left: 30px;
+        @media(max-width: $md - 0.02px) {
+            display: none;
+        }
+    }
+}

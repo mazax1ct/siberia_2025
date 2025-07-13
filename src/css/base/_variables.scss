@@ -1,0 +1,24 @@
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$hd: 1200px;
+$lg: 1400px;
+$fhd: 1900px;
+
+:root {
+    --rich_green: #1B2615;
+    --leaf_green: #627856;
+    --grey: #EFEFEF;
+    --border_grey: #D6D6D6;
+    --beige: #D7B56D;
+    --beige_20: rgba(#D7B56D, 0.2);
+    --black: #000;
+    --container_padding: 16px;
+    --header_min_height: 65px;
+    --container_max_width: 1202px;
+    --primary_font: 'Montserrat', Arial, sans-serif;
+    --secondary_font: 'Cormorant Unicase', Times, serif;
+    @media(min-width: $hd) {
+        --header_min_height: 90px;
+    }
+}

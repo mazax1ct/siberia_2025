@@ -1,0 +1,29 @@
+.email {
+    align-items: flex-start;
+    color: #fff;
+    display: flex;
+    font-weight: 500;
+    gap: 8px;
+    text-decoration: none;
+    @include hover {
+        color: var(--beige);
+    }
+
+    &__address {
+        display: block;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+    &__title {
+        color: #8D938A;
+        font-size: 12px;
+    }
+
+    svg {
+        fill: currentColor;
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+    }
+}

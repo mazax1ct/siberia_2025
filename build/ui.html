@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>UI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Сибирь" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-CormorantUnicase-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="header__inner container">
+            <a class="header__logo" href="#">
+                <img src="images/logo.svg" alt="Сибирь">
+            </a>
+    
+            <button class="header__search-opener header__button" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#search_icon" />
+                </svg>
+                <span>Поиск</span>
+            </button>
+    
+            <button class="header__menu-opener header__button" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#burger_icon" />
+                </svg>
+                <span>МЕНЮ</span>
+            </button>
+    
+            <a class="header__phone header__button" href="#">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#phone_icon" />
+                </svg>
+                <span>+7 (3452) 687-000</span>
+            </a>
+    
+            <a class="button button--primary button--h_40" href="#">
+                <span>Забронировать</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Услуги и цены</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Оформление медкнижек в Ивантеевке
+                </li>
+            </ul>
+
+            <h2>Кнопки</h2>
+
+            <button class="button button--primary" type="button">Кнопка</button>
+
+            <a class="button button--primary" href="#">Ссылка</a>
+
+            <button class="button button--primary" type="button" disabled>Кнопка</button>
+
+            <a class="button button--primary disabled">Ссылка</a>
+
+            <br> <br>
+
+            <button class="button button--secondary" type="button">Кнопка</button>
+
+            <a class="button button--secondary" href="#">Ссылка</a>
+
+            <button class="button button--secondary" type="button" disabled>Кнопка</button>
+
+            <a class="button button--secondary disabled">Ссылка</a>
+
+            <br> <br>
+
+            <h2>Чекбоксы</h2>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" disabled>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" disabled checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br> <br>
+
+            <h2>Поля ввода</h2>
+
+            <div class="input-group">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <input id="inp" class="js-input-group__input input-group__input" type="text" name="">
+                        <label class="input-group__label" for="inp">ФИО пациента<span class="required">*</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group error">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <input id="inp_2" class="js-input-group__input input-group__input" type="text" name="">
+                        <label class="input-group__label" for="inp_2">ФИО пациента<span class="required">*</span></label>
+                    </div>
+                </div>
+
+                <p class="error-text">Заполните это поле</p>
+            </div>
+
+            <br>
+
+            <div class="input-group">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <input id="inp_3" class="js-input-group__input input-group__input" type="text" name="" disabled>
+                        <label class="input-group__label" for="inp_3">ФИО пациента<span class="required">*</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group input-group--simple is-disabled">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <input id="inp_4" class="js-input-group__input input-group__input" type="text" name="" value="Константинопольский Константин Константинович" placeholder="ФИО пациента" disabled>
+                        <label class="input-group__label" for="inp_4">ФИО пациента<span class="required">*</span></label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group input-group--textarea">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="inp_11" class="js-input-group__input input-group__textarea" name="" placeholder="Комментарий"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="inp_11">Комментарий</label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group input-group--textarea error">
+                <p class="error-text">Заполните это поле</p>
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="inp_12" class="js-input-group__input input-group__textarea" name="" placeholder="Комментарий"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="inp_12">Комментарий<span class="required">*</span></label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group input-group--textarea is-disabled">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="inp_13" class="js-input-group__input input-group__textarea" name="" placeholder="Комментарий" disabled></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="inp_13">Комментарий</label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group input-group--textarea is-disabled">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="inp_14" class="js-input-group__input input-group__textarea" name="" placeholder="Комментарий"
+                          disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta fuga cumque molestiae omnis beatae recusandae porro, ad dolorem enim! Sed, voluptatem expedita soluta aspernatur placeat at. Perspiciatis aliquid, vitae!</textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="inp_14">Комментарий</label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <h2>Селекты</h2>
+
+            <div class="select-wrapper">
+                <select class="js-select" data-placeholder="Специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Специальность">
+                    <option></option>
+                    <option value="1">Хирург</option>
+                    <option value="2">Офтальмолог</option>
+                    <option value="3">Эндокринолог</option>
+                    <option value="4">Терапевт</option>
+                    <option value="5">Гигапевт</option>
+                    <option value="6">Мегапевт</option>
+                    <option value="7">Килопевт</option>
+                    <option value="8">Певт</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="select-wrapper">
+                <select class="js-select" data-placeholder="Специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Специальность" disabled>
+                    <option></option>
+                    <option value="1">Хирург</option>
+                    <option value="2">Офтальмолог</option>
+                    <option value="3">Эндокринолог</option>
+                    <option value="4">Терапевт</option>
+                    <option value="5">Гигапевт</option>
+                    <option value="6">Мегапевт</option>
+                    <option value="7">Килопевт</option>
+                    <option value="8">Певт</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="select-wrapper">
+                <select class="js-select" data-placeholder="Специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Специальность" disabled>
+                    <option></option>
+                    <option value="1">Хирург</option>
+                    <option value="2">Офтальмолог</option>
+                    <option value="3">Эндокринолог</option>
+                    <option value="4" selected>Терапевт</option>
+                    <option value="5">Гигапевт</option>
+                    <option value="6">Мегапевт</option>
+                    <option value="7">Килопевт</option>
+                    <option value="8">Певт</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="images/logo.svg" alt="Сибирь">
+                </div>
+    
+                <div class="footer__top-phone">
+                    <a href="tel:+73452687000">+7 (3452) 687-000</a>
+                </div>
+            </div>
+    
+            <div class="footer__middle">
+                <div class="footer__contacts">
+                    <div class="footer__contacts-block">
+                        <p class="footer__title">Почта для связи</p>
+    
+                        <div class="footer__emails">
+                            <a class="email" href="mailto:service@sibircentr.ru">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#envelope_icon" />
+                                </svg>
+    
+                                <span>
+                                    <span class="email__address">service@sibircentr.ru</span>
+                                    <span class="email__title">отдел реализации и сервиса</span>
+                                </span>
+                            </a>
+    
+                            <a class="email" href="mailto:office@sibircentr.ru">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#envelope_icon" />
+                                </svg>
+    
+                                <span>
+                                    <span class="email__address">office@sibircentr.ru</span>
+                                    <span class="email__title">приёмная для документов и писем</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__contacts-block">
+                        <p class="footer__title">Мы в мессенджерах</p>
+    
+                        <div class="footer__socials">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш WhatsApp">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#wa_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#tg_icon" />
+                                </svg>
+                            </a>
+                        </div>
+    
+                        <p class="footer__title">Мы в социальных сетях</p>
+    
+                        <div class="footer__socials">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Яндекс.Дзен">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#dzen_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#vk_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Однокласниках">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ok_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Rutube">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#rt_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на YouTube">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#yt_icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">Посетителям</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Важная информация</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Услуги онлайн</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Скачать документы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Сертификаты и лицензии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Вопросы - ответы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Реквизиты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Книги и журналы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Обратная связь</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Веб-камера</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Виртуальная экскурсия</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Акции</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Медпрограммы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Налоговый вычет</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Проживание</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Отдых</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Стоимость</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Детям</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Афиша</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Бары и рестораны</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Термальные комплексы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Экскурсии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Платные медуслуги</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">О комплексе</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">О медецинском центре</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Как добраться</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Галерея</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Even & MICE</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Карта территории</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Достопримечательности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <p>Маркетинговая поддержка и разработка сайта <a href="#">VSignal</a></p>
+                <p>Юридическое название компании Акционерное общество "Центр восстановительной медицины и реабилитации "Сибирь". Адрес: 625519, Тюменская область, р-н Тюменский, км 19-ый (ФАД Иркутск-Улан-Удэ-Чита тер), стр. 1. Почтовый адрес: 625519,
+                    Тюменская обл., Тюменский район, с. Червишево</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

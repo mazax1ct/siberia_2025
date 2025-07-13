@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>UI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <div class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Услуги и цены</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Оформление медкнижек в Ивантеевке
+                </li>
+            </ul>
+
+            <h2>Кнопки</h2>
+
+            <button class="button button--primary" type="button">Кнопка</button>
+
+            <a class="button button--primary" href="#">Ссылка</a>
+
+            <button class="button button--primary" type="button" disabled>Кнопка</button>
+
+            <a class="button button--primary disabled">Ссылка</a>
+
+            <br> <br>
+
+            <button class="button button--secondary" type="button">Кнопка</button>
+
+            <a class="button button--secondary" href="#">Ссылка</a>
+
+            <button class="button button--secondary" type="button" disabled>Кнопка</button>
+
+            <a class="button button--secondary disabled">Ссылка</a>
+
+            <br> <br>
+
+            <h2>Чекбоксы</h2>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" disabled>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" disabled checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br> <br>
+
+            <h2>Поля ввода</h2>
+
+            <div class="input-group">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <input id="inp" class="js-input-group__input input-group__input" type="text" name="">
+                        <label class="input-group__label" for="inp">ФИО пациента<span class="required">*</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group error">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <input id="inp_2" class="js-input-group__input input-group__input" type="text" name="">
+                        <label class="input-group__label" for="inp_2">ФИО пациента<span class="required">*</span></label>
+                    </div>
+                </div>
+
+                <p class="error-text">Заполните это поле</p>
+            </div>
+
+            <br>
+
+            <div class="input-group">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <input id="inp_3" class="js-input-group__input input-group__input" type="text" name="" disabled>
+                        <label class="input-group__label" for="inp_3">ФИО пациента<span class="required">*</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group input-group--simple is-disabled">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <input id="inp_4" class="js-input-group__input input-group__input" type="text" name="" value="Константинопольский Константин Константинович" placeholder="ФИО пациента" disabled>
+                        <label class="input-group__label" for="inp_4">ФИО пациента<span class="required">*</span></label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group input-group--textarea">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="inp_11" class="js-input-group__input input-group__textarea" name="" placeholder="Комментарий"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="inp_11">Комментарий</label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group input-group--textarea error">
+                <p class="error-text">Заполните это поле</p>
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="inp_12" class="js-input-group__input input-group__textarea" name="" placeholder="Комментарий"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="inp_12">Комментарий<span class="required">*</span></label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group input-group--textarea is-disabled">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="inp_13" class="js-input-group__input input-group__textarea" name="" placeholder="Комментарий" disabled></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="inp_13">Комментарий</label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-group input-group--textarea is-disabled">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="inp_14" class="js-input-group__input input-group__textarea" name="" placeholder="Комментарий"
+                          disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta fuga cumque molestiae omnis beatae recusandae porro, ad dolorem enim! Sed, voluptatem expedita soluta aspernatur placeat at. Perspiciatis aliquid, vitae!</textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="inp_14">Комментарий</label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+
+            <h2>Селекты</h2>
+
+            <div class="select-wrapper">
+                <select class="js-select" data-placeholder="Специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Специальность">
+                    <option></option>
+                    <option value="1">Хирург</option>
+                    <option value="2">Офтальмолог</option>
+                    <option value="3">Эндокринолог</option>
+                    <option value="4">Терапевт</option>
+                    <option value="5">Гигапевт</option>
+                    <option value="6">Мегапевт</option>
+                    <option value="7">Килопевт</option>
+                    <option value="8">Певт</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="select-wrapper">
+                <select class="js-select" data-placeholder="Специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Специальность" disabled>
+                    <option></option>
+                    <option value="1">Хирург</option>
+                    <option value="2">Офтальмолог</option>
+                    <option value="3">Эндокринолог</option>
+                    <option value="4">Терапевт</option>
+                    <option value="5">Гигапевт</option>
+                    <option value="6">Мегапевт</option>
+                    <option value="7">Килопевт</option>
+                    <option value="8">Певт</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="select-wrapper">
+                <select class="js-select" data-placeholder="Специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Специальность" disabled>
+                    <option></option>
+                    <option value="1">Хирург</option>
+                    <option value="2">Офтальмолог</option>
+                    <option value="3">Эндокринолог</option>
+                    <option value="4" selected>Терапевт</option>
+                    <option value="5">Гигапевт</option>
+                    <option value="6">Мегапевт</option>
+                    <option value="7">Килопевт</option>
+                    <option value="8">Певт</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    //= template/common/footer.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>
