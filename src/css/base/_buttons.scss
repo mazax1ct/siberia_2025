@@ -57,6 +57,7 @@
         &:not([data-disabled]) {
             @include hover {
                 background-color: var(--leaf_green);
+                color: #fff;
             }
         }
 

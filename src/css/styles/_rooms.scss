@@ -1,0 +1,163 @@
+.rooms-list {
+    --gap: 12px;
+    display: flex;
+    gap: var(--gap);
+    @media(min-width: $sm) {
+        --gap: 16px;
+    }
+    @media(min-width: $md) {
+        flex-wrap: wrap;
+    }
+    @media(min-width: $hd) {
+        --gap: 20px;
+    }
+    @media(max-width: $md - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+        overflow-x: auto;
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+    }
+}
+
+.room-card {
+    border-radius: 12px;
+    border: 1px solid var(--border_grey);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    @media(max-width: $sm - 0.02px) {
+        min-width: 334px;
+        width: 334px;
+    }
+    @media(min-width: $sm) and (max-width: $md - 0.02px) {
+        min-width: 354px;
+        width: 354px;
+    }
+    @media(min-width: $md) {
+        width: calc(100% / 3 - var(--gap) / 3 * 2);
+    }
+    @include hover {
+        img {
+            transform: scale(1.02);
+        }
+    }
+
+    &__image {
+        overflow: hidden;
+        margin-bottom: 20px;
+        @media(min-width: $sm) {
+            height: 280px;
+        }
+
+        img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1);
+            transition: transform 0.3s;
+            width: 100%;
+        }
+    }
+
+    &__info {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 32px;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        @media(min-width: $hd) {
+            font-size: 18px;
+        }
+
+        a {
+            @include active-area;
+            text-decoration: none;
+
+            &::after {
+                height: 100%;
+            }
+        }
+    }
+
+    &__props {
+        margin-bottom: 8px;
+    }
+
+    &__prop {
+        align-self: flex-start;
+        color: #484848;
+        display: flex;
+        gap: 8px;
+        min-height: 78px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--border_grey);
+        }
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+        }
+    }
+
+    &__prop-title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    &__prop-text {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    &__badges {
+        display: flex;
+        gap: 6px;
+        //flex-wrap: wrap;
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            gap: 8px;
+        }
+    }
+
+    &__badge {
+        align-items: center;
+        background-color: #EDEDED;
+        border-radius: 8px;
+        display: flex;
+        font-size: 11px;
+        min-height: 38px;
+        padding: 8px 5px;
+        white-space: nowrap;
+        @media(min-width: $hd) {
+            font-size: 12px;
+            gap: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        svg {
+            fill: currentColor;
+            height: 20px;
+            min-width: 20px;
+            width: 20px;
+        }
+    }
+
+    .button {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+}
