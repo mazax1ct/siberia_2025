@@ -1,0 +1,110 @@
+.promo-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media(min-width: $md) {
+        flex-direction: row;
+    }
+
+    .gallery-slider {
+        @media(min-width: $md) {
+            width: calc(100% / 4 - 20px * 3 / 4);
+        }
+    }
+}
+
+.gallery-slider {
+    display: flex;
+    gap: 20px;
+    @media(max-width: $md - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+        overflow-x: auto;
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+    }
+    @media(min-width: $md) {
+        flex-direction: column;
+    }
+
+    &__item {
+        border-radius: 12px;
+        overflow: hidden;
+        @media(max-width: $md - 0.02px) {
+            min-width: 210px;
+            width: 210px;
+        }
+        @include hover {
+            img {
+                transform: scale(1.02);
+            }
+        }
+
+        img {
+            display: block;
+            transform: scale(1);
+            transition: transform 0.3s;
+            width: 100%;
+            @media(min-width: $md) {
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        &--top {
+            img {
+                @media(min-width: $md) {
+                    object-position: top;
+                }
+            }
+        }
+
+        &--center {
+            img {
+                @media(min-width: $md) {
+                    object-position: center;
+                }
+            }
+        }
+
+        &--right {
+            img {
+                @media(min-width: $md) {
+                    object-position: right;
+                }
+            }
+        }
+
+        &--type_1 {
+            img {
+                @media(min-width: $md) {
+                    aspect-ratio: 1;
+                }
+            }
+        }
+
+        &--type_2 {
+            img {
+                @media(min-width: $md) {
+                    aspect-ratio: 1/1.658;
+                }
+            }
+        }
+
+        &--type_3 {
+            img {
+                @media(min-width: $md) {
+                    aspect-ratio: 2/1;
+                }
+            }
+        }
+
+        &--type_4 {
+            img {
+                @media(min-width: $md) {
+                    aspect-ratio: 1/.7;
+                }
+            }
+        }
+    }
+}

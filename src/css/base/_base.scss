@@ -44,29 +44,37 @@ html {
         scrollbar-gutter: stable;
     }
 
-    &--main_page {}
+    &--main_page {
+        h2 {
+            font-size: 28px;
+            @media(min-width: $sm) {
+                font-size: 36px;
+            }
+            @media(min-width: $hd) {
+                font-size: 40px;
+            }
+        }
+    }
 
     &__content {
         flex: 1 0 auto;
         padding-top: var(--header_min_height);
-        padding-bottom: 40px;
+        /*padding-bottom: 40px;
         @media(min-width: $sm) {
             padding-bottom: 48px;
         }
         @media(min-width: $hd) {
             padding-bottom: 0;
-        }
+        }*/
     }
 
     &__section {
-        &:not(:last-child) {
-            padding-bottom: 48px;
-            @media(min-width: $sm) {
-                padding-bottom: 56px;
-            }
-            @media(min-width: $hd) {
-                padding-bottom: 70px;
-            }
+        padding-bottom: 48px;
+        @media(min-width: $sm) {
+            padding-bottom: 56px;
+        }
+        @media(min-width: $hd) {
+            padding-bottom: 70px;
         }
 
         &--dark {
@@ -78,6 +86,26 @@ html {
             }
             @media(min-width: $hd) {
                 padding-top: 70px;
+            }
+
+            & + .page__section {
+                padding-top: 48px;
+                @media(min-width: $sm) {
+                    padding-top: 56px;
+                }
+                @media(min-width: $hd) {
+                    padding-top: 70px;
+                }
+            }
+
+            & + .page__section--dark {
+                padding-top: 0;
+                @media(min-width: $sm) {
+                    padding-top: 0;
+                }
+                @media(min-width: $hd) {
+                    padding-top: 0;
+                }
             }
 
             a {
@@ -122,6 +150,25 @@ html {
     h2,
     h3 {
         margin: 0;
+    }
+}
+
+.two-columns {
+    --gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    @media(min-width: $sm) {
+        flex-direction: row;
+    }
+    @media(min-width: $hd) {
+        --gap: 20px;
+    }
+
+    & > * {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
     }
 }
 
@@ -183,25 +230,9 @@ h3 {
         font-size: 16px;
         line-height: 1.375;
     }
-    @media(min-width: $fhd) {
-        font-size: 20px;
-        line-height: 1.2;
-    }
 
     &:not(:last-child) {
         margin-bottom: 16px;
-    }
-}
-
-h4 {
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 1.5;
-    margin-bottom: 16px;
-    @media(min-width: $fhd) {
-        font-size: 18px;
-        line-height: 1.33333;
-        margin-bottom: 20px;
     }
 }
 

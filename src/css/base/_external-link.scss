@@ -1,0 +1,66 @@
+.external-link {
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 104px;
+    padding: 24px;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    @media(min-width: $md) {
+        min-height: 230px;
+    }
+    @include hover {
+        color: #fff;
+    }
+
+    &--type_1 {
+        background-color: var(--leaf_green);
+    }
+
+    &--type_2 {
+        background-color: var(--leaf_green);
+        background-image: url("../images/backgrounds/external-links/pattern.svg");
+        background-repeat: repeat;
+    }
+
+    &__text {
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        padding-right: 80px;
+        @media(max-width: $md - 0.02px) {
+            display: none;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__title {
+        align-items: center;
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;
+        gap: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        svg {
+            fill: currentColor;
+            height: 40px;
+            min-width: 40px;
+            width: 40px;
+        }
+    }
+
+    .leaf {
+        left: auto;
+        right: 24px;
+        position: absolute;
+        top: 24px;
+    }
+}
