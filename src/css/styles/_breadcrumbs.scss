@@ -1,48 +1,44 @@
 .breadcrumbs {
     @include list-reset;
-    color: var(--dark_grey);
     display: flex;
-    font-size: 15px;
-    gap: 12px;
-    line-height: 1.33333;
-    margin-bottom: 12px;
+    font-size: 12px;
+    gap: 8px;
+    line-height: 1.2;
     margin-left: calc(0.01px - var(--container_padding));
     margin-right: calc(0.01px - var(--container_padding));
     overflow-x: auto;
-    padding-left: var(--container_padding);
-    padding-right: var(--container_padding);
+    padding: 20px var(--container_padding);
+    scrollbar-width: none;
     white-space: nowrap;
-    @media(min-width: $hd) {
-        gap: 20px;
+    @media(min-width: $sm) {
+        font-size: 14px;
     }
-    @media(min-width: $fhd) {
-        font-size: 18px;
-        margin-bottom: 24px;
+    @media(min-width: $hd) {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     &__item {
-        align-items: center;
-        display: flex;
-        gap: 12px;
-        @media(min-width: $hd) {
-            gap: 20px;
+        &:last-child {
+            opacity: 0.4;
         }
 
         &:not(:last-child) {
+            align-items: center;
+            display: flex;
+            gap: 8px;
+
             &::after {
-                background-color: var(--stroke);
+                border-radius: 50%;
+                background-color: currentColor;
                 content: '';
-                display: block;
-                height: 24px;
-                width: 1px;
+                height: 2px;
+                width: 2px;
             }
         }
     }
 
-    a {
-        align-items: center;
-        display: flex;
-        min-height: 40px;
+    &__link {
         text-decoration: none;
     }
 }

@@ -78,10 +78,6 @@
         a {
             @include active-area;
             text-decoration: none;
-
-            &::after {
-                height: 100%;
-            }
         }
     }
 
@@ -124,7 +120,6 @@
     &__badges {
         display: flex;
         gap: 6px;
-        //flex-wrap: wrap;
         margin-bottom: 24px;
         @media(min-width: $hd) {
             gap: 8px;

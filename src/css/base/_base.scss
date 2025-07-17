@@ -30,7 +30,7 @@ html {
     font-size: 14px;
     font-family: var(--primary_font);
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.3;
     letter-spacing: 0.1px;
     overflow-x: hidden;
     -webkit-text-size-adjust: none;
@@ -56,6 +56,33 @@ html {
         }
     }
 
+    &--dark {
+        background-color: var(--rich_green);
+        color: #fff;
+
+        .page__content {
+            a {
+                &:not([class]) {
+                    color: #fff;
+                    @include hover {
+                        color: var(--beige);
+                    }
+                }
+            }
+
+            .breadcrumbs__link {
+                color: #fff;
+                @include hover {
+                    color: var(--beige);
+                }
+            }
+        }
+    }
+
+    &--pale {
+        background-color: #E0E4DD;
+    }
+
     &__content {
         flex: 1 0 auto;
         padding-top: var(--header_min_height);
@@ -66,6 +93,25 @@ html {
         @media(min-width: $hd) {
             padding-bottom: 0;
         }*/
+    }
+
+    &__title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @media(min-width: $sm) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        @media(min-width: $hd) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        h1 {
+            align-items: center;
+            display: flex;
+            min-height: 46px;
+        }
     }
 
     &__section {
@@ -224,15 +270,13 @@ h2 {
 h3 {
     font-size: 14px;
     font-weight: 600;
-    line-height: 1.42857;
-    margin-top: 0;
+    margin-bottom: 16px;
     @media(min-width: $sm) {
         font-size: 16px;
-        line-height: 1.375;
     }
 
-    &:not(:last-child) {
-        margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -372,4 +416,8 @@ ul {
 
 .text-right {
     text-align: right;
+}
+
+.bg-leaf {
+    background-color: var(--leaf_green);
 }
