@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page page--pale">
+<body class="page">
     <header class="header compensate-for-scrollbar">
         <div class="header__inner container">
             <a class="header__logo" href="#">
@@ -64,8 +64,16 @@
 
     <main class="page__content">
         <div class="container">
-            <div class="page__title">
-                <h1>Карта курорта Сибирь</h1>
+            <div class="page__banner full-width">
+                <div class="page__banner-inner container">
+                    <div class="page__banner-image">
+                        <img src="images/content/otdelenie/img.jpg" srcset="images/content/otdelenie/img@2x.jpg 2x" alt="">
+                    </div>
+                    <div class="page__banner-text">
+                        <h1>Лечебные отделения</h1>
+                        <p>В медицинском Центре природного курорта «Сибирь» работает 4 отделения, которые проводят целый комплекс процедур, диагностических исследований и врачебных манипуляций, направленных на улучшение здоровья Гостей.</p>
+                    </div>
+                </div>
             </div>
 
             <div class="full-width bg-leaf">
@@ -78,41 +86,83 @@
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
-                <li class="breadcrumbs__item">Карта</li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Медицинский центр</a>
+                </li>
+                <li class="breadcrumbs__item">Отделения</li>
             </ul>
 
+            <section class="page__section">
+                <div class="cabinets">
+                    <a class="cabinets__item" href="#">
+                        <img src="images/content/otdelenie/img_2.jpg" srcset="images/content/otdelenie/img_2@2x.jpg 2x" alt="">
 
-            <div class="map">
-                <div class="map__inner">
-                    <a class="map__pin" href="javascript:void(0)" title="Жилой корпус I" data-fancybox="map_1" data-src="">1</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Жилой корпус II" data-fancybox="map_2" data-src="">2</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Лечебный корпус" data-fancybox="map_3" data-src="">3</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Ресторанный комплекс" data-fancybox="map_4" data-src="">4</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Спортивный комплекс" data-fancybox="map_5" data-src="">5</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Коттеджи и таунхаусы" data-fancybox="map_6" data-src="">6</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Береговая линия у озера" data-fancybox="map_7" data-src="">7</a>
-                    <a class="map__pin" href="javascript:void(0)" title="VESLABAR" data-fancybox="map_8" data-src="">8</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Старт по терренкуру" data-fancybox="map_9" data-src="">9</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Детская площадка" data-fancybox="map_10" data-src="">10</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Теннисный корт" data-fancybox="map_11" data-src="">11</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Древо мудрости и Дерево Фонарь" data-fancybox="map_12" data-src="">12</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Фонарь" data-fancybox="map_13" data-src="">13</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Спортивный городок" data-fancybox="map_14" data-src="">14</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Караульная гора" data-fancybox="map_15" data-src="">15</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Арт-объект «Лоси»" data-fancybox="map_16" data-src="">16</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Поклонный крест" data-fancybox="map_17" data-src="">17</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Дерево Мудрости и Камень Жизни" data-fancybox="map_18" data-src="">18</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Административно-бытовой корпус" data-fancybox="map_19" data-src="">19</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Автостоянка (гостевая)" data-fancybox="map_20" data-src="">20</a>
-                    <a class="map__pin" href="javascript:void(0)" title="КПП" data-fancybox="map_21" data-src="">21</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Лестница здоровья" data-fancybox="map_22" data-src="">22</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Арт-объект «Сердце»" data-fancybox="map_23" data-src="">23</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Конный двор" data-fancybox="map_24" data-src="">24</a>
-                    <a class="map__pin" href="javascript:void(0)" title="Парящая тропа" data-fancybox="map_25" data-src="">25</a>
+                        <span class="cabinets__item-inner">
+                            <span class="leaf">
+                                <svg class="leaf__leaf" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#leaf_icon" />
+                                </svg>
+                                <svg class="leaf__arrow" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#leaf_arrow" />
+                                </svg>
+                            </span>
 
-                    <img src="images/content/map/map.svg" alt="">
+                            <span class="cabinets__item-title">Отделение эстетической и аппаратной косметологии</span>
+                        </span>
+                    </a>
+
+                    <a class="cabinets__item" href="#">
+                        <img src="images/content/otdelenie/img_3.jpg" srcset="images/content/otdelenie/img_3@2x.jpg 2x" alt="">
+
+                        <span class="cabinets__item-inner">
+                            <span class="leaf">
+                                <svg class="leaf__leaf" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#leaf_icon" />
+                                </svg>
+                                <svg class="leaf__arrow" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#leaf_arrow" />
+                                </svg>
+                            </span>
+
+                            <span class="cabinets__item-title">Отделение восстановительного лечения</span>
+                        </span>
+                    </a>
+
+                    <a class="cabinets__item" href="#">
+                        <img src="images/content/otdelenie/img_4.jpg" srcset="images/content/otdelenie/img_4@2x.jpg 2x" alt="">
+
+                        <span class="cabinets__item-inner">
+                            <span class="leaf">
+                                <svg class="leaf__leaf" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#leaf_icon" />
+                                </svg>
+                                <svg class="leaf__arrow" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#leaf_arrow" />
+                                </svg>
+                            </span>
+
+                            <span class="cabinets__item-title">Лечебно-диагностические отделение</span>
+                        </span>
+                    </a>
+
+                    <a class="cabinets__item" href="#">
+                        <img src="images/content/otdelenie/img_5.jpg" srcset="images/content/otdelenie/img_5@2x.jpg 2x" alt="">
+
+                        <span class="cabinets__item-inner">
+                            <span class="leaf">
+                                <svg class="leaf__leaf" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#leaf_icon" />
+                                </svg>
+                                <svg class="leaf__arrow" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#leaf_arrow" />
+                                </svg>
+                            </span>
+
+                            <span class="cabinets__item-title">Отделение лечебной физкультуры</span>
+                        </span>
+                    </a>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 
@@ -349,6 +399,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     
     <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
 </body>
 
 </html>

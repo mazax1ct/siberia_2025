@@ -9,12 +9,13 @@
 @import "base/_social-link.scss";
 @import "base/_email.scss";
 @import "base/_leaf.scss";
-@import "base/_external-link.scss";
-@import "base/_internal-link.scss";
+@import "base/_link-block.scss";
 @import "base/_swiper.scss";
 @import "base/_fancybox.scss";
+@import "base/_show-more.scss";
 @import "styles/_header.scss";
 @import "styles/_breadcrumbs.scss";
+@import "styles/_pager.scss";
 @import "styles/_footer.scss";
 @import "styles/_main-banner.scss";
 @import "styles/_horizontal-menu.scss";
@@ -26,3 +27,5 @@
 @import "styles/_comfort.scss";
 @import "styles/_gallery.scss";
 @import "styles/_map.scss";
+@import "styles/_restaurants.scss";
+@import "styles/_cabinets.scss";

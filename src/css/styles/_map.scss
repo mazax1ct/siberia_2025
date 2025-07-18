@@ -205,3 +205,49 @@
         width: 100%;
     }
 }
+
+.map-description {
+    font-size: 16px;
+    font-weight: 600;
+    @media(min-width: $sm) {
+        column-count: 2;
+        column-gap: 24px;
+    }
+    @media(min-width: $md) {
+        column-count: 3;
+    }
+
+    & > li {
+        margin-bottom: 16px;
+        overflow: hidden;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        break-inside: avoid-column;
+
+        & > span {
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 8px;
+        }
+
+        & > ul {
+            @include list-reset;
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 8px;
+
+            li {
+                padding-left: 18px;
+
+                &::before {
+                    height: 2px;
+                    left: 9px;
+                    top: 0.7em;
+                    width: 2px;
+                }
+            }
+        }
+    }
+}
