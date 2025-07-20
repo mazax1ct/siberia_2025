@@ -1,0 +1,16 @@
+.bron-container {
+    @media(min-width: $hd) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    & + .page__section {
+        //padding-top: 24px;
+        /*@media(min-width: $sm) {
+            padding-top: 32px;
+        }*/
+        @media(min-width: $hd) {
+            padding-top: 70px;
+        }
+    }
+}

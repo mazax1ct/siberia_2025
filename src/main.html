@@ -14,6 +14,8 @@
 
     //= template/common/fonts_preload.html
 
+    //= template/common/bron_head.html
+
     //= template/common/styles.html
 </head>
 
@@ -57,70 +59,74 @@
                 </div>
             </section>
 
-            <ul class="horizontal-menu">
-                <li>
-                    <a class="horizontal-menu__link" href="#">
-                        <span class="horizontal-menu__image">
-                            <img src="images/content/horizontal-menu/img.jpg" alt="">
-                        </span>
-                        <span>Досуг</span>
-                    </a>
-                </li>
+            <div class="bron-container">
+                //= template/common/bron.html
 
-                <li>
-                    <a class="horizontal-menu__link" href="#">
-                        <span class="horizontal-menu__image">
-                            <img src="images/content/horizontal-menu/img.jpg" alt="">
-                        </span>
-                        <span>Процедуры</span>
-                    </a>
-                </li>
+                <ul class="horizontal-menu">
+                    <li>
+                        <a class="horizontal-menu__link" href="#">
+                            <span class="horizontal-menu__image">
+                                <img src="images/content/horizontal-menu/img.jpg" alt="">
+                            </span>
+                            <span>Досуг</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a class="horizontal-menu__link" href="#">
-                        <span class="horizontal-menu__image">
-                            <img src="images/content/horizontal-menu/img.jpg" alt="">
-                        </span>
-                        <span>Отзывы</span>
-                    </a>
-                </li>
+                    <li>
+                        <a class="horizontal-menu__link" href="#">
+                            <span class="horizontal-menu__image">
+                                <img src="images/content/horizontal-menu/img.jpg" alt="">
+                            </span>
+                            <span>Процедуры</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a class="horizontal-menu__link" href="#">
-                        <span class="horizontal-menu__image">
-                            <img src="images/content/horizontal-menu/img.jpg" alt="">
-                        </span>
-                        <span>Детям</span>
-                    </a>
-                </li>
+                    <li>
+                        <a class="horizontal-menu__link" href="#">
+                            <span class="horizontal-menu__image">
+                                <img src="images/content/horizontal-menu/img.jpg" alt="">
+                            </span>
+                            <span>Отзывы</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a class="horizontal-menu__link" href="#">
-                        <span class="horizontal-menu__image">
-                            <img src="images/content/horizontal-menu/img.jpg" alt="">
-                        </span>
-                        <span>Спорт</span>
-                    </a>
-                </li>
+                    <li>
+                        <a class="horizontal-menu__link" href="#">
+                            <span class="horizontal-menu__image">
+                                <img src="images/content/horizontal-menu/img.jpg" alt="">
+                            </span>
+                            <span>Детям</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a class="horizontal-menu__link" href="#">
-                        <span class="horizontal-menu__image">
-                            <img src="images/content/horizontal-menu/img.jpg" alt="">
-                        </span>
-                        <span>Книги</span>
-                    </a>
-                </li>
+                    <li>
+                        <a class="horizontal-menu__link" href="#">
+                            <span class="horizontal-menu__image">
+                                <img src="images/content/horizontal-menu/img.jpg" alt="">
+                            </span>
+                            <span>Спорт</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a class="horizontal-menu__link" href="#">
-                        <span class="horizontal-menu__image">
-                            <img src="images/content/horizontal-menu/img.jpg" alt="">
-                        </span>
-                        <span>Для заезда</span>
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a class="horizontal-menu__link" href="#">
+                            <span class="horizontal-menu__image">
+                                <img src="images/content/horizontal-menu/img.jpg" alt="">
+                            </span>
+                            <span>Книги</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="horizontal-menu__link" href="#">
+                            <span class="horizontal-menu__image">
+                                <img src="images/content/horizontal-menu/img.jpg" alt="">
+                            </span>
+                            <span>Для заезда</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
             <section class="page__section">
                 <div class="tiles">
@@ -721,7 +727,19 @@
 
             <section class="page__section page__section--dark full-width">
                 <div class="container">
-                    <h2>Постройте свой план действий!</h2>
+                    <div class="test">
+                        <div class="test__start">
+                            <div class="test__start-image">
+                                <img src="images/content/test/start.svg" alt="">
+                            </div>
+
+                            <div class="test__start-text">
+                                <h2>Постройте свой план действий!</h2>
+                                <p>Расскажите нам о себе, пройдя небольшой тест. На основании ответов мы сформируем для вас персональные рекомендации по улучшению самочувствия и дорожную карту пребывания у нас.</p>
+                                <button class="button button--primary" type="button"><span>Начать тест</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -818,8 +836,18 @@
                 </div>
             </section>
 
-            <section class="page__section">
-                <h2>Карта территории курорта Сибирь</h2>
+            <section class="page__section page__section--pale full-width">
+                <div class="about-map container">
+                    <div class="about-map__image">
+                        <img src="images/content/about-map/logo.svg" alt="">
+                    </div>
+
+                    <div class="about-map__text">
+                        <h2>Карта курорта Сибирь</h2>
+                        <p>Изучите инфраструктуру курорта: живописные места для прогулок, рестораны, спортивные локации и медицинские объекты – все собрали для вас на карте.</p>
+                        <p><a class="button button--secondary" href="#"><span>Перейти к карте</span></a></p>
+                    </div>
+                </div>
             </section>
 
             <section class="page__section page__section--dark full-width">
@@ -1119,7 +1147,6 @@
     </main>
 
     //= template/common/footer.html
-
 
     //= template/common/scripts.html
 

@@ -32,6 +32,7 @@
             margin-bottom: 24px;
         }
         @media(min-width: $md) {
+            min-width: 475px;
             margin-bottom: 0;
         }
         @media(max-width: $md - 0.02px) {

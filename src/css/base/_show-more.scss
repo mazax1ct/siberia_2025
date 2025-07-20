@@ -2,7 +2,9 @@
     text-align: center;
 
     .button {
-        max-width: 340px;
         width: 100%;
+        @media(min-width: $md) {
+            max-width: 340px;
+        }
     }
 }

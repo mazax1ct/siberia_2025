@@ -32,21 +32,22 @@
     <header class="header compensate-for-scrollbar">
         <div class="header__inner container">
             <a class="header__logo" href="#">
-                <img src="images/logo.svg" alt="Сибирь">
+                <img class="header__logo-icon" src="images/logo_icon.svg" alt="">
+                <img class="header__logo-text" src="images/logo_text.svg" alt="Сибирь">
             </a>
+    
+            <button class="js-menu-opener header__menu-opener header__button" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#burger_icon" />
+                </svg>
+                <span>МЕНЮ</span>
+            </button>
     
             <button class="header__search-opener header__button" type="button">
                 <svg aria-hidden="true">
                     <use xlink:href="images/sprite.svg#search_icon" />
                 </svg>
                 <span>Поиск</span>
-            </button>
-    
-            <button class="header__menu-opener header__button" type="button">
-                <svg aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#burger_icon" />
-                </svg>
-                <span>МЕНЮ</span>
             </button>
     
             <a class="header__phone header__button" href="#">
@@ -59,6 +60,258 @@
             <a class="button button--primary button--h_40" href="#">
                 <span>Забронировать</span>
             </a>
+        </div>
+    
+        <div class="header__dropdown main-menu">
+            <div class="main-menu__inner">
+                <div class="container">
+                    <div class="main-menu__top">
+                        <button class="js-menu-closer main-menu__closer" type="button" title="Закрыть меню">
+                            <svg>
+                                <use xlink:href="images/sprite.svg#close_icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+    
+                    <div class="main-menu__button-block">
+                        <a class="button button--primary" href="#"><span>Забронировать</span></a>
+                    </div>
+    
+                    <nav class="main-menu__nav" role="navigation" aria-label="Основное меню">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__list-item "><a class="main-menu__list-link" href="#">Проживание</a></li>
+    
+                            <li class="main-menu__list-item "><a class="main-menu__list-link" href="#">Бары и рестораны</a></li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Медцентр</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Медцентр</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Мед программы</a></li>
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Заболевания</a></li>
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Кабинеты</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Инфраструктура</a>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Отдых</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Отдых</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Бассейн и сауна</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Тренажерный зал</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="javascript:void(0)">Посетителям</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Посетителям</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Онлайн-камера</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Отзывы отдыхающих</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Полезные книги</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Частые вопросы</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Акции</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Как добраться</a>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Цены</a>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Контакты</a>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">О центре</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>О центре</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">История</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Достопримечательности</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Лицензии</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Виртуальная экскурсия</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Карьера</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Вакансии</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Реквизиты</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Фотогалерея</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="javascript:void(0)">Партнерам</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Партнерам</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Конференц-услуги</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Афиша</a></li>
+    
+                            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Детям</a></li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Справки и документы</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+    
+                                        <span>Справки и документы</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Скачать документы</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Госгарантии</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Персональные данные</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Пользовательское соглашение</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Правила пребывания</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Документы для заезда</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Анкета</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <div class="main-menu__bottom">
+                        <a href="tel:+73452687000">+7 (3452) 687-000</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 

@@ -1,0 +1,30 @@
+.test {
+    background-color: var(--rich_green);
+
+    &__start {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 920px;
+        @media(min-width: $sm) {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__start-text {
+        line-height: 1.5;
+        @media(min-width: $sm) {
+            min-width: 340px;
+            width: 340px;
+        }
+
+        h2 {
+            margin-bottom: 12px;
+        }
+
+        .button {
+            width: 100%;
+        }
+    }
+}

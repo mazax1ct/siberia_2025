@@ -1,0 +1,29 @@
+.info-block {
+    border: 1px solid var(--beige);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    justify-content: flex-end;
+    padding: 24px;
+
+    &__icon {
+        @media(min-width: $hd) {
+            margin-bottom: 8px;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 4px;
+        @media(min-width: $hd) {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+    }
+}

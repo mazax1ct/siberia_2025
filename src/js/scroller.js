@@ -15,6 +15,7 @@ $(document).ready(function() {
         slidesOffsetAfter: 16,
         slidesOffsetBefore: 16,
         watchOverflow: true,
+        resistanceRatio: 0,
 
         breakpoints: {
             1200: {

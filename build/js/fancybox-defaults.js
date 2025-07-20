@@ -8,7 +8,6 @@ $.fancybox.defaults.smallBtn = true;
 $.fancybox.defaults.toolbar = 'auto';
 $.fancybox.defaults.buttons = ['close'];
 $.fancybox.defaults.closeExisting = true;
-$.fancybox.defaults.clickSlide = true;
 $.fancybox.defaults.closeClickOutside = true;
 $.fancybox.defaults.wheel = false;
 $.fancybox.defaults.btnTpl.smallBtn = '<button data-fancybox-close class="popup-closer fancybox-button fancybox-close-small" type="button" title="{{CLOSE}}"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#close_icon" /></svg></button>';

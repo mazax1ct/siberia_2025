@@ -1,0 +1,153 @@
+.procedure-card {
+    padding-bottom: 32px;
+    @media(min-width: $sm) {
+        padding-bottom: 40px;
+    }
+    @media(min-width: $md) {
+        align-items: flex-start;
+        display: flex;
+        gap: 20px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    &:not(:first-child) {
+        padding-top: 32px;
+        @media(min-width: $sm) {
+            padding-top: 40px;
+        }
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid var(--border_grey);
+    }
+
+    &__image {
+        margin-bottom: 12px;
+        max-width: 475px;
+        width: 100%;
+        @media(min-width: $sm) {
+            margin-bottom: 24px;
+        }
+        @media(min-width: $md) {
+            margin-bottom: 0;
+            min-width: 475px;
+        }
+        @media(max-width: $md - 0.02px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            border-radius: 120px 0 120px 0;
+            display: block;
+            width: 100%;
+            @media(min-width: $sm) {
+                border-radius: 160px 0 160px 0;
+            }
+        }
+    }
+
+    &__text {
+        line-height: 1.5;
+        @media(min-width: $sm) {
+            font-size: 16px;
+        }
+        @media(min-width: $md) {
+            flex-grow: 1;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            @media(min-width: $sm) {
+                font-size: 26px;
+                margin-bottom: 16px;
+            }
+            @media(min-width: $hd) {
+                font-size: 28px;
+            }
+        }
+    }
+
+    &__content {
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        &.is-collapsed {
+            height: 180px;
+            padding-right: 32px;
+
+            &::after {
+                background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 1) 100%);
+                bottom: 0;
+                content: '';
+                height: 60px;
+                left: 0;
+                position: absolute;
+                pointer-events: none;
+                top: auto;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .procedure-card__more {
+                display: block;
+            }
+        }
+    }
+
+    &__more {
+        @include active-area;
+        @include button-reset;
+        bottom: 0;
+        display: none;
+        font-size: 14px;
+        font-weight: 600;
+        left: auto;
+        position: absolute;
+        right: 0;
+        top: auto;
+        z-index: 2;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 24px;
+        @media(min-width: $sm) {
+            flex-direction: row;
+        }
+
+        .button {
+            width: 100%;
+            @media(min-width: $sm) {
+                width: 200px;
+            }
+        }
+    }
+
+    &__time {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        font-weight: 500;
+
+        &:not(:first-child) {
+            margin-top: 32px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        svg {
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+        }
+    }
+}
