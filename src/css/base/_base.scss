@@ -257,6 +257,12 @@ html {
             }
         }
     }
+
+    svg {
+        display: block;
+        max-height: initial !important;
+        max-width: initial !important;
+    }
 }
 
 .container {

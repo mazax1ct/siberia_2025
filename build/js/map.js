@@ -11,4 +11,4 @@ $(document).ready(function() {
   map_scroll();
 });
 
-$(window).on("resize", map_scroll);
+//$(window).on("resize", map_scroll);

@@ -301,8 +301,7 @@
                     color: var(--extra_green);
                 }
             }
-
-            &:focus-within {
+            /*&:focus-within {
                 .main-menu__dropdown {
                     @media(min-width: $hd) {
                         display: block;
@@ -316,8 +315,7 @@
                 .main-menu__button {
                     color: var(--extra_green);
                 }
-            }
-
+            }*/
             &:nth-last-child(1),
             &:nth-last-child(2),
             &:nth-last-child(3),
@@ -350,12 +348,12 @@
     }
 
     &__list-link {
-        &:focus ~ .main-menu__dropdown,
+        /*&:focus ~ .main-menu__dropdown,
         &:focus-within ~ .main-menu__dropdown {
             @media(min-width: $hd) {
                 display: block;
             }
-        }
+        }*/
     }
 
     &__button {

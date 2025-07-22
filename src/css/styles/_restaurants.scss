@@ -69,8 +69,10 @@
         }
 
         .button {
-            max-width: 340px;
             width: 100%;
+            @media(min-width: $sm) {
+                max-width: 340px;
+            }
         }
     }
 

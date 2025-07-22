@@ -91,9 +91,9 @@
     &__more-link {
         @include active-area;
         font-size: 16px;
-        @media(min-width: $hd) {
+        /*@media(min-width: $hd) {
             font-size: 20px;
-        }
+        }*/
         @include hover {
             color: var(--beige);
         }
