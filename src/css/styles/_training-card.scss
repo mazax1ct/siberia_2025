@@ -1,0 +1,34 @@
+.training-card {
+    display: block;
+    min-width: 244px;
+    text-decoration: none;
+    width: 244px;
+    @include hover {
+        color: var(--black);
+        text-decoration: underline;
+
+        img {
+            transform: scale(1.02);
+        }
+    }
+
+    &__image {
+        border-radius: 12px;
+        display: block;
+        overflow: hidden;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        img {
+            display: block;
+            transition: transform 0.3s;
+            transform: scale(1);
+        }
+    }
+
+    &__title {
+        display: block;
+    }
+}

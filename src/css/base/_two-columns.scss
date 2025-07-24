@@ -1,0 +1,32 @@
+.two-columns {
+    @media(min-width: $md) {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+        @media(min-width: $md) {
+            margin-bottom: 40px;
+        }
+    }
+
+    & > div {
+        @media(min-width: $md) {
+            width: calc(100% / 2 - 20px / 2);
+        }
+
+        &:first-child {
+            @media(max-width: $md - 0.02px) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &__image-block {
+        max-width: 575px;
+        width: 100%;
+    }
+}

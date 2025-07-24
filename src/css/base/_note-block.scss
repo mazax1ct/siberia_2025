@@ -1,0 +1,57 @@
+.note-block {
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 16px;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    &__icon {
+        min-width: 40px;
+        width: 40px;
+        @media(max-width: $sm - 0.02px) {
+            display: none;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    &--iconed {
+        @media(min-width: $sm) {
+            display: flex;
+            gap: 12px;
+        }
+    }
+
+    &--centered {
+        align-items: center;
+    }
+
+    &--type_1 {
+        background-color: rgba(#D7B56D, 0.5);
+
+        a {
+            @include hover {
+                color: var(--black);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    ul {
+        &:not([class]) {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+}
