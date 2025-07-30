@@ -7,8 +7,18 @@
         margin-bottom: 40px;
     }
 
-    a {
-        text-decoration: none;
+    & + & {
+        margin-top: -8px;
+    }
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    b {
+        font-weight: 500;
     }
 
     &__icon {
@@ -40,9 +50,13 @@
         a {
             @include hover {
                 color: var(--black);
-                text-decoration: underline;
+                text-decoration: none;
             }
         }
+    }
+
+    &--type_2 {
+        border: 2px solid var(--border_grey);
     }
 
     ul {

@@ -1,0 +1,57 @@
+.reqs {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    tr {
+        &:nth-child(even) {
+            td {
+                background-color: var(--grey_light);
+            }
+        }
+    }
+
+    td {
+        border: none;
+        padding: 20px;
+        @media(max-width: $sm - 0.02px) {
+            display: block;
+        }
+        @media(min-width: $sm) and (max-width: $md - 0.02px) {
+            width: 50%;
+        }
+
+        &:first-child {
+            font-size: 15px;
+            font-weight: 500;
+            @media(max-width: $sm - 0.02px) {
+                padding-bottom: 5px;
+            }
+            @media(min-width: $sm) {
+                font-size: 16px;
+            }
+            @media(min-width: $md) {
+                width: 35%;
+            }
+        }
+
+        &:last-child {
+            @media(max-width: $sm - 0.02px) {
+                padding-top: 5px;
+            }
+        }
+
+        &.big {
+            font-size: 20px;
+            line-height: 1.3;
+            padding: 20px !important;
+            @media(min-width: $sm) {
+                font-size: 24px;
+            }
+        }
+    }
+}

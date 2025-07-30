@@ -3,6 +3,10 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
 
 .feature_3 {

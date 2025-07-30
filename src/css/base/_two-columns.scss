@@ -1,9 +1,19 @@
 .two-columns {
     @media(min-width: $md) {
-        align-items: center;
         display: flex;
         gap: 20px;
         justify-content: space-between;
+    }
+
+    &--centered {
+        align-items: center;
+    }
+
+    &:not(:first-child) {
+        margin-top: 24px;
+        @media(min-width: $md) {
+            margin-top: 40px;
+        }
     }
 
     &:not(:last-child) {
@@ -23,10 +33,24 @@
                 margin-bottom: 12px;
             }
         }
+
+        &:last-child {
+            .figured-image {
+                @media(min-width: $md) {
+                    margin-left: auto;
+                }
+            }
+        }
     }
 
     &__image-block {
         max-width: 575px;
         width: 100%;
+
+        img {
+            border-radius: 12px;
+            display: block;
+            width: 100%;
+        }
     }
 }

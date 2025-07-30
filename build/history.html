@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Сибирь</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Сибирь" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-CormorantUnicase-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <script type='text/javascript' data-skip-moving="true">
+        (function(w) {
+            var q = [
+                ['setContext', 'TL-INT-sibir-tumen', 'ru'],
+                ['embed', 'booking-form', {
+                    container: 'tl-booking-form'
+                }],
+                ['embed', 'search-form', {
+                    container: 'tl-search-form'
+                }],
+            ];
+            var h = ["ru-ibe.tlintegration.ru", "ibe.tlintegration.ru", "ibe.tlintegration.com"];
+            var t = w.travelline = (w.travelline || {}),
+                ti = t.integration = (t.integration || {});
+            ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
+            if (!ti.__loader) {
+                ti.__loader = true;
+                var d = w.document,
+                    c = d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0];
+    
+                function e(s, f) {
+                    return function() {
+                        w.TL || (c.removeChild(s), f())
+                    }
+                }
+                (function l(h) {
+                    if (0 === h.length) return;
+                    var s = d.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = !0;
+                    s.src = "https://" + h[0] + "/integration/loader.js";
+                    s.onerror = s.onload = e(s, function() {
+                        l(h.slice(1, h.length))
+                    });
+                    c.appendChild(s)
+                })(h);
+            }
+        })(window);
+    </script>
+    
+    <style>
+        #block-search,
+        #block-search * {
+            box-sizing: border-box;
+        }
+    
+        #block-search {
+            background: #627856;
+            min-height: 366px;
+        }
+    
+        @media(min-width: 388px) {
+            #block-search {
+                min-height: 216px;
+            }
+        }
+    
+        @media(min-width: 886px) {
+            #block-search {
+                min-height: 144px;
+            }
+        }
+    
+        @media(min-width: 1187px) {
+            #block-search {
+                min-height: 102px;
+            }
+        }
+    
+        .tl-container {
+            padding: 0 30px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="header__inner container">
+            <a class="header__logo" href="#">
+                <img class="header__logo-icon" src="images/logo_icon.svg" alt="">
+                <img class="header__logo-text" src="images/logo_text.svg" alt="Сибирь">
+            </a>
+    
+            <button class="js-menu-opener header__menu-opener header__button" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#burger_icon" />
+                </svg>
+                <span>МЕНЮ</span>
+            </button>
+    
+            <button class="header__search-opener header__button" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#search_icon" />
+                </svg>
+                <span>Поиск</span>
+            </button>
+    
+            <a class="header__phone header__button" href="#">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#phone_icon" />
+                </svg>
+                <span>+7 (3452) 687-000</span>
+            </a>
+    
+            <a class="button button--primary button--h_40" href="#">
+                <span>Забронировать</span>
+            </a>
+        </div>
+    
+        <div class="header__dropdown main-menu">
+            <div class="main-menu__inner">
+                <div class="container">
+                    <div class="main-menu__top">
+                        <button class="js-menu-closer main-menu__closer" type="button" title="Закрыть меню">
+                            <svg>
+                                <use xlink:href="images/sprite.svg#close_icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+    
+                    <div class="main-menu__button-block">
+                        <a class="button button--primary" href="#"><span>Забронировать</span></a>
+                    </div>
+    
+                    <nav class="main-menu__nav" role="navigation" aria-label="Основное меню">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__list-item "><a class="main-menu__list-link" href="#">Проживание</a></li>
+    
+                            <li class="main-menu__list-item "><a class="main-menu__list-link" href="#">Бары и рестораны</a></li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Медцентр</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Медцентр</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Мед программы</a></li>
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Заболевания</a></li>
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Кабинеты</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Инфраструктура</a>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Отдых</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Отдых</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Бассейн и сауна</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Тренажерный зал</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="javascript:void(0)">Посетителям</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Посетителям</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Онлайн-камера</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Отзывы отдыхающих</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Полезные книги</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Частые вопросы</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Акции</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Как добраться</a>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Цены</a>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Контакты</a>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">О центре</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>О центре</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">История</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Достопримечательности</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Лицензии</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Виртуальная экскурсия</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Карьера</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Вакансии</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Реквизиты</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Фотогалерея</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="javascript:void(0)">Партнерам</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Партнерам</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Конференц-услуги</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Афиша</a></li>
+    
+                            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Детям</a></li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Справки и документы</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+    
+                                        <span>Справки и документы</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Скачать документы</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Госгарантии</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Персональные данные</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Пользовательское соглашение</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Правила пребывания</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Документы для заезда</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Анкета</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <div class="main-menu__bottom">
+                        <a href="tel:+73452687000">+7 (3452) 687-000</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <div class="page__banner full-width">
+                <div class="page__banner-inner container">
+                    <div class="page__banner-image">
+                        <img src="images/content/history/img.jpg" srcset="images/content/history/img@2x.jpg 2x" alt="">
+                    </div>
+                    <div class="page__banner-text">
+                        <h1>История</h1>
+                        <p>С этим местом связаны разные легенды. По утверждению некоторых историков именно здесь один из первых завоевателей Сибири атаман Ермак Тимофеевич поставил свою заставу. Эта застава долгое время контролировала торговые
+                            караваны, идущие с Урала в Сибирь.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id='block-search' class="full-width">
+                <div id='tl-search-form' class='tl-container container'>
+                    <a href='https://www.travelline.ru/products/tl-hotel/' target='_blank'>TravelLine</a>
+                </div>
+            </div>
+
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">История</li>
+            </ul>
+
+            <section class="page__section">
+                <h2>1586 год</h2>
+
+                <p>На этом “отрезке границы сильно была чувствуема опасность от набегов” - писал один из первых исследователей Сибири П.А.Словцов. Река Пышма поэтому играла исключительно важную роль как пограничная река “домогавшихся похода на Тюмень
+                    царевич Алея и Азима с их кочевья проведовать вестей, крепки ли сторожи и карулы”. [Миллер, Г. Ф. История Сибири : [в 2 т.]. [Т.] 1. - Москва ; Ленинград, 1937]</p>
+
+                <div class="two-columns two-columns--centered">
+                    <div class="two-columns__image-block">
+                        <img src="images/content/history/img_2.jpg" srcset="images/content/history/img_2@2x.jpg 2x" alt="">
+                    </div>
+
+                    <div>
+                        <p>Заселение «припышимья» русскими началось в XVII веке, вскоре после основания первых русских городов на юге Сибири - Тюмени в 1586 году и Тобольска в 1587 году. На тот период река Пышма (Топоним очень сложен. Есть несколько
+                            версий происхождения названия. С татарского языка означает спокойная, неторопливая, медлительная) была своеобразным водоразделом между оседлым татарским населением и кочевыми калмыцкими народами, не принимавшими подданство
+                            Московскому государству.</p>
+                    </div>
+                </div>
+
+                <h2>1601 год</h2>
+
+                <p>“В том же 1608 годы нагайские татары под предводительством мурзы Уруса совершили набег на Тюменский уезд и 26 августа подошли к реке Пышме в 20 верстах от города, где и разгромили все русские и татарские жилища.” 3</p>
+
+                <p>Нужно иметь в виду следующее: со стороны будущего города Курган - “Царёва городища” на Тобольск проходил караванный торговый путь из Бухары в тогдашнюю столицу Кучумовского царства - Искер. В районе между современными поселками
+                    Большие Акияры и Онохино были переправы и купцы из бухары получали разрешение а переправу через Пышму с последующим заходом в Тюмень.</p>
+
+                <p>3(Миллер, Г. Ф. История Сибири : [в 2 т.]. [Т.] 1. - Москва ; Ленинград, 1937)</p>
+
+                <p>1647 г. не ранее июля 10. — Отписка тюменского воеводы Ивана Тургенева туринскому воеводе Федору Шишкину о прибытии торговых бухарцев и калмыцких послов с торгом от тайшихи „Дарыки и сына ее Ешкепа и от Ирденея конпгайиш и о
+                    недовольстве их распоряжением отправить в Тобольск и не разрешать торговать и „пословать” на Тюмени, “Господину Федору Григорьевичи Иван Тургенев челом бьет. В нынешнем во 155-и году июня в 8 день приехал с Пышмы с нижнего караулу
+                    тюменской конный казак Безсонко Трубачев, а передо мною в роспросе сказал: идут де на Тюмень торговые бухарцы и калмытские послы с торгом с лошадьми и с коровы н с овнами от Тайчиповы жены Дарыки да сына ее Ешкепа да от Ирдепея
+                    коптаиши, послов и торговых людей и кашеваров 32 человека. И того ж числа послал с Тюмени навстречю на Пышму тюменских сына боярского Семена Поскочяна да с ним служилых людей 20 и велел тех калыытцких послов остановить и за Пышму
+                    их пущать не велел. И июля в 9 день послал к ним х калмытцким послом за Пышму тюменского сына боярского Сергея Ушакова да съезжей избы подьячево Павла Кирилова да толмача Семейку Трофимова да с -южи служивых людей 10 человек и
+                    велел им калматцких послов роспросить, отказать и отговорить, что по государеву цареву и великого князя Алексея Михайловича всеа Русии указу и по тобольской отписке калмыцких послов, на Тюмень принимать не велено; а которые
+                    колматцкие послы и станут приходить на Тюмень, и с Тюмени велено их посылать с провожатыми в Тобольск, а на Тюмени им по-словать отнюдь не - велев».4</p>
+
+                <p>4(Миллер, Г. Ф. История Сибири : [в 2 т.]. [Т.] 1. - Москва ; Ленинград, 1937)</p>
+
+                <div class="two-columns two-columns--centered">
+                    <div class="two-columns__image-block">
+                        <img src="images/content/history/img_3.jpg" srcset="images/content/history/img_3@2x.jpg 2x" alt="">
+                    </div>
+
+                    <div>
+                        <p>Кроме того, важно отметить, что враждебная деятельность Кучумовичей вряд ли была бы возможна без поддержки внешних сил. В частности, старшие сыновья Кучума Алей и Канай ориентировались на традиционный союз с ногаями – они
+                            оба были женаты на дочерях видных ногайских мурз. Еще в 1601 г. силы Кучумовичей в совокупности насчитывали 450 воинов, в основном из башкир-табынцев и сынрянцев. После присоединения в 1603 г. к Алею ногайского мурзы Уруса
+                            их соединенный отряд стал насчитывать уже 1100 человек.2</p>
+                        <p>2 (Васьков Дмитрий Александрович старший преподаватель УрФУ, г. Екатеринбург “ПОТОМКИ КУЧУМА В XVII В. И ИХ РОЛЬ В ОРГАНИЗАЦИИ АНТИРУССКИХ ВЫСТУПЛЕНИЙ НА ЮЖНОМ УРАЛЕ И В ЗАПАДНОЙ СИБИРИ”). </p>
+                    </div>
+                </div>
+
+                <h2>1720 год</h2>
+
+                <div class="js-simple-slider swiper simple-slider" data-slider="slider_1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/content/history/img_4.jpg" srcset="images/content/history/img_4@2x.jpg 2x" alt=""></div>
+                        <div class="swiper-slide"><img src="images/content/history/img_4.jpg" srcset="images/content/history/img_4@2x.jpg 2x" alt=""></div>
+                        <div class="swiper-slide"><img src="images/content/history/img_4.jpg" srcset="images/content/history/img_4@2x.jpg 2x" alt=""></div>
+                    </div>
+
+                    <div class="js-simple-slider-pagination swiper-pagination" data-slider="slider_1"></div>
+
+                    <button class="js-simple-slider-prev swiper-button-prev" data-slider="slider_1" type="button" title="Назад">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_left" />
+                        </svg>
+                    </button>
+
+                    <button class="js-simple-slider-next swiper-button-next" data-slider="slider_1" type="button" title="Вперёд">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_right" />
+                        </svg>
+                    </button>
+                </div>
+
+                <p>Вдоль всей Пышмы, на участке от современной Талицы до впадения ее в Туру было два десятка караулов. Один из самых известных и ближайших к Тюмени, а следовательно старейшим и важнейшим, стоявшим на страже дороги в “Ворота Сибири”
+                    был на месте современного Центра “Сибирь”. Четырехсотлетний караул стал называться “Караульной горой” стал немым свидетелем последующих наслоений исторических событий.</p>
+
+                <p>По этим историческим записям следует, что историю свою Центр “Сибирь” мог бы смело начинать с 1700 годов с упоминания “Караульной горы” в районе деревни Червишево на картах Семёна Ульяновича Ремезова.</p>
+
+                <h2>Водяная мельница на реке Пышма</h2>
+
+                <p>К нашему времени от мельницы остались только торчащие в русле Пышмы сваи. В хорошем состоянии на территории лагеря находятся старинный склад с оригинальным краснокирпичным декором, господский дом на высоком берегу над бывшей
+                    запрудой и пруд. Сохранил остатки былой роскоши небольшой парк с вековыми деревьями. Также на территории близлежащего санатория "Сибирь" сохранилась пара жерновов: возможно, они принадлежали Пышминской мельнице. Но жива заимка. Её
+                    история включает в себя период с XVIII по XXI века. Многим поколениям полюбилось это место в сосновом бору на красивом берегу реки Пышмы.6</p>
+
+                <p>6(https://rayon72.ru/news/history/180928.html).</p>
+
+                <p>Несколько лет назад на территории санатория была проведена разведка на предмет нахождения древних артефактов. Организатором мероприятия выступил павел Ситников и под его руководством были найдены интересные исторические находки.
+                </p>
+
+                <div class="two-columns two-columns--centered">
+                    <div class="two-columns__image-block">
+                        <img src="images/content/history/img_5.jpg" srcset="images/content/history/img_5@2x.jpg 2x" alt="">
+                    </div>
+
+                    <div>
+                        <p>Подлинный размах мельница и поселок получили при купцах Волчихине и Текутьеве в начале ХХ века. Это сооружение - шести этажная мельница с плотиной-мостом, с водосливом - водопадом и деревянным трехметровым водяным колесом.
+                            Помимо мельницы на заимке были кузница, кирпичный склад, жилые дома. В начале 20-х годов ХХ века мельницу сожгли. В 1928 году на этом месте устроили пионерский лагерь, названный “Онохинским”. Позже его переименовали в
+                            лагерь “Зои Космодемьянской”, а затем в “Алые Паруса”.</p>
+                    </div>
+                </div>
+
+                <h2>На территории Караульной горы найдены остатки керамики</h2>
+
+                <div class="js-simple-slider swiper simple-slider" data-slider="slider_2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/content/history/img_6.jpg" srcset="images/content/history/img_6@2x.jpg 2x" alt=""></div>
+                        <div class="swiper-slide"><img src="images/content/history/img_6.jpg" srcset="images/content/history/img_6@2x.jpg 2x" alt=""></div>
+                        <div class="swiper-slide"><img src="images/content/history/img_6.jpg" srcset="images/content/history/img_6@2x.jpg 2x" alt=""></div>
+                    </div>
+
+                    <div class="js-simple-slider-pagination swiper-pagination" data-slider="slider_2"></div>
+
+                    <button class="js-simple-slider-prev swiper-button-prev" data-slider="slider_2" type="button" title="Назад">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_left" />
+                        </svg>
+                    </button>
+
+                    <button class="js-simple-slider-next swiper-button-next" data-slider="slider_2" type="button" title="Вперёд">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_right" />
+                        </svg>
+                    </button>
+                </div>
+
+                <p>В проектировании здравницы было задействовано пять специализированных научно-исследовательских институтов страны при участии ведущих архитекторов, строителей, ученых и врачей того времени. Тогда планировалось, что “Сибирь” станет
+                    закрытым учреждением для партийной элиты.</p>
+
+                <p>Выбор местоположения был определен уникальными природными факторами - наличием целебных минеральных вод и сапропелевой грязи, которую можно было добывать рядом, разноуровневым природным ландшафтом, наличием сосновых и березовых
+                    лесов, а также возможностью организовать большое чистое озеро прямо на территории санатория.</p>
+
+                <p>С местом, где расположен Санаторий "Сибирь", связаны разные легенды. По утверждению некоторых историков, именно в этом месте, где река Пышма огибала Караульную гору, один из первых завоевателей Сибири атаман Ермак Тимофеевич
+                    поставил свою заставу. Эта застава долгое время контролировала торговые караваны, идущие с Урала в Сибирь.</p>
+
+                <h2>Строительство санатория</h2>
+
+                <p>При строительстве санатория повышенное внимание уделялось качеству используемых материалов и сохранению природы в первозданном виде. Так, при возведении корпусов использовался кирпич из Прибалтики, но один раз строители с целью
+                    сокращения сроков сдачи объекта закупили местный строительный материал более низкого качества. Когда курирующие органы узнали об этом, то заставили разобрать все, что было построено из местного кирпича и возвести заново, но уже из
+                    прибалтийского кирпича.</p>
+
+                <p><img class="simple-image" src="images/content/history/img_7.jpg" srcset="images/content/history/img_7@2x.jpg 2x" alt=""></p>
+
+                <h2>1985 год</h2>
+
+                <div class="two-columns two-columns--centered">
+                    <div class="two-columns__image-block">
+                        <img src="images/content/history/img_8.jpg" srcset="images/content/history/img_8@2x.jpg 2x" alt="">
+                        <p class="image-caption">Михаил Федорович Заварзин, главный врач санатория "Сибирь" (1985-1992).</p>
+                    </div>
+
+                    <div>
+                        <p>Как строился санаторий лучше всего послушать из первых уст человека, руководившего стройкой - Михаил Федорович Заварзин, главный врач санатория "Сибирь" с 1985 по 1992 годы.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="images/logo.svg" alt="Сибирь">
+                </div>
+    
+                <div class="footer__top-phone">
+                    <a href="tel:+73452687000">+7 (3452) 687-000</a>
+                </div>
+            </div>
+    
+            <div class="footer__middle">
+                <div class="footer__contacts">
+                    <div class="footer__contacts-block">
+                        <p class="footer__title">Почта для связи</p>
+    
+                        <div class="footer__emails">
+                            <a class="email" href="mailto:service@sibircentr.ru">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#envelope_icon" />
+                                </svg>
+    
+                                <span>
+                                    <span class="email__address">service@sibircentr.ru</span>
+                                    <span class="email__title">отдел реализации и сервиса</span>
+                                </span>
+                            </a>
+    
+                            <a class="email" href="mailto:office@sibircentr.ru">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#envelope_icon" />
+                                </svg>
+    
+                                <span>
+                                    <span class="email__address">office@sibircentr.ru</span>
+                                    <span class="email__title">приёмная для документов и писем</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__contacts-block">
+                        <p class="footer__title">Мы в мессенджерах</p>
+    
+                        <div class="footer__socials">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш WhatsApp">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#wa_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#tg_icon" />
+                                </svg>
+                            </a>
+                        </div>
+    
+                        <p class="footer__title">Мы в социальных сетях</p>
+    
+                        <div class="footer__socials">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Яндекс.Дзен">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#dzen_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#vk_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Однокласниках">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ok_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Rutube">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#rt_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на YouTube">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#yt_icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">Посетителям</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Важная информация</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Услуги онлайн</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Скачать документы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Сертификаты и лицензии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Вопросы - ответы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Реквизиты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Книги и журналы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Обратная связь</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Веб-камера</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Виртуальная экскурсия</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Акции</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Медпрограммы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Налоговый вычет</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Проживание</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Отдых</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Стоимость</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Детям</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Афиша</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Бары и рестораны</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Термальные комплексы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Экскурсии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Платные медуслуги</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">О комплексе</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">О медецинском центре</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Как добраться</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Галерея</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Even & MICE</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Карта территории</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Достопримечательности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <p>Маркетинговая поддержка и разработка сайта <a href="#">VSignal</a></p>
+                <p>Юридическое название компании Акционерное общество "Центр восстановительной медицины и реабилитации "Сибирь". Адрес: 625519, Тюменская область, р-н Тюменский, км 19-ый (ФАД Иркутск-Улан-Удэ-Чита тер), стр. 1. Почтовый адрес: 625519,
+                    Тюменская обл., Тюменский район, с. Червишево</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/simple-slider.js"></script>
+</body>
+
+</html>

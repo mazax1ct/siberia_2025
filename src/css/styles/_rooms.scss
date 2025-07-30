@@ -19,6 +19,10 @@
         padding-right: var(--container_padding);
         scrollbar-width: none;
     }
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
 }
 
 .room-card {
@@ -83,11 +87,13 @@
     }
 
     &__props {
-        margin-bottom: 8px;
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
     }
 
     &__prop {
-        align-self: flex-start;
+        align-items: center;
         color: #484848;
         display: flex;
         gap: 8px;
@@ -108,8 +114,11 @@
     }
 
     &__prop-title {
+        align-items: flex-start;
+        display: flex;
         font-size: 16px;
         font-weight: 500;
+        gap: 8px;
         margin-bottom: 0;
     }
 
@@ -155,5 +164,24 @@
         position: relative;
         width: 100%;
         z-index: 1;
+    }
+
+    &--type_1 {
+        h3 {
+            font-size: 18px;
+            @media(min-width: $sm) {
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 12px;
+            }
+            @media(min-width: $hd) {
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+        }
+
+        .room-card__info {
+            padding-bottom: 10px;
+        }
     }
 }

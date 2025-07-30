@@ -1,9 +1,24 @@
 .simple-slider {
     border-radius: 12px;
+    height: 310px;
+    @media(min-width: $sm) {
+        height: 480px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
 
     img {
         border-radius: 12px;
         display: block;
+        height: 310px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        @media(min-width: $sm) {
+            height: 480px;
+        }
     }
 
     .swiper-button-next,

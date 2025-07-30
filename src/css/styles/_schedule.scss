@@ -1,0 +1,83 @@
+.schedule {
+    --gap: 16px;
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+    @media(min-width: $sm) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media(min-width: $hd) {
+        --gap: 20px;
+    }
+
+    &__item {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+        @media(min-width: $md) {
+            width: calc(100% / 3 - var(--gap) * 2 / 3);
+        }
+
+        h3 {
+            align-items: center;
+            display: flex;
+            font-weight: 500;
+            line-height: 1.3;
+            min-height: 40px;
+            margin-bottom: 8px;
+            @media(min-width: $sm) {
+                font-size: 20px;
+                min-height: 52px;
+            }
+        }
+    }
+
+    &__table {
+        border-radius: 8px;
+        border: 1px solid var(--beige);
+        padding: 16px;
+        @media(min-width: $sm) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        @media(min-width: $hd) {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+    }
+
+    &__table-row {
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--beige);
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+        }
+    }
+
+    &__item-time {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 2px;
+        @media(min-width: $sm) {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        svg {
+            fill: var(--beige);
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+        }
+    }
+
+    &__item-title {
+        color: rgba(#000,0.6);
+        font-size: 14px;
+        padding-left: 32px;
+    }
+}

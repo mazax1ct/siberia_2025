@@ -8,6 +8,7 @@ $(document).ready(function() {
       loop: false,
       spaceBetween: 16,
       slidesPerView: 1,
+      resistanceRatio: 0,
 
       pagination: {
         el: '.js-simple-slider-pagination[data-slider="'+el.dataset.slider+'"]',
