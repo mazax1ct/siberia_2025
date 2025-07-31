@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Сибирь</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Сибирь" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-CormorantUnicase-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <script type='text/javascript' data-skip-moving="true">
+        (function(w) {
+            var q = [
+                ['setContext', 'TL-INT-sibir-tumen', 'ru'],
+                ['embed', 'booking-form', {
+                    container: 'tl-booking-form'
+                }],
+                ['embed', 'search-form', {
+                    container: 'tl-search-form'
+                }],
+            ];
+            var h = ["ru-ibe.tlintegration.ru", "ibe.tlintegration.ru", "ibe.tlintegration.com"];
+            var t = w.travelline = (w.travelline || {}),
+                ti = t.integration = (t.integration || {});
+            ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
+            if (!ti.__loader) {
+                ti.__loader = true;
+                var d = w.document,
+                    c = d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0];
+    
+                function e(s, f) {
+                    return function() {
+                        w.TL || (c.removeChild(s), f())
+                    }
+                }
+                (function l(h) {
+                    if (0 === h.length) return;
+                    var s = d.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = !0;
+                    s.src = "https://" + h[0] + "/integration/loader.js";
+                    s.onerror = s.onload = e(s, function() {
+                        l(h.slice(1, h.length))
+                    });
+                    c.appendChild(s)
+                })(h);
+            }
+        })(window);
+    </script>
+    
+    <style>
+        #block-search,
+        #block-search * {
+            box-sizing: border-box;
+        }
+    
+        #block-search {
+            background: #627856;
+            min-height: 366px;
+        }
+    
+        @media(min-width: 388px) {
+            #block-search {
+                min-height: 216px;
+            }
+        }
+    
+        @media(min-width: 886px) {
+            #block-search {
+                min-height: 144px;
+            }
+        }
+    
+        @media(min-width: 1187px) {
+            #block-search {
+                min-height: 102px;
+            }
+        }
+    
+        .tl-container {
+            padding: 0 30px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="header__inner container">
+            <a class="header__logo" href="#">
+                <img class="header__logo-icon" src="images/logo_icon.svg" alt="">
+                <img class="header__logo-text" src="images/logo_text.svg" alt="Сибирь">
+            </a>
+    
+            <button class="js-menu-opener header__menu-opener header__button" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#burger_icon" />
+                </svg>
+                <span>МЕНЮ</span>
+            </button>
+    
+            <button class="header__search-opener header__button" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#search_icon" />
+                </svg>
+                <span>Поиск</span>
+            </button>
+    
+            <a class="header__phone header__button" href="#">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#phone_icon" />
+                </svg>
+                <span>+7 (3452) 687-000</span>
+            </a>
+    
+            <a class="button button--primary button--h_40" href="#">
+                <span>Забронировать</span>
+            </a>
+        </div>
+    
+        <div class="header__dropdown main-menu">
+            <div class="main-menu__inner">
+                <div class="container">
+                    <div class="main-menu__top">
+                        <button class="js-menu-closer main-menu__closer" type="button" title="Закрыть меню">
+                            <svg>
+                                <use xlink:href="images/sprite.svg#close_icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+    
+                    <div class="main-menu__button-block">
+                        <a class="button button--primary" href="#"><span>Забронировать</span></a>
+                    </div>
+    
+                    <nav class="main-menu__nav" role="navigation" aria-label="Основное меню">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__list-item "><a class="main-menu__list-link" href="#">Проживание</a></li>
+    
+                            <li class="main-menu__list-item "><a class="main-menu__list-link" href="#">Бары и рестораны</a></li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Медцентр</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Медцентр</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Мед программы</a></li>
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Заболевания</a></li>
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Кабинеты</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Инфраструктура</a>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Отдых</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Отдых</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Бассейн и сауна</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Тренажерный зал</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="javascript:void(0)">Посетителям</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Посетителям</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Онлайн-камера</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Отзывы отдыхающих</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Полезные книги</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Частые вопросы</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Акции</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Как добраться</a>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Цены</a>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Контакты</a>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">О центре</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>О центре</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">История</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Достопримечательности</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Лицензии</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Виртуальная экскурсия</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Карьера</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Вакансии</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Реквизиты</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Фотогалерея</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="javascript:void(0)">Партнерам</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Партнерам</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Конференц-услуги</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Афиша</a></li>
+    
+                            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Детям</a></li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Справки и документы</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+    
+                                        <span>Справки и документы</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Скачать документы</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Госгарантии</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Персональные данные</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Пользовательское соглашение</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Правила пребывания</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Документы для заезда</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Анкета</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <div class="main-menu__bottom">
+                        <a href="tel:+73452687000">+7 (3452) 687-000</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <div class="page__banner full-width">
+                <div class="page__banner-inner container">
+                    <div class="page__banner-image">
+                        <img src="images/content/loyality/img.jpg" srcset="images/content/loyality/img@2x.jpg 2x" alt="">
+                    </div>
+                    <div class="page__banner-text">
+                        <h1>Программа лояльности</h1>
+                        <p>Для получения карты лояльности вам необходимо зарегистрироваться на форме бронирования: <a href="/bronirovanie/">https://www.sibircentr.ru/bronirovanie/</a></p>
+                        <p>В правом верхнем углу кликните на кнопку «Войти» и зарегистрируйтесь любым удобным способом: e-mail/телефон, VK ID (ВКонтакте), Сбер ID, Tinkoff ID</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id='block-search' class="full-width">
+                <div id='tl-search-form' class='tl-container container'>
+                    <a href='https://www.travelline.ru/products/tl-hotel/' target='_blank'>TravelLine</a>
+                </div>
+            </div>
+
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Посетителям</a>
+                </li>
+                <li class="breadcrumbs__item">Программа лояльности</li>
+            </ul>
+
+            <section class="page__section">
+                <div class="loyality">
+                    <div class="loyality-card">
+                        <div class="news-card__image"><img src="images/content/loyality/5.jpg" srcset="images/content/loyality/5@2x@2x.jpg 2x" alt=""></div>
+
+                        <div class="news-card__text">
+                            <h3>Первый уровень — Серебро</h3>
+
+                            <p>Общая сумма проживания* до 100 тыс. руб. предоставляет накопление 5% от суммы брони. Данный уровень предоставляет возможность использовать бонусы для оплаты бронирования на сайте в размере до 5 % от вносимой суммы.
+                                Конкретная сумма будет показана при бронировании на странице оплаты.</p>
+                        </div>
+                    </div>
+
+                    <div class="loyality-card">
+                        <div class="news-card__image"><img src="images/content/loyality/10.jpg" srcset="images/content/loyality/10@2x@2x.jpg 2x" alt=""></div>
+
+                        <div class="news-card__text">
+                            <h3>Второй уровень — Золото</h3>
+
+                            <p>Общая сумма проживания* от 100 до 400 тыс. руб. предоставляет накопление 10% от суммы на будущие брони после достижения уровня. Данный уровень предоставляет возможность использовать бонусы для оплаты бронирования на
+                                сайте в размере до 10% от вносимой суммы. Конкретная сумма будет показана при бронировании на странице оплаты.</p>
+                        </div>
+                    </div>
+
+                    <div class="loyality-card">
+                        <div class="news-card__image"><img src="images/content/loyality/15.jpg" srcset="images/content/loyality/15@2x@2x.jpg 2x" alt=""></div>
+
+                        <div class="news-card__text">
+                            <h3>Третий уровень — Платина</h3>
+
+                            <p>Общая сумма проживания* свыше 400 тыс. руб. предоставляет накопление 15% от суммы на будущие брони после достижения уровня. Данный уровень предоставляет возможность использовать бонусы для оплаты бронирования на сайте в
+                                размере до 15% от вносимой суммы. Конкретная сумма будет показана при бронировании на странице оплаты.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note-block note-block--iconed note-block--centered note-block--type_2">
+                    <div class="note-block__icon">
+                        <img src="images/content/note-blocks/star.svg" alt="">
+                    </div>
+
+                    <div>
+                        <p>
+                            <b>Для начисления баллов учитывается только стоимость проживания</b>
+                        </p>
+                    </div>
+                </div>
+
+                <h2>Правила и условия участия в программе лояльности</h2>
+
+                <p>1. Для получения скидки на будущее бронирование, зайдите в личный кабинет гостя тем же способом, каким происходила регистрация: например, если регистрация происходила через VK ID, то в следующий раз необходимо зайти тоже через VK
+                    ID.</p>
+
+                <p>2. Скидки на проживание предоставляются при бронировании на сайте отеля https://www.sibircentr.ru/bronirovanie/ или при расчётах на месте.</p>
+
+                <p>3. При внесении 100-процентной предоплаты за бронирование для себя или другого Гостя на сайте, все бонусы будут начислены владельцу личного кабинета. При внесении предоплаты 30 и 50% за бронирование для себя или другого Гостя,
+                    баллы будут разделены между всеми гостями брони.</p>
+
+                <p>4. Начисления по бронированиям появляются в личном кабинете гостя и в списке карт через 5 дней после выезда.</p>
+
+                <p>5. Приняв решение об участии в программе лояльности и зарегистрировав профиль на сайте отеля, участник программы дает свое согласие организатору программы на сбор, систематизацию, накопление, хранение, уточнение, изменение,
+                    использование и иные действия, связанные с исполнением условий программы на период срока ее действия.</p>
+
+                <p>6. В случае нарушения участником правил проживания в отеле, а также правил участия в программе, карта может быть аннулирована с оповещением гостя сотрудником службы приема или отдела бронирования, с разъяснением причин аннуляции
+                    устно или посредством письма на электронный адрес участника.</p>
+
+                <p>Если у вас возникли вопросы, ознакомьтесь с правилами программы по ссылке: <a href="https://www.travelline.ru/support/knowledge-base/programma-loyalnosti-instruktsiya-dlya-gostya/"
+                      target="_blank">https://www.travelline.ru/support/knowledge-base/programma-loyalnosti-instruktsiya-dlya-gostya/</a></p>
+            </section>
+
+            <section class="page__section">
+                <h2>Подробная инструкция и вход</h2>
+
+                <div class="link-blocks link-blocks--type_1">
+                    <a class="link-block link-block--type_1 link-block--320" href="#">
+                        <span class="leaf">
+                            <svg class="leaf__leaf" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#leaf_icon" />
+                            </svg>
+                            <svg class="leaf__arrow" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#leaf_arrow" />
+                            </svg>
+                        </span>
+
+                        <span class="link-block__title">Личный кабинет</span>
+
+                        <span class="link-block__text">Для участия в Программе лояльности и получения скидки на будущее бронирование, зайдите в личный кабинет гостя</span>
+
+                        <span class="link-block__more">Войти в личный кабинет</span>
+                    </a>
+
+                    <a class="link-block link-block--type_2 link-block--decor link-block--320" href="#">
+                        <span class="leaf">
+                            <svg class="leaf__leaf" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#leaf_icon" />
+                            </svg>
+                            <svg class="leaf__arrow" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#leaf_arrow" />
+                            </svg>
+                        </span>
+
+                        <span class="link-block__title">Подробная инструкция</span>
+
+                        <span class="link-block__text">В этой статье можно прочитать подробную инструкцию по регистрации в Программе лояльности</span>
+
+                        <span class="link-block__more">Ознакомиться</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="images/logo.svg" alt="Сибирь">
+                </div>
+    
+                <div class="footer__top-phone">
+                    <a href="tel:+73452687000">+7 (3452) 687-000</a>
+                </div>
+            </div>
+    
+            <div class="footer__middle">
+                <div class="footer__contacts">
+                    <div class="footer__contacts-block">
+                        <p class="footer__title">Почта для связи</p>
+    
+                        <div class="footer__emails">
+                            <a class="email" href="mailto:service@sibircentr.ru">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#envelope_icon" />
+                                </svg>
+    
+                                <span>
+                                    <span class="email__address">service@sibircentr.ru</span>
+                                    <span class="email__title">отдел реализации и сервиса</span>
+                                </span>
+                            </a>
+    
+                            <a class="email" href="mailto:office@sibircentr.ru">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#envelope_icon" />
+                                </svg>
+    
+                                <span>
+                                    <span class="email__address">office@sibircentr.ru</span>
+                                    <span class="email__title">приёмная для документов и писем</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__contacts-block">
+                        <p class="footer__title">Мы в мессенджерах</p>
+    
+                        <div class="footer__socials">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш WhatsApp">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#wa_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#tg_icon" />
+                                </svg>
+                            </a>
+                        </div>
+    
+                        <p class="footer__title">Мы в социальных сетях</p>
+    
+                        <div class="footer__socials">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Яндекс.Дзен">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#dzen_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#vk_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Однокласниках">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ok_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Rutube">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#rt_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на YouTube">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#yt_icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">Посетителям</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Важная информация</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Услуги онлайн</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Скачать документы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Сертификаты и лицензии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Вопросы - ответы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Реквизиты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Книги и журналы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Обратная связь</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Веб-камера</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Виртуальная экскурсия</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Акции</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Медпрограммы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Налоговый вычет</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Проживание</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Отдых</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Стоимость</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Детям</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Афиша</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Бары и рестораны</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Термальные комплексы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Экскурсии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Платные медуслуги</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">О комплексе</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">О медецинском центре</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Как добраться</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Галерея</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Even & MICE</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Карта территории</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Достопримечательности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <p>Маркетинговая поддержка и разработка сайта <a href="#">VSignal</a></p>
+                <p>Юридическое название компании Акционерное общество "Центр восстановительной медицины и реабилитации "Сибирь". Адрес: 625519, Тюменская область, р-н Тюменский, км 19-ый (ФАД Иркутск-Улан-Удэ-Чита тер), стр. 1. Почтовый адрес: 625519,
+                    Тюменская обл., Тюменский район, с. Червишево</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

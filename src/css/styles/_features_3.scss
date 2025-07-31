@@ -11,15 +11,14 @@
 
 .feature_3 {
     display: flex;
-    color: #484848;
     font-size: 14px;
     flex-direction: column;
     justify-content: center;
     min-height: 78px;
     padding: 12px 8px;
     @media(min-width: $hd) {
-        padding-top: 18px;
-        padding-bottom: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     &:not(:last-child) {
@@ -48,6 +47,7 @@
     }
 
     &__text {
+        color: #484848;
         padding-left: 32px;
     }
 }

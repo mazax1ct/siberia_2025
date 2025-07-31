@@ -24,20 +24,19 @@
     &__icon {
         min-width: 40px;
         width: 40px;
-        @media(max-width: $sm - 0.02px) {
+        /*@media(max-width: $sm - 0.02px) {
             display: none;
-        }
-
+        }*/
         img {
             display: block;
         }
     }
 
     &--iconed {
-        @media(min-width: $sm) {
-            display: flex;
-            gap: 12px;
-        }
+        //@media(min-width: $sm) {
+        display: flex;
+        gap: 12px;
+        //}
     }
 
     &--centered {

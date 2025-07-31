@@ -1,8 +1,10 @@
-.news-card {
-    padding-bottom: 32px;
-    @media(min-width: $sm) {
-        padding-bottom: 40px;
+.news {
+    &:not(:last-child) {
+        margin-bottom: 40px;
     }
+}
+
+.news-card {
     @media(min-width: $md) {
         align-items: center;
         display: flex;
@@ -20,6 +22,10 @@
 
     &:not(:last-child) {
         border-bottom: 1px solid var(--border_grey);
+        padding-bottom: 32px;
+        @media(min-width: $sm) {
+            padding-bottom: 40px;
+        }
     }
 
     &__image {

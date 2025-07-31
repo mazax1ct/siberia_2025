@@ -1,10 +1,11 @@
-.procedure-card {
-    padding-bottom: 32px;
-    @media(min-width: $sm) {
-        padding-bottom: 40px;
+.procedures {
+    &:not(:last-child) {
+        margin-bottom: 40px;
     }
+}
+
+.procedure-card {
     @media(min-width: $md) {
-        align-items: flex-start;
         display: flex;
         gap: 20px;
         flex-direction: row-reverse;
@@ -20,6 +21,10 @@
 
     &:not(:last-child) {
         border-bottom: 1px solid var(--border_grey);
+        padding-bottom: 32px;
+        @media(min-width: $sm) {
+            padding-bottom: 40px;
+        }
     }
 
     &__image {
@@ -49,6 +54,8 @@
     }
 
     &__text {
+        display: flex;
+        flex-direction: column;
         line-height: 1.5;
         @media(min-width: $sm) {
             font-size: 16px;
@@ -62,22 +69,43 @@
             font-weight: 500;
             margin-bottom: 10px;
             @media(min-width: $sm) {
-                font-size: 26px;
+                font-size: 24px;
                 margin-bottom: 16px;
-            }
-            @media(min-width: $hd) {
-                font-size: 28px;
             }
         }
     }
 
+    &__badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+            @media(min-width: $sm) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__badge {
+        align-items: center;
+        background-color: var(--grey_light);
+        border-radius: 8px;
+        display: flex;
+        font-size: 14px;
+        min-height: 40px;
+        padding: 5px 8px;
+    }
+
     &__content {
+        flex-grow: 1;
         overflow: hidden;
         position: relative;
         z-index: 1;
 
         &.is-collapsed {
-            height: 180px;
+            max-height: 180px;
             padding-right: 32px;
 
             &::after {
@@ -117,7 +145,8 @@
         display: flex;
         flex-direction: column;
         gap: 4px;
-        margin-top: 24px;
+        margin-top: auto;
+        padding-top: 24px;
         @media(min-width: $sm) {
             flex-direction: row;
         }
@@ -135,14 +164,6 @@
         display: flex;
         gap: 8px;
         font-weight: 500;
-
-        &:not(:first-child) {
-            margin-top: 32px;
-        }
-
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
 
         svg {
             height: 24px;

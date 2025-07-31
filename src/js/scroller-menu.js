@@ -1,12 +1,12 @@
-let scrollerSideOffset = 40;
-var scroller;
+let scrollerMenuSideOffset = 40;
+var scrollerMenu;
 
 $(document).ready(function() {
     if ($('body').width() >= 1200) {
-        scrollerSideOffset = (window.innerWidth - 1170) / 2;
+        scrollerMenuSideOffset = (window.innerWidth - 1170) / 2;
     }
 
-    scroller = new Swiper('.js-scroller', {
+    scrollerMenu = new Swiper('.js-scroller-menu', {
         loop: false,
         freeMode: true,
         grabCursor: true,
@@ -19,8 +19,8 @@ $(document).ready(function() {
 
         breakpoints: {
             1200: {
-                slidesOffsetAfter: scrollerSideOffset,
-                slidesOffsetBefore: scrollerSideOffset
+                slidesOffsetAfter: scrollerMenuSideOffset,
+                slidesOffsetBefore: scrollerMenuSideOffset
             }
         }
     });
@@ -28,11 +28,11 @@ $(document).ready(function() {
 
 $(window).on("resize", function() {
     if ($('body').width() >= 1200) {
-        scrollerSideOffset = (window.innerWidth - 1170) / 2;
-        scroller.params.slidesOffsetAfter = scrollerSideOffset;
-        scroller.params.slidesOffsetBefore = scrollerSideOffset;
+        scrollerMenuSideOffset = (window.innerWidth - 1170) / 2;
+        scrollerMenu.params.slidesOffsetAfter = scrollerMenuSideOffset;
+        scrollerMenu.params.slidesOffsetBefore = scrollerMenuSideOffset;
         setTimeout(function() {
-            scroller.update();
+            scrollerMenu.update();
         }, 100);
     }
 });

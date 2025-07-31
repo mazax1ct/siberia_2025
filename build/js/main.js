@@ -84,3 +84,16 @@ $(document).on('click', '.js-menu-lvl2-close', function () {
   $('.main-menu__dropdown').removeClass('is-open');
   return false;
 });
+
+//аккордион
+$(document).on('click', '.js-accordion-toggler', function () {
+  let _this = $(this);
+  if(!_this.hasClass('is-active')){
+    _this.closest('.accordion').find('.accordion__body').slideDown();
+    _this.addClass('is-active');
+  }else{
+    _this.closest('.accordion').find('.accordion__body').slideUp();
+    _this.removeClass('is-active');
+  }
+  return false;
+});

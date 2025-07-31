@@ -70,7 +70,6 @@
 
         .link-block__title {
             font-size: 16px;
-            padding-right: 0;
             @media(min-width: $md) {
                 font-size: 20px;
             }
@@ -134,7 +133,6 @@
         display: block;
         font-size: 18px;
         font-weight: 500;
-        padding-right: 80px;
         @media(min-width: $hd) {
             font-size: 24px;
         }
