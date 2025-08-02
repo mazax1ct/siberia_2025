@@ -391,11 +391,11 @@ h2 {
 
 .h3,
 h3 {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    @media(min-width: $sm) {
-        font-size: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    @media(min-width: $hd) {
+        font-size: 18px;
     }
 
     &:last-child {

@@ -1,0 +1,73 @@
+.sostav {
+    --gap: 32px;
+    background-color: var(--leaf_green);
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: 12px;
+    @media(min-width: $sm) {
+        --gap: 24px;
+        flex-direction: row;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @media(min-width: $hd) {
+        --gap: 40px;
+    }
+
+    &__column {
+        @media(min-width: $sm) {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            width: calc(100% / 3 - var(--gap) * 2 / 3);
+        }
+
+        &:not(:last-child) {
+            @media(min-width: $sm) {
+                position: relative;
+            }
+
+            &::after {
+                @media(min-width: $sm) {
+                    border-left: 1px solid rgba(#fff, 0.5);
+                    content: '';
+                    height: 100%;
+                    left: auto;
+                    position: absolute;
+                    right: -12px;
+                    top: 0;
+                }
+                @media(min-width: $hd) {
+                    border-left: 1px solid rgba(#fff, 0.5);
+                    right: -20px;
+                }
+            }
+        }
+    }
+
+    &:not(:first-child) {
+        margin-top: 20px;
+        @media(min-width: $md) {
+            margin-top: 40px;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+        @media(min-width: $md) {
+            margin-bottom: 40px;
+        }
+    }
+
+    p {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+    }
+}
