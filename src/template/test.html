@@ -1,0 +1,841 @@
+<div class="test">
+    <div class="test__start">
+        <div class="test__start-image">
+            <img src="images/content/test/start.svg" alt="">
+        </div>
+
+        <div class="test__start-text">
+            <h2>Постройте свой план действий!</h2>
+            <p>Расскажите нам о себе, пройдя небольшой тест. На основании ответов мы сформируем для вас персональные рекомендации по улучшению самочувствия и дорожную карту пребывания у нас.</p>
+            <button class="js-test-start button button--primary" type="button"><span>Начать тест</span></button>
+        </div>
+    </div>
+
+    <div class="test__popup">
+        <div class="test__popup-top container">
+            <button class="js-test-prev test__button" type="button" title="Назад">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#arrow_left" />
+                </svg>
+            </button>
+
+            <button class="js-test-close test__button" type="button" title="Закрыть">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#close_icon" />
+                </svg>
+            </button>
+
+            <div class="test__progress">
+                <div class="test__progress-section is-active" style="width: 16%"></div>
+                <div class="test__progress-section" style="width: 8%"></div>
+                <div class="test__progress-section" style="width: 8%"></div>
+                <div class="test__progress-section" style="width: 16%"></div>
+                <div class="test__progress-section" style="width: 22%"></div>
+                <div class="test__progress-section" style="width: 22%"></div>
+                <div class="test__progress-section" style="width: 8%"></div>
+            </div>
+        </div>
+
+        <form id="test_form" class="container">
+            <div class="test__step is-active">
+                <p class="test__step-title">Питание</p>
+                <p>Ваш ежедневный рацион можно считать разнообразным</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="1" value="1">
+                        <span class="test-option__inner">
+                            <span>Да</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="1" value="1">
+                        <span class="test-option__inner">
+                            <span>Скорее «Да»</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="1" value="1">
+                        <span class="test-option__inner">
+                            <span>Затрудняюсь ответить</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="1" value="1">
+                        <span class="test-option__inner">
+                            <span>Скорее «Нет»</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="1" value="1">
+                        <span class="test-option__inner">
+                            <span>Нет</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="test__step">
+                <p class="test__step-title">Питание</p>
+                <p>Как часто вы употребляете фрукты и овощи в течение дня?</p>
+
+                <input class="js-test-slider" type="text" name="2" value="" />
+
+                <div class="test__slider-legend">
+                    <div>
+                        <img src="images/content/test/slider_legend_1.svg" alt="">
+                        <p>Почти<br> никогда</p>
+                    </div>
+
+                    <div>
+                        <img src="images/content/test/slider_legend_2.svg" alt="">
+                        <p>Очень<br> часто</p>
+                    </div>
+                </div>
+
+                <button class="js-test-next button button--primary button--wide" type="button">Продолжить</button>
+            </div>
+
+            <div class="test__step">
+                <p class="test__step-title">Питание</p>
+                <p>Как много белка присутствует в вашем рационе: мясо, рыба, яйца, бобовые?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="3" value="1">
+                        <span class="test-option__inner">
+                            <span>Много</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="3" value="2">
+                        <span class="test-option__inner">
+                            <span>Довольно много</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="3" value="3">
+                        <span class="test-option__inner">
+                            <span>В среднем количестве</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="3" value="4">
+                        <span class="test-option__inner">
+                            <span>Не очень много</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="3" value="5">
+                        <span class="test-option__inner">
+                            <span>Отсутствует</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="js-next-section test__step">
+                <p class="test__step-title">Сон</p>
+                <p>Сколько обычно часов вы спите?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="4" value="1">
+                        <span class="test-option__inner">
+                            <span>Меньше 3</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="4" value="2">
+                        <span class="test-option__inner">
+                            <span>3-4</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="4" value="3">
+                        <span class="test-option__inner">
+                            <span>5-6</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="4" value="4">
+                        <span class="test-option__inner">
+                            <span>7-8</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="4" value="5">
+                        <span class="test-option__inner">
+                            <span>8+</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="test__step">
+                <p class="test__step-title">Сон</p>
+                <p>Как часто вы испытываете трудности с засыпанием?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="5" value="1">
+                        <span class="test-option__inner">
+                            <span>Никогда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="5" value="2">
+                        <span class="test-option__inner">
+                            <span>Редко</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="5" value="3">
+                        <span class="test-option__inner">
+                            <span>Иногда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="5" value="4">
+                        <span class="test-option__inner">
+                            <span>Часто</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="5" value="5">
+                        <span class="test-option__inner">
+                            <span>Постоянно</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="test__step">
+                <p class="test__step-title">Сон</p>
+                <p>Насколько часто изменяется ваш график сна?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="6" value="1">
+                        <span class="test-option__inner">
+                            <span>Строго придерживаюсь графика</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="6" value="2">
+                        <span class="test-option__inner">
+                            <span>Редко</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="6" value="3">
+                        <span class="test-option__inner">
+                            <span>Иногда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="6" value="4">
+                        <span class="test-option__inner">
+                            <span>Часто</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="6" value="5">
+                        <span class="test-option__inner">
+                            <span>Отсутствует график сна</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="js-next-section test__step">
+                <p class="test__step-title">Движение</p>
+                <p>Сколько раз в неделю вы занимаетесь физической активностью, включая упражнения или спорт?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="7" value="1">
+                        <span class="test-option__inner">
+                            <span>Не занимаюсь</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="7" value="2">
+                        <span class="test-option__inner">
+                            <span>1</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="7" value="3">
+                        <span class="test-option__inner">
+                            <span>2-3</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="7" value="4">
+                        <span class="test-option__inner">
+                            <span>4-5</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="7" value="5">
+                        <span class="test-option__inner">
+                            <span>Почти ежедневно</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="test__step">
+                <p class="test__step-title">Движение</p>
+                <p>Насколько разнообразны ваши физические активности?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="8" value="1">
+                        <span class="test-option__inner">
+                            <span>Не занимаюсь</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="8" value="2">
+                        <span class="test-option__inner">
+                            <span>1</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="8" value="3">
+                        <span class="test-option__inner">
+                            <span>2-3</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="8" value="4">
+                        <span class="test-option__inner">
+                            <span>4-5</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="8" value="5">
+                        <span class="test-option__inner">
+                            <span>Широкий спектр</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="js-next-section test__step">
+                <p class="test__step-title">Эмоции</p>
+                <p>Как часто вы испытываете стресс в вашей жизни?</p>
+
+                <input class="js-test-slider" type="text" name="9" value="" />
+
+                <div class="test__slider-legend">
+                    <div>
+                        <img src="images/content/test/slider_legend_3.svg" alt="">
+                        <p>Почти<br> никогда</p>
+                    </div>
+
+                    <div>
+                        <img src="images/content/test/slider_legend_4.svg" alt="">
+                        <p>Очень<br> часто</p>
+                    </div>
+                </div>
+
+                <button class="js-test-next button button--primary button--wide" type="button">Продолжить</button>
+            </div>
+
+            <div class="test__step">
+                <p class="test__step-title">Эмоции</p>
+                <p>Как часто вы испытываете позитивные эмоции, такие как радость, удовлетворение или благодарность?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="10" value="1">
+                        <span class="test-option__inner">
+                            <span>Никогда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="10" value="2">
+                        <span class="test-option__inner">
+                            <span>Редко</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="10" value="3">
+                        <span class="test-option__inner">
+                            <span>Иногда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="10" value="4">
+                        <span class="test-option__inner">
+                            <span>Часто</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="10" value="5">
+                        <span class="test-option__inner">
+                            <span>Постоянно</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="js-next-section test__step">
+                <p class="test__step-title">Здоровье</p>
+                <p>Насколько активно вы принимаете участие в профилактических мероприятиях, таких как прививки или скрининги?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="11" value="1">
+                        <span class="test-option__inner">
+                            <span>Никогда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="11" value="2">
+                        <span class="test-option__inner">
+                            <span>Редко</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="11" value="3">
+                        <span class="test-option__inner">
+                            <span>Иногда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="11" value="4">
+                        <span class="test-option__inner">
+                            <span>Часто</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="11" value="5">
+                        <span class="test-option__inner">
+                            <span>Постоянно</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="test__step">
+                <p class="test__step-title">Здоровье</p>
+                <p>Как часто вы соблюдаете рекомендации врачей по профилактике заболеваний и ведению здорового образа жизни?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="12" value="1">
+                        <span class="test-option__inner">
+                            <span>Никогда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="12" value="2">
+                        <span class="test-option__inner">
+                            <span>Редко</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="12" value="3">
+                        <span class="test-option__inner">
+                            <span>Иногда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="12" value="4">
+                        <span class="test-option__inner">
+                            <span>Часто</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="12" value="5">
+                        <span class="test-option__inner">
+                            <span>Постоянно</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="js-next-section test__step">
+                <p class="test__step-title">Баланс</p>
+                <p>Как часто вы соблюдаете рекомендации врачей по профилактике заболеваний и ведению здорового образа жизни?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="13" value="1">
+                        <span class="test-option__inner">
+                            <span>Никогда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="13" value="2">
+                        <span class="test-option__inner">
+                            <span>Редко</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="13" value="3">
+                        <span class="test-option__inner">
+                            <span>Иногда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="13" value="4">
+                        <span class="test-option__inner">
+                            <span>Часто</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="13" value="5">
+                        <span class="test-option__inner">
+                            <span>Постоянно</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="test__step">
+                <p class="test__step-title">Баланс</p>
+                <p>Как часто вы соблюдаете рекомендации врачей по профилактике заболеваний и ведению здорового образа жизни?</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="14" value="1">
+                        <span class="test-option__inner">
+                            <span>Никогда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="14" value="2">
+                        <span class="test-option__inner">
+                            <span>Редко</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="14" value="3">
+                        <span class="test-option__inner">
+                            <span>Иногда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="14" value="4">
+                        <span class="test-option__inner">
+                            <span>Часто</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="14" value="5">
+                        <span class="test-option__inner">
+                            <span>Постоянно</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="js-next-section test__step">
+                <p class="test__step-title">О вас</p>
+                <p>Для того, чтобы результаты были более корректными, расскажите нам немного о себе.<br> Укажите ваш пол:</p>
+
+                <div class="test__options">
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="15" value="1">
+                        <span class="test-option__inner">
+                            <span>Женский</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-next test-option">
+                        <input type="radio" name="15" value="2">
+                        <span class="test-option__inner">
+                            <span>Мужской</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="test__step">
+                <p class="test__step-title">О вас</p>
+                <p>Укажите ваш возраст:</p>
+
+                <div class="test__options">
+                    <label class="js-test-finish test-option">
+                        <input type="radio" name="16" value="1">
+                        <span class="test-option__inner">
+                            <span>18-30</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-finish test-option">
+                        <input type="radio" name="16" value="2">
+                        <span class="test-option__inner">
+                            <span>31-40</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-finish test-option">
+                        <input type="radio" name="16" value="3">
+                        <span class="test-option__inner">
+                            <span>41-54</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="js-test-finish test-option">
+                        <input type="radio" name="16" value="4">
+                        <span class="test-option__inner">
+                            <span>55+</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
