@@ -1,0 +1,60 @@
+.licenses {
+    --gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    @media(min-width: $hd) {
+        --gap: 20px;
+    }
+
+    &:not(:first-child) {
+        margin-top: 24px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+        @media(min-width: $hd) {
+            margin-bottom: 60px;
+        }
+    }
+
+    .licence {
+        width: calc(100% / 2 - var(--gap)/ 2);
+        @media(min-width: $sm) {
+            width: calc(100% / 3 - var(--gap) * 2 / 3);
+        }
+        @media(min-width: $md) {
+            width: calc(100% / 4 - var(--gap) * 3 / 4);
+        }
+    }
+}
+
+.licence {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    @include hover {
+        img {
+            transform: scale(1.02);
+        }
+    }
+    @media(min-width: $sm) {
+        font-size: 14px;
+    }
+    @media(min-width: $hd) {
+        font-size: 16px;
+    }
+
+    img {
+        display: block;
+        transition: transform 0.3s;
+        transform: scale(1);
+        width: 100%;
+    }
+
+    &__image {
+        display: block;
+        margin-bottom: 12px;
+    }
+}
