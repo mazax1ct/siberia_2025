@@ -1,10 +1,10 @@
 .links-list {
     &:not(:first-child) {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     &:not(:last-child) {
-        margin-bottom: 32px;
+        margin-bottom: 40px;
     }
 }
 
@@ -22,5 +22,50 @@
         height: 32px;
         min-width: 32px;
         width: 32px;
+    }
+}
+
+.big-link {
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(#000,0.8);
+    background-color: #fff;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    padding: 24px 20px 20px;
+    text-decoration: none;
+    @media(min-width: $sm) {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    @media(min-width: $hd) {
+        font-size: 18px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    span {
+        &:first-child {
+            @media(max-width: $sm - 0.02px) {
+                text-align: center;
+            }
+        }
+
+        &:last-child {
+            align-items: center;
+            display: flex;
+            font-weight: 600;
+            min-height: 58px;
+            justify-content: center;
+            @media(min-width: $sm) {
+                min-height: 46px;
+                padding-right: 32px;
+            }
+        }
     }
 }

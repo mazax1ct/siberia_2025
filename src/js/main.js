@@ -97,3 +97,9 @@ $(document).on('click', '.js-accordion-toggler', function () {
   }
   return false;
 });
+
+//input[type=file]
+$('.file input[type=file]').on('change', function(){
+	let file = this.files[0];
+	$(this).closest('.file').find('.file__file').html(file.name);
+});

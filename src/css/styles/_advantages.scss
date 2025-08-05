@@ -1,0 +1,83 @@
+.advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-wrap: wrap;
+    @media(min-width: $sm) {
+        background: url("../images/backgrounds/advantages/bg.svg") no-repeat 50% 50% / 440px 440px;
+        flex-direction: row;
+    }
+    @media(min-width: $md) {
+        background-size: 616px 616px;
+        position: relative;
+        justify-content: space-between;
+        gap: 76px 16px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    &:not(:first-child) {
+        margin-top: 40px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        margin: 0;
+        width: 100%;
+        @media(min-width: $md) {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        br {
+            @media(max-width: $md - 0.02px) {
+                display: none;
+            }
+        }
+    }
+
+    .adv-card {
+        @media(min-width: $sm) and (max-width: $md - 0.02px) {
+            width: calc(100% / 2 - 16px / 2);
+        }
+        @media(min-width: $md) {
+            width: 380px;
+        }
+    }
+}
+
+.adv-card {
+    border-radius: 12px;
+    background-color: var(--light_green);
+    color: rgba(#000,0.8);
+    display: flex;
+    flex-direction: column;
+    min-height: 240px;
+    padding: 20px;
+
+    &__title {
+        align-items: center;
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        margin-bottom: auto;
+        @media(min-width: $sm) {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        @media(min-width: $hd) {
+            font-size: 22px;
+        }
+
+        img {
+            min-width: 40px;
+            width: 40px;
+        }
+    }
+}

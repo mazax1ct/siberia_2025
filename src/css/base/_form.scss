@@ -1,0 +1,51 @@
+.form {
+    background-color: var(--leaf_green);
+    color: #fff;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media(max-width: $sm - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+    }
+    @media(min-width: $sm) {
+        border-radius: 12px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    h3 {
+        font-size: 24px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .input-group {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__note {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    &__submit {
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: var(--beige);
+                color: #fff;
+            }
+        }
+    }
+}

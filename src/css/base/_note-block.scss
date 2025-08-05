@@ -8,7 +8,10 @@
     }
 
     & + & {
-        margin-top: -8px;
+        margin-top: -20px;
+        @media(min-width: $sm) {
+            margin-top: -8px;
+        }
     }
 
     p {

@@ -1,0 +1,41 @@
+.file {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+
+    input {
+        position: absolute;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        width: 1px;
+    }
+
+    &__button {
+        align-items: center;
+        border-radius: 4px;
+        background-color: var(--beige);
+        color: var(--black);
+        cursor: pointer;
+        display: flex;
+        font-size: 14px;
+        font-weight: 600;
+        height: 40px;
+        min-width: 168px;
+        padding-left: 24px;
+        padding-right: 24px;
+        transition: background-color 0.3s, color 0.3s;
+        width: 168px;
+        @include hover {
+            background-color: var(--rich_green);
+            color: #fff;
+        }
+    }
+
+    &__file {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: calc(100% - (168px + 16px));
+    }
+}
