@@ -23,6 +23,20 @@
     &:not(:last-child) {
         margin-bottom: 40px;
     }
+
+    .room-card {
+        @media(max-width: $sm - 0.02px) {
+            min-width: 334px;
+            width: 334px;
+        }
+        @media(min-width: $sm) and (max-width: $md - 0.02px) {
+            min-width: 354px;
+            width: 354px;
+        }
+        @media(min-width: $md) {
+            width: calc(100% / 3 - var(--gap) / 3 * 2);
+        }
+    }
 }
 
 .room-card {
@@ -31,17 +45,6 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
-    @media(max-width: $sm - 0.02px) {
-        min-width: 334px;
-        width: 334px;
-    }
-    @media(min-width: $sm) and (max-width: $md - 0.02px) {
-        min-width: 354px;
-        width: 354px;
-    }
-    @media(min-width: $md) {
-        width: calc(100% / 3 - var(--gap) / 3 * 2);
-    }
     @include hover {
         img {
             transform: scale(1.02);
@@ -69,7 +72,7 @@
     &__info {
         padding-left: 16px;
         padding-right: 16px;
-        padding-bottom: 32px;
+        padding-bottom: 16px;
     }
 
     h3 {
@@ -164,6 +167,12 @@
         position: relative;
         width: 100%;
         z-index: 1;
+    }
+
+    &__more {
+        font-weight: 600;
+        margin-top: 8px;
+        text-decoration: none;
     }
 
     &--type_1 {

@@ -118,7 +118,7 @@
                 <span>МЕНЮ</span>
             </button>
     
-            <button class="header__search-opener header__button" type="button">
+            <button class="js-search-opener header__search-opener header__button" type="button">
                 <svg aria-hidden="true">
                     <use xlink:href="images/sprite.svg#search_icon" />
                 </svg>
@@ -384,6 +384,77 @@
     
                     <div class="main-menu__bottom">
                         <a href="tel:+73452687000">+7 (3452) 687-000</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="header__dropdown search">
+            <div class="container">
+                <div class="search__top container">
+                    <button class="js-search-closer search__closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+    
+                    <form class="search__form" action="">
+                        <input class="js-input search__input" type="text" name="q" value="" autocomplete="off" placeholder="Что вы ищете">
+    
+                        <button class="search__button search__button--submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+    
+                        <button class="js-input-clear search__button search__button--clear" type="submit" title="Очистить">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#close_icon" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+    
+                <div class="search__bottom">
+                    <div class="search__bottom-column">
+                        <p class="search__options-title">Популярное</p>
+                        <div class="search__options">
+                            <button class="search__option" type="button">Налоговый вычет</button>
+                            <button class="search__option" type="button">Документы</button>
+                            <button class="search__option" type="button">Досуг</button>
+                            <button class="search__option" type="button">Лечение</button>
+                            <button class="search__option" type="button">Питание</button>
+                            <button class="search__option" type="button">Стоимость</button>
+                            <button class="search__option" type="button">Косметология</button>
+                            <button class="search__option" type="button">Санаторная карта</button>
+                        </div>
+                    </div>
+    
+                    <div class="search__bottom-column">
+                        <p class="search__options-title">Лечение</p>
+                        <div class="search__options">
+                            <button class="search__option" type="button">ЖКТ</button>
+                            <button class="search__option" type="button">Женское здоровье</button>
+                            <button class="search__option" type="button">Кожа</button>
+                            <button class="search__option" type="button">Мужское здоровье</button>
+                            <button class="search__option" type="button">Неврология</button>
+                            <button class="search__option" type="button">Эндокринология</button>
+                            <button class="search__option" type="button">Органы дыхания</button>
+                            <button class="search__option" type="button">Суставы и кости</button>
+                            <button class="search__option" type="button">Сердце и сосуды</button>
+                        </div>
+                    </div>
+    
+                    <div class="search__bottom-column">
+                        <p class="search__options-title">Программы</p>
+                        <div class="search__options">
+                            <button class="search__option" type="button">Санаторно-курортная путёвка</button>
+                            <button class="search__option" type="button">Здоровый ребёнок</button>
+                            <button class="search__option" type="button">Детокс и стройность</button>
+                            <button class="search__option" type="button">Антистресс и Здоровый сон</button>
+                            <button class="search__option" type="button">Check-up</button>
+                            <button class="search__option" type="button">Оздоровительная путёвка</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -654,7 +725,7 @@
                     <div class="room-card">
                         <div class="room-card__image"><img src="images/content/rooms/img.jpg" srcset="images/content/rooms/img@2x.jpg 2x" alt=""></div>
                         <div class="room-card__info">
-                            <h3><a href="#">Студия</a></h3>
+                            <h3>Студия</h3>
 
                             <div class="room-card__props">
                                 <div class="room-card__prop">
@@ -714,13 +785,15 @@
                             </div>
 
                             <a class="button button--secondary" href="#"><span>Забронировать</span></a>
+
+                            <a class="room-card__more button button--link" href="#"><span>Подробнее</span></a>
                         </div>
                     </div>
 
                     <div class="room-card">
                         <div class="room-card__image"><img src="images/content/rooms/img.jpg" srcset="images/content/rooms/img@2x.jpg 2x" alt=""></div>
                         <div class="room-card__info">
-                            <h3><a href="#">Люкс</a></h3>
+                            <h3>Люкс</h3>
 
                             <div class="room-card__props">
                                 <div class="room-card__prop">
@@ -780,13 +853,15 @@
                             </div>
 
                             <a class="button button--secondary" href="#"><span>Забронировать</span></a>
+
+                            <a class="room-card__more button button--link" href="#"><span>Подробнее</span></a>
                         </div>
                     </div>
 
                     <div class="room-card">
                         <div class="room-card__image"><img src="images/content/rooms/img.jpg" srcset="images/content/rooms/img@2x.jpg 2x" alt=""></div>
                         <div class="room-card__info">
-                            <h3><a href="#">Коттедж №1</a></h3>
+                            <h3>Коттедж №1</h3>
 
                             <div class="room-card__props">
                                 <div class="room-card__prop">
@@ -827,6 +902,8 @@
                             </div>
 
                             <a class="button button--secondary" href="#"><span>Забронировать</span></a>
+
+                            <a class="room-card__more button button--link" href="#"><span>Подробнее</span></a>
                         </div>
                     </div>
                 </div>
@@ -2037,12 +2114,12 @@
             </section>
 
             <section class="page__section page__section--pale full-width">
-                <div class="about-map container">
-                    <div class="about-map__image">
+                <div class="info-incut container">
+                    <div class="info-incut__image">
                         <img src="images/content/about-map/logo.svg" alt="">
                     </div>
 
-                    <div class="about-map__text">
+                    <div class="info-incut__text">
                         <h2>Карта курорта Сибирь</h2>
                         <p>Изучите инфраструктуру курорта: живописные места для прогулок, рестораны, спортивные локации и медицинские объекты – все собрали для вас на карте.</p>
                         <p><a class="button button--secondary" href="#"><span>Перейти к карте</span></a></p>

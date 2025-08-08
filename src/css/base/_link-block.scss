@@ -173,7 +173,6 @@
 
     &__more {
         font-weight: 500;
-        text-decoration: underline;
     }
 
     .leaf {
@@ -234,6 +233,34 @@
         & > * {
             @media(min-width: $md) {
                 width: calc(100% / 2 - var(--gap) / 2);
+            }
+        }
+    }
+
+    &--type_3 {
+        @media(min-width: $md) {
+            align-items: flex-start;
+        }
+
+        & > .link-block {
+            &:nth-child(1),
+            &:nth-child(4) {
+                @media(min-width: $md) {
+                    height: 260px;
+                }
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                @media(min-width: $md) {
+                    height: 320px;
+                }
+            }
+
+            &:nth-child(3) {
+                @media(min-width: $md) {
+                    margin-top: -60px;
+                }
             }
         }
     }

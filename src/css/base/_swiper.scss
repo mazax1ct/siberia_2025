@@ -5,4 +5,13 @@
         height: auto;
         width: auto;
     }
+
+    .room-card {
+        min-width: 334px;
+        width: 334px;
+        @media(min-width: $sm) {
+            min-width: 376px;
+            width: 376px;
+        }
+    }
 }

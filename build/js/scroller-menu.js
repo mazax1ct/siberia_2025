@@ -19,7 +19,7 @@ $(document).ready(function() {
 
         breakpoints: {
             1200: {
-                slidesOffsetAfter: scrollerMenuSideOffset,
+                //slidesOffsetAfter: scrollerMenuSideOffset,
                 slidesOffsetBefore: scrollerMenuSideOffset
             }
         }
@@ -29,7 +29,7 @@ $(document).ready(function() {
 $(window).on("resize", function() {
     if ($('body').width() >= 1200) {
         scrollerMenuSideOffset = (window.innerWidth - 1170) / 2;
-        scrollerMenu.params.slidesOffsetAfter = scrollerMenuSideOffset;
+        //scrollerMenu.params.slidesOffsetAfter = scrollerMenuSideOffset;
         scrollerMenu.params.slidesOffsetBefore = scrollerMenuSideOffset;
         setTimeout(function() {
             scrollerMenu.update();

@@ -20,7 +20,7 @@ $(document).ready(function() {
         breakpoints: {
             1200: {
                 spaceBetween: 20,
-                slidesOffsetAfter: scrollerSideOffset,
+                //slidesOffsetAfter: scrollerSideOffset,
                 slidesOffsetBefore: scrollerSideOffset
             }
         }
@@ -30,7 +30,7 @@ $(document).ready(function() {
 $(window).on("resize", function() {
     if ($('body').width() >= 1200) {
         scrollerSideOffset = (window.innerWidth - 1170) / 2;
-        scroller.params.slidesOffsetAfter = scrollerSideOffset;
+        //scroller.params.slidesOffsetAfter = scrollerSideOffset;
         scroller.params.slidesOffsetBefore = scrollerSideOffset;
         setTimeout(function() {
             scroller.update();

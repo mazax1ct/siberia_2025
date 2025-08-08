@@ -31,13 +31,12 @@ $(document).ready(function() {
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
 $(window).on("scroll", resize_scroll).on("resize", resize_scroll);
 
-
 //открытие главного меню
 $(document).on('click', '.js-menu-opener', function () {
   const _this = $(this);
   if(!_this.hasClass('is-active')) {
     $('body').addClass('is-overflow');
-    $('.header__dropdown').addClass('is-open');
+    $('.header__dropdown.main-menu').addClass('is-open');
     _this.find('use').attr('xlink:href', 'images/sprite.svg#close_icon');
     _this.find('span').text('ЗАКРЫТЬ');
     _this.addClass('is-active');
@@ -46,7 +45,7 @@ $(document).on('click', '.js-menu-opener', function () {
     _this.find('span').text('МЕНЮ');
     _this.removeClass('is-active');
     $('body').removeClass('is-overflow');
-    $('.header__dropdown').removeClass('is-open');
+    $('.header__dropdown.main-menu').removeClass('is-open');
   }
 
   return false;
@@ -55,7 +54,7 @@ $(document).on('click', '.js-menu-opener', function () {
 //закрытие главного меню
 $(document).on('click', '.js-menu-closer', function () {
   $('body').removeClass('is-overflow');
-  $('.header__dropdown').removeClass('is-open');
+  $('.header__dropdown.main-menu').removeClass('is-open');
   $('.js-menu-opener').find('use').attr('xlink:href', 'images/sprite.svg#burger_icon');
   $('.js-menu-opener').find('span').text('МЕНЮ');
   $('.js-menu-opener').removeClass('is-active');
@@ -85,6 +84,36 @@ $(document).on('click', '.js-menu-lvl2-close', function () {
   return false;
 });
 
+//открытие поиска
+$(document).on('click', '.js-search-opener', function () {
+  const _this = $(this);
+  if(!_this.hasClass('is-active')) {
+    $('body').addClass('is-overflow');
+    $('.header__dropdown.search').addClass('is-open');
+    _this.addClass('is-active');
+  } else {
+    _this.removeClass('is-active');
+    $('body').removeClass('is-overflow');
+    $('.header__dropdown.search').removeClass('is-open');
+  }
+
+  return false;
+});
+
+//закрытие поиска
+$(document).on('click', '.js-search-closer', function () {
+  $('body').removeClass('is-overflow');
+  $('.header__dropdown.search').removeClass('is-open');
+  $('.js-search-opener').removeClass('is-active');
+  return false;
+});
+
+//варианты быстрого поиска
+$(document).on('click', '.search__option', function() {
+  let query = $(this).text();
+  $('.search__input').val(query).focus();
+});
+
 //аккордион
 $(document).on('click', '.js-accordion-toggler', function () {
   let _this = $(this);
@@ -96,10 +125,4 @@ $(document).on('click', '.js-accordion-toggler', function () {
     _this.removeClass('is-active');
   }
   return false;
-});
-
-//input[type=file]
-$('.file input[type=file]').on('change', function(){
-	let file = this.files[0];
-	$(this).closest('.file').find('.file__file').html(file.name);
 });
