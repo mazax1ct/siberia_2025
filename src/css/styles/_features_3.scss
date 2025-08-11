@@ -1,9 +1,4 @@
 .features_3 {
-    @media(min-width: $md) {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
     &:not(:last-child) {
         margin-bottom: 20px;
     }

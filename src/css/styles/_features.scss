@@ -5,6 +5,12 @@
     @media(min-width: $md) {
         columns: 3;
     }
+
+    &--type_2 {
+        @media(min-width: $hd) {
+            columns: 4;
+        }
+    }
 }
 
 .feature {

@@ -1,0 +1,29 @@
+.badges {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+    @media(min-width: $hd) {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+.badge {
+    align-items: center;
+    background-color: #EDEDED;
+    border-radius: 8px;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 4px;
+    min-height: 40px;
+    padding: 8px 16px 8px 8px;
+    white-space: nowrap;
+
+    svg {
+        fill: currentColor;
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+    }
+}

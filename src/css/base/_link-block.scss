@@ -42,6 +42,10 @@
         }
     }
 
+    &--wide {
+        width: 100% !important;
+    }
+
     &--type_1 {
         background-color: var(--leaf_green);
     }
@@ -110,7 +114,7 @@
         z-index: 0;
 
         &::after {
-            background-color: rgba(#000,0.2);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 65%);
             bottom: 0;
             content: '';
             left: 0;
@@ -173,6 +177,7 @@
 
     &__more {
         font-weight: 500;
+        text-decoration: underline;
     }
 
     .leaf {

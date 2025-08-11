@@ -513,7 +513,7 @@ h2 {
 h3 {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     @media(min-width: $hd) {
         font-size: 18px;
     }
@@ -586,7 +586,7 @@ ul {
             z-index: 1;
 
             &:not(:last-child) {
-                margin-bottom: 16px;
+                margin-bottom: 12px;
             }
 
             &::before {

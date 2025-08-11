@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Сибирь</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/bron_head.html
+
+    <link rel="stylesheet" href="css_plugins/ion.rangeSlider.css" />
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <div class="page__banner full-width">
+                <div class="page__banner-inner container">
+                    <div class="page__banner-image">
+                        <img src="images/content/rooms/img_6.jpg" srcset="images/content/rooms/img_6@2x.jpg 2x" alt="">
+                    </div>
+                    <div class="page__banner-text">
+                        <h1>Корпус №1</h1>
+                        <p>Стильный пятиэтажный корпус с шестью скоростными лифтами объединяет комфорт и эстетику: здесь вас ждут уютные студии и просторные люкс-номера с видом на лес.</p>
+                        <p>В одном крыле — спа-комплекс «Минерал СПА», а в другом — всё для идеального отдыха: детская комната и студии творчества.</p>
+                    </div>
+                </div>
+            </div>
+
+            //= template/common/bron.html
+
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Проживание</a>
+                </li>
+                <li class="breadcrumbs__item">Корпус №1</li>
+            </ul>
+
+            <section class="page__section">
+                <div class="filter">
+                    <button class="js-filter-opener filter__opener button button--outline_dark" type="button">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#filter_icon" />
+                        </svg>
+                        <span>Фильтры</span>
+                    </button>
+
+                    <form class="filter__form" action="">
+                        <div class="filter__form-inner">
+                            <div class="filter__column">
+                                <div class="filter__section">
+                                    <p class="filter__section-title">Количество комнат</p>
+
+                                    <div class="filter__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">1</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="2" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">2</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="filter__section">
+                                    <p class="filter__section-title">Площадь, м²</p>
+
+                                    <input class="js-square-slider" type="text" name="square" value="" />
+                                </div>
+
+                                <div class="filter__section">
+                                    <p class="filter__section-title">Количество гостей</p>
+
+                                    <input class="js-guests-slider" type="text" name="guests" value="" />
+                                </div>
+
+                                <div class="filter__section">
+                                    <p class="filter__section-title">Питание</p>
+
+                                    <div class="filter__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Стандарт</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="2" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Шведский стол</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="2" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Ресторан Здорового питания – программа Детокс</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="2" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Ресторан Здорового питания – программа Детокс</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter__column">
+                                <div class="filter__section">
+                                    <p class="filter__section-title">Размер спального места</p>
+
+                                    <div class="filter__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">90x200</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">160x200</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">180x200</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="filter__section">
+                                    <p class="filter__section-title">Количество кроватей</p>
+
+                                    <div class="filter__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">1</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">2</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="filter__section">
+                                    <p class="filter__section-title">Дополнительные места</p>
+
+                                    <div class="filter__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Раскладной диван</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Раскладное кресло</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="filter__section">
+                                    <p class="filter__section-title">Санузел</p>
+
+                                    <div class="filter__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Ванна</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Душевая кабина</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter__column">
+                                <div class="filter__section">
+                                    <p class="filter__section-title">Программа</p>
+
+                                    <div class="filter__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">С лечением от 7ми дней</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Без лечения от 2х дней</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Здоровый сон от 7ми дней</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Детокс от 7ми дней</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="filter__section">
+                                    <p class="filter__section-title">Ещё удобства</p>
+
+                                    <div class="filter__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Кофемашина</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Камин</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Набор для ванной</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Увлажнитель воздуха</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Телевизор</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Смарт-ТВ</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" name="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Сбер-портал</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="filter__apply button button--primary" type="submit">Применить</button>
+                    </form>
+                </div>
+
+                <div class="rooms-list rooms-list--type_2">
+                    <div class="room-card">
+                        <div class="room-card__image"><img src="images/content/rooms/img.jpg" srcset="images/content/rooms/img@2x.jpg 2x" alt=""></div>
+                        <div class="room-card__info">
+                            <h3>Студия</h3>
+
+                            <div class="room-card__props">
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#square_icon" />
+                                            </svg>
+                                            <span>35 м² общей площади</span>
+                                        </p>
+                                        <p class="room-card__prop-text">1 комната</p>
+                                    </div>
+                                </div>
+
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#food_icon" />
+                                            </svg>
+                                            <span>Полный пансион</span>
+                                        </p>
+                                        <p class="room-card__prop-text">шведский стол в ресторане Стандарт</p>
+                                    </div>
+                                </div>
+
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#map_pin_icon" />
+                                            </svg>
+                                            <span>Расположен в Корпусе 1</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="room-card__badges">
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_1_icon" />
+                                    </svg>
+                                    <span>от 15 000₽</span>
+                                </div>
+
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_2_icon" />
+                                    </svg>
+                                    <span>от 25 560₽</span>
+                                </div>
+
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_3_icon" />
+                                    </svg>
+                                    <span>от 32 280₽</span>
+                                </div>
+                            </div>
+
+                            <a class="button button--secondary" href="#"><span>Забронировать</span></a>
+
+                            <a class="room-card__more button button--link" href="#"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+
+                    <div class="room-card">
+                        <div class="room-card__image"><img src="images/content/rooms/img.jpg" srcset="images/content/rooms/img@2x.jpg 2x" alt=""></div>
+                        <div class="room-card__info">
+                            <h3>Люкс</h3>
+
+                            <div class="room-card__props">
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#square_icon" />
+                                            </svg>
+                                            <span>43 м² общей площади</span>
+                                        </p>
+                                        <p class="room-card__prop-text">2 комнаты</p>
+                                    </div>
+                                </div>
+
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#food_icon" />
+                                            </svg>
+                                            <span>Полный пансион</span>
+                                        </p>
+                                        <p class="room-card__prop-text">шведский стол в ресторане Shalet</p>
+                                    </div>
+                                </div>
+
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#map_pin_icon" />
+                                            </svg>
+                                            <span>Расположен в Корпусе 1</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="room-card__badges">
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_1_icon" />
+                                    </svg>
+                                    <span>от 15 000₽</span>
+                                </div>
+
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_2_icon" />
+                                    </svg>
+                                    <span>от 25 560₽</span>
+                                </div>
+
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_3_icon" />
+                                    </svg>
+                                    <span>от 32 280₽</span>
+                                </div>
+                            </div>
+
+                            <a class="button button--secondary" href="#"><span>Забронировать</span></a>
+
+                            <a class="room-card__more button button--link" href="#"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+
+                    <div class="room-card">
+                        <div class="room-card__image"><img src="images/content/rooms/img.jpg" srcset="images/content/rooms/img@2x.jpg 2x" alt=""></div>
+                        <div class="room-card__info">
+                            <h3>Люкс Комфорт</h3>
+
+                            <div class="room-card__props">
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#square_icon" />
+                                            </svg>
+                                            <span>52 м² общей площади</span>
+                                        </p>
+                                        <p class="room-card__prop-text">2 комнаты</p>
+                                    </div>
+                                </div>
+
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#food_icon" />
+                                            </svg>
+                                            <span>Полный пансион</span>
+                                        </p>
+                                        <p class="room-card__prop-text">шведский стол в ресторане Shalet</p>
+                                    </div>
+                                </div>
+
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#map_pin_icon" />
+                                            </svg>
+                                            <span>Расположен в Корпусе 1</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="room-card__badges">
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_1_icon" />
+                                    </svg>
+                                    <span>от 15 000₽</span>
+                                </div>
+
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_2_icon" />
+                                    </svg>
+                                    <span>от 25 560₽</span>
+                                </div>
+
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_3_icon" />
+                                    </svg>
+                                    <span>от 32 280₽</span>
+                                </div>
+                            </div>
+
+                            <a class="button button--secondary" href="#"><span>Забронировать</span></a>
+
+                            <a class="room-card__more button button--link" href="#"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+
+                    <div class="room-card">
+                        <div class="room-card__image"><img src="images/content/rooms/img.jpg" srcset="images/content/rooms/img@2x.jpg 2x" alt=""></div>
+                        <div class="room-card__info">
+                            <h3>Гранд Люкс</h3>
+
+                            <div class="room-card__props">
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#square_icon" />
+                                            </svg>
+                                            <span>35 м² общей площади</span>
+                                        </p>
+                                        <p class="room-card__prop-text">1 комната</p>
+                                    </div>
+                                </div>
+
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#food_icon" />
+                                            </svg>
+                                            <span>Полный пансион</span>
+                                        </p>
+                                        <p class="room-card__prop-text">шведский стол в ресторане Shalet</p>
+                                    </div>
+                                </div>
+
+                                <div class="room-card__prop">
+                                    <div class="room-card__prop-info">
+                                        <p class="room-card__prop-title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#map_pin_icon" />
+                                            </svg>
+                                            <span>Расположен в Корпусе 1</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="room-card__badges">
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_1_icon" />
+                                    </svg>
+                                    <span>от 15 000₽</span>
+                                </div>
+
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_2_icon" />
+                                    </svg>
+                                    <span>от 25 560₽</span>
+                                </div>
+
+                                <div class="room-card__badge">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#persons_3_icon" />
+                                    </svg>
+                                    <span>от 32 280₽</span>
+                                </div>
+                            </div>
+
+                            <a class="button button--secondary" href="#"><span>Забронировать</span></a>
+
+                            <a class="room-card__more button button--link" href="#"><span>Подробнее</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section page__section--pale full-width">
+                <div class="info-incut container">
+                    <div class="info-incut__image">
+                        <img class="simple-image" src="images/content/rooms/img_7.jpg" srcset="images/content/rooms/img_7@2x.jpg 2x" alt="">
+                    </div>
+
+                    <div class="info-incut__text">
+                        <h2>Посмотреть номера Корпуса №2</h2>
+                        <p>В «Сибири» есть и исторический корпус с уютными стандартными номерами и студиями.</p>
+                        <p><a class="button button--secondary" href="#">Открыть</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/scripts.html
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+
+</html>

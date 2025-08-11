@@ -1,0 +1,92 @@
+.filter {
+    @media(min-width: $sm) {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+        @media(min-width: $hd) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__opener {
+        min-width: 166px;
+        @media(max-width: $sm - 0.02px) {
+            width: 100%;
+        }
+    }
+
+    &__form {
+        display: none;
+        padding-top: 30px;
+    }
+
+    &__form-inner {
+        --v_gap: 24px;
+        --h_gap: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        @media(min-width: $sm) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: var(--v_gap) var(--h_gap);
+        }
+        @media(min-width: $hd) {
+            --h_gap: 20px;
+        }
+    }
+
+    &__column {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--h_gap) / 2);
+        }
+        @media(min-width: $md) {
+            width: calc(100% / 3 - var(--h_gap) * 2 / 3);
+        }
+    }
+
+    &__section {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        .irs {
+            max-width: 220px;
+        }
+    }
+
+    &__section-title {
+        font-size: 15px;
+        font-weight: 500;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__list {
+        .checkbox {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__apply {
+        @media(max-width: $sm - 0.02px) {
+            margin-top: 24px;
+            width: 100%;
+        }
+        @media(min-width: $sm) {
+            left: auto;
+            min-width: 166px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+    }
+}

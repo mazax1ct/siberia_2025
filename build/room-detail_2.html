@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Сибирь</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Сибирь" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-CormorantUnicase-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <script type='text/javascript' data-skip-moving="true">
+        (function(w) {
+            var q = [
+                ['setContext', 'TL-INT-sibir-tumen', 'ru'],
+                ['embed', 'booking-form', {
+                    container: 'tl-booking-form'
+                }],
+                ['embed', 'search-form', {
+                    container: 'tl-search-form'
+                }],
+            ];
+            var h = ["ru-ibe.tlintegration.ru", "ibe.tlintegration.ru", "ibe.tlintegration.com"];
+            var t = w.travelline = (w.travelline || {}),
+                ti = t.integration = (t.integration || {});
+            ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
+            if (!ti.__loader) {
+                ti.__loader = true;
+                var d = w.document,
+                    c = d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0];
+    
+                function e(s, f) {
+                    return function() {
+                        w.TL || (c.removeChild(s), f())
+                    }
+                }
+                (function l(h) {
+                    if (0 === h.length) return;
+                    var s = d.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = !0;
+                    s.src = "https://" + h[0] + "/integration/loader.js";
+                    s.onerror = s.onload = e(s, function() {
+                        l(h.slice(1, h.length))
+                    });
+                    c.appendChild(s)
+                })(h);
+            }
+        })(window);
+    </script>
+    
+    <style>
+        #block-search,
+        #block-search * {
+            box-sizing: border-box;
+        }
+    
+        #block-search {
+            background: #627856;
+            min-height: 366px;
+        }
+    
+        @media(min-width: 388px) {
+            #block-search {
+                min-height: 216px;
+            }
+        }
+    
+        @media(min-width: 886px) {
+            #block-search {
+                min-height: 144px;
+            }
+        }
+    
+        @media(min-width: 1187px) {
+            #block-search {
+                min-height: 102px;
+            }
+        }
+    
+        .tl-container {
+            padding: 0 30px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="header__inner container">
+            <a class="header__logo" href="#">
+                <img class="header__logo-icon" src="images/logo_icon.svg" alt="">
+                <img class="header__logo-text" src="images/logo_text.svg" alt="Сибирь">
+            </a>
+    
+            <button class="js-menu-opener header__menu-opener header__button" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#burger_icon" />
+                </svg>
+                <span>МЕНЮ</span>
+            </button>
+    
+            <button class="js-search-opener header__search-opener header__button" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#search_icon" />
+                </svg>
+                <span>Поиск</span>
+            </button>
+    
+            <a class="header__phone header__button" href="#">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#phone_icon" />
+                </svg>
+                <span>+7 (3452) 687-000</span>
+            </a>
+    
+            <a class="button button--primary button--h_40" href="#">
+                <span>Забронировать</span>
+            </a>
+        </div>
+    
+        <div class="header__dropdown main-menu">
+            <div class="main-menu__inner">
+                <div class="container">
+                    <div class="main-menu__top">
+                        <button class="js-menu-closer main-menu__closer" type="button" title="Закрыть меню">
+                            <svg>
+                                <use xlink:href="images/sprite.svg#close_icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+    
+                    <div class="main-menu__button-block">
+                        <a class="button button--primary" href="#"><span>Забронировать</span></a>
+                    </div>
+    
+                    <nav class="main-menu__nav" role="navigation" aria-label="Основное меню">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__list-item "><a class="main-menu__list-link" href="#">Проживание</a></li>
+    
+                            <li class="main-menu__list-item "><a class="main-menu__list-link" href="#">Бары и рестораны</a></li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Медцентр</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Медцентр</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Мед программы</a></li>
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Заболевания</a></li>
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Кабинеты</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Инфраструктура</a>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Отдых</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Отдых</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Бассейн и сауна</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Тренажерный зал</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="javascript:void(0)">Посетителям</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Посетителям</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Онлайн-камера</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Отзывы отдыхающих</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Полезные книги</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Частые вопросы</a>
+                                        </li>
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Акции</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Как добраться</a>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Цены</a>
+                            </li>
+    
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-link" href="#">Контакты</a>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">О центре</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>О центре</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">История</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Достопримечательности</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Лицензии</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Виртуальная экскурсия</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Карьера</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Вакансии</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Реквизиты</a>
+                                        </li>
+    
+                                        <li class="main-menu__list2-item">
+                                            <a class="main-menu__list2-link" href="#">Фотогалерея</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="javascript:void(0)">Партнерам</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+                                        <span>Партнерам</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Конференц-услуги</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Афиша</a></li>
+    
+                            <li class="main-menu__list-item"><a class="main-menu__list-link" href="#">Детям</a></li>
+    
+                            <li class="main-menu__list-item main-menu__list-item--root" aria-haspopup="true">
+                                <a class="main-menu__list-link" href="#">Справки и документы</a>
+    
+                                <button class="js-menu-lvl2 main-menu__button" type="button" title="Открыть меню второго уровня">
+                                    <svg class="main-menu__button-icon">
+                                        <use xlink:href="images/sprite.svg#chevron_right"></use>
+                                    </svg>
+                                </button>
+    
+                                <div class="main-menu__dropdown" aria-label="submenu">
+                                    <button class="js-menu-lvl2-close main-menu__dropdown-closer" type="button">
+                                        <svg class="main-menu__dropdown-closer-icon">
+                                            <use xlink:href="images/sprite.svg#chevron_left"></use>
+                                        </svg>
+    
+                                        <span>Справки и документы</span>
+                                    </button>
+    
+                                    <ul class="main-menu__list2">
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Скачать документы</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Госгарантии</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Персональные данные</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Пользовательское соглашение</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Правила пребывания</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Документы для заезда</a></li>
+    
+                                        <li class="main-menu__list2-item"><a class="main-menu__list2-link" href="#">Анкета</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <div class="main-menu__bottom">
+                        <a href="tel:+73452687000">+7 (3452) 687-000</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="header__dropdown search">
+            <div class="container">
+                <div class="search__top container">
+                    <button class="js-search-closer search__closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+    
+                    <form class="search__form" action="">
+                        <input class="js-input search__input" type="text" name="q" value="" autocomplete="off" placeholder="Что вы ищете">
+    
+                        <button class="search__button search__button--submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+    
+                        <button class="js-input-clear search__button search__button--clear" type="submit" title="Очистить">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#close_icon" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+    
+                <div class="search__bottom">
+                    <div class="search__bottom-column">
+                        <p class="search__options-title">Популярное</p>
+                        <div class="search__options">
+                            <button class="search__option" type="button">Налоговый вычет</button>
+                            <button class="search__option" type="button">Документы</button>
+                            <button class="search__option" type="button">Досуг</button>
+                            <button class="search__option" type="button">Лечение</button>
+                            <button class="search__option" type="button">Питание</button>
+                            <button class="search__option" type="button">Стоимость</button>
+                            <button class="search__option" type="button">Косметология</button>
+                            <button class="search__option" type="button">Санаторная карта</button>
+                        </div>
+                    </div>
+    
+                    <div class="search__bottom-column">
+                        <p class="search__options-title">Лечение</p>
+                        <div class="search__options">
+                            <button class="search__option" type="button">ЖКТ</button>
+                            <button class="search__option" type="button">Женское здоровье</button>
+                            <button class="search__option" type="button">Кожа</button>
+                            <button class="search__option" type="button">Мужское здоровье</button>
+                            <button class="search__option" type="button">Неврология</button>
+                            <button class="search__option" type="button">Эндокринология</button>
+                            <button class="search__option" type="button">Органы дыхания</button>
+                            <button class="search__option" type="button">Суставы и кости</button>
+                            <button class="search__option" type="button">Сердце и сосуды</button>
+                        </div>
+                    </div>
+    
+                    <div class="search__bottom-column">
+                        <p class="search__options-title">Программы</p>
+                        <div class="search__options">
+                            <button class="search__option" type="button">Санаторно-курортная путёвка</button>
+                            <button class="search__option" type="button">Здоровый ребёнок</button>
+                            <button class="search__option" type="button">Детокс и стройность</button>
+                            <button class="search__option" type="button">Антистресс и Здоровый сон</button>
+                            <button class="search__option" type="button">Check-up</button>
+                            <button class="search__option" type="button">Оздоровительная путёвка</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <div class="page__title full-width">
+                <div class="container">
+                    <h1>Описание номера</h1>
+                </div>
+            </div>
+
+            <div id='block-search' class="full-width">
+                <div id='tl-search-form' class='tl-container container'>
+                    <a href='https://www.travelline.ru/products/tl-hotel/' target='_blank'>TravelLine</a>
+                </div>
+            </div>
+
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Проживание</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Коттеджи</a>
+                </li>
+                <li class="breadcrumbs__item">Коттедж №1</li>
+            </ul>
+
+            <section class="page__section">
+                <h2>Коттедж №1</h2>
+
+                <div class="two-columns">
+                    <div class="two-columns__image-block">
+                        <div class="js-simple-slider swiper simple-slider" data-slider="slider_1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/content/rooms/img_8.jpg" srcset="images/content/rooms/img_8@2x.jpg 2x" alt=""></div>
+                                <div class="swiper-slide"><img src="images/content/rooms/img_8.jpg" srcset="images/content/rooms/img_8@2x.jpg 2x" alt=""></div>
+                                <div class="swiper-slide"><img src="images/content/rooms/img_8.jpg" srcset="images/content/rooms/img_8@2x.jpg 2x" alt=""></div>
+                            </div>
+
+                            <div class="js-simple-slider-pagination swiper-pagination" data-slider="slider_1"></div>
+
+                            <button class="js-simple-slider-prev swiper-button-prev" data-slider="slider_1" type="button" title="Назад">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_left" />
+                                </svg>
+                            </button>
+
+                            <button class="js-simple-slider-next swiper-button-next" data-slider="slider_1" type="button" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="two-columns__text-block two-columns__text-block--type_1">
+                        <div class="features_3">
+                            <div class="feature_3">
+                                <p class="feature_3__title">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#map_pin_icon" />
+                                    </svg>
+                                    <span>Расположен в отдалении от корпусов</span>
+                                </p>
+                            </div>
+
+                            <div class="feature_3">
+                                <p class="feature_3__title">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#square_icon" />
+                                    </svg>
+                                    <span>360 м² общей площади + гараж</span>
+                                </p>
+
+                                <p class="feature_3__text">2 подъезда по 180м²</p>
+                            </div>
+
+                            <div class="feature_3">
+                                <p class="feature_3__title">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#eat_icon" />
+                                    </svg>
+                                    <span>Без питания</span>
+                                </p>
+                            </div>
+
+                            <div class="feature_3">
+                                <p class="feature_3__title">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#phone_2_icon" />
+                                    </svg>
+                                    <span>Бронирование только по телефону<br> +7(3452) 687000</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="badges">
+                            <div class="badge">
+                                <span>4 гостя | от 16 000₽</span>
+                            </div>
+                        </div>
+
+                        <a class="button button--secondary button--wide" href="#">Узнать о наличии</a>
+                    </div>
+                </div>
+
+                <p>Бронировать коттеджи можно только напрямую в отделе продаж по телефону +7(3452) 687000. Это связано с особенным расчетным часом, отличающимся от общего расчетного часа. Или напишите свой номер телефона для обратного звонка
+                    специалиста отдела продаж.</p>
+            </section>
+
+            <section class="page__section">
+                <h2>Всё для комфортного проживания</h2>
+
+                <div class="features features--type_2">
+                    <p class="feature">
+                        <img src="images/content/features/bed_2.svg" alt="">
+                        <span>двуспальная кровать</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/bath_tube.svg" alt="">
+                        <span>ванна</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/recirkulator.svg" alt="">
+                        <span>рециркулятор</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/bar.svg" alt="">
+                        <span>мини-бар</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/safe.svg" alt="">
+                        <span>сейф</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/phone.svg" alt="">
+                        <span>телефон</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/tv.svg" alt="">
+                        <span>жк телевизор</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/halat.svg" alt="">
+                        <span>халат</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/tapki.svg" alt="">
+                        <span>тапочки</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/fen.svg" alt="">
+                        <span>фен</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/tea_nabor.svg" alt="">
+                        <span>чайный набор</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/tea_pot.svg" alt="">
+                        <span>чайник</span>
+                    </p>
+
+                    <p class="feature">
+                        <img src="images/content/features/gigiena.svg" alt="">
+                        <span>принадлежности гигиены</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Детали</h2>
+                <h3>В каждом коттедже:</h3>
+                <ul>
+                    <li>система кондиционирования воздуха</li>
+                    <li>элегантная мебель</li>
+                    <li>полный набор бытовой техники и посуды</li>
+                    <li>телевизоры</li>
+                    <li>паркинг в капитальном гараже с электрическими воротами (кроме Аппарт отеля)</li>
+                    <li>освещаемая мангальная площадка</li>
+                    <li>мебелью для отдыха на улице</li>
+                    <li>наружное видеонаблюдение</li>
+                    <li>круглосуточная охрана</li>
+                </ul>
+
+                <h3>В каждом номере:</h3>
+                <ul>
+                    <li>2,0 - спальная кровать</li>
+                    <li>1,5 - спальные кровати</li>
+                    <li>махровые халаты</li>
+                    <li>тапочки</li>
+                </ul>
+            </section>
+
+            <section class="page__section">
+                <h2>Видеообзор</h2>
+
+                <div class="two-columns two-columns--centered">
+                    <div>
+                        <a class="video" href="https://vk.com/video-46039416_456239690" target="_blank" data-fancybox="video">
+                            <img src="images/content/spa/img_5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <h3>Коттедж состоит из двух подъездов, площадью по 180 кв.м. В каждом подъезде:</h3>
+                        <ul>
+                            <li>1 этаж - прихожая, гардеробная, гостиная, кабинет, кухня, санузел для гостей;</li>
+                            <li>2 этаж - две спальни, холл, санузел</li>
+                            <li>Максимальное количество гостей в одном подъезде: 4</li>
+                            <li>Максимальная вместимость всего коттеджа: 8 гостей.</li>
+                        </ul>
+                        <a class="button button--secondary" href="#">Забронировать</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Медицинские программы</h2>
+                <p>В данном типе размещения включено несколько медицинских программ в зависимости от количества дней отдыха. Выберите желаемое количество дней и тип размещения и сервис рассчитает полный состав программы.</p>
+            </section>
+
+            <section class="page__section">
+                <h2>Питание</h2>
+
+                <div class="full-width">
+                    <div class="js-scroller swiper scroller">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card card--type_1">
+                                    <div class="card__info">
+                                        <div class="card__top-block">
+                                            <div class="card__icon"><img src="images/content/restaurants/standart.svg" alt=""></div>
+
+                                            <div>
+                                                <h3 class="card__title">Стандарт</h3>
+                                                <p class="card__title-note">ресторан</p>
+                                            </div>
+                                        </div>
+
+                                        <p class="card__preview">Ресторан со шведской линией, где представлены блюда в широким ассортименте, в т.ч. с зелёным столом, паста-станцией и детским столом.</p>
+
+                                        <a class="card__more-link" href="#">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#leaf_arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="card__image">
+                                        <img src="images/content/restaurants/img.jpg" srcset="images/content/restaurants/img@2x.jpg 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card card--type_1">
+                                    <div class="card__info">
+                                        <div class="card__top-block">
+                                            <div class="card__icon"><img src="images/content/restaurants/zdorovie.svg" alt=""></div>
+
+                                            <div>
+                                                <h3 class="card__title">Здоровое питание</h3>
+                                                <p class="card__title-note">ресторан</p>
+                                            </div>
+                                        </div>
+
+                                        <p class="card__preview">Cбалансированное 5-разовое питание с калорийностью 1400 ккал. В блюдах минимальное содержание соли, а все десерты не содержат сахар.</p>
+
+                                        <a class="card__more-link" href="#">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#leaf_arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="card__image">
+                                        <img src="images/content/restaurants/img.jpg" srcset="images/content/restaurants/img@2x.jpg 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card card--type_1">
+                                    <div class="card__info">
+                                        <div class="card__top-block">
+                                            <div class="card__icon"><img src="images/content/restaurants/shale.svg" alt=""></div>
+
+                                            <div>
+                                                <h3 class="card__title">Шале</h3>
+                                                <p class="card__title-note">ресторан</p>
+                                            </div>
+                                        </div>
+
+                                        <p class="card__preview">Холодные блюда и фуршетные закуски представлены на шведской линии, а горячие блюда подаются индивидуально по заказному меню.</p>
+
+                                        <a class="card__more-link" href="#">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#leaf_arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="card__image">
+                                        <img src="images/content/restaurants/img.jpg" srcset="images/content/restaurants/img@2x.jpg 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card card--type_1">
+                                    <div class="card__info">
+                                        <div class="card__top-block">
+                                            <div class="card__icon"><img src="images/content/restaurants/vesla.svg" alt=""></div>
+
+                                            <div>
+                                                <h3 class="card__title">Вёсла бар</h3>
+                                                <p class="card__title-note">бар-ресторан на озере</p>
+                                            </div>
+                                        </div>
+
+                                        <p class="card__preview">Демократичные цены, хороший выбор блюд и быстрая технология приготовления на открытой кухне.</p>
+
+                                        <a class="card__more-link" href="#">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#leaf_arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="card__image">
+                                        <img src="images/content/restaurants/img.jpg" srcset="images/content/restaurants/img@2x.jpg 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card card--type_1">
+                                    <div class="card__info">
+                                        <div class="card__top-block">
+                                            <div class="card__icon"><img src="images/content/restaurants/disco.svg" alt=""></div>
+
+                                            <div>
+                                                <h3 class="card__title">Диско бар</h3>
+                                                <p class="card__title-note">бар</p>
+                                            </div>
+                                        </div>
+
+                                        <p class="card__preview">В Диско баре можно насладиться вкусными коктейлями, авторскими чаями и ароматным свежесваренным кофе.</p>
+
+                                        <a class="card__more-link" href="#">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#leaf_arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="card__image">
+                                        <img src="images/content/restaurants/img.jpg" srcset="images/content/restaurants/img@2x.jpg 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card card--type_1">
+                                    <div class="card__info">
+                                        <div class="card__top-block">
+                                            <div class="card__icon"><img src="images/content/restaurants/bar.svg" alt=""></div>
+
+                                            <div>
+                                                <h3 class="card__title">Лобби бар</h3>
+                                                <p class="card__title-note">бар</p>
+                                            </div>
+                                        </div>
+
+                                        <p class="card__preview">Насладиться вкусными десертами от собственной кондитерской и выпить чашечку ароматного кофе или насладиться авторскими коктейлями.</p>
+
+                                        <a class="card__more-link" href="#">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#leaf_arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="card__image">
+                                        <img src="images/content/restaurants/img.jpg" srcset="images/content/restaurants/img@2x.jpg 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="link-blocks link-blocks--type_1">
+                    <div class="info-block info-block--wide">
+                        <div class="info-block__icon">
+                            <img src="images/content/info-block/time.svg" alt="">
+                        </div>
+                        <h3>Расчетный час</h3>
+                        <p>Заезд в 14:00, выезд в 10:00.</p>
+                    </div>
+
+                    <a class="link-block link-block--type_1 link-block--decor link-block--320" href="#">
+                        <span class="leaf">
+                            <svg class="leaf__leaf" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#leaf_icon"></use>
+                            </svg>
+                            <svg class="leaf__arrow" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#leaf_arrow"></use>
+                            </svg>
+                        </span>
+
+                        <span class="link-block__title">Дополнительные услуги</span>
+
+                        <span class="link-block__text">Отдельные медицинские услуги можно купить при наличии свободных мест на нужную услугу в день обращения</span>
+
+                        <span class="link-block__more">Подробнее</span>
+                    </a>
+
+                    <a class="link-block link-block--type_1 link-block--320" href="#">
+                        <span class="link-block__image"><img src="images/content/link-block/img_4.jpg" srcset="images/content/link-block/img_4@2x.jpg 2x" alt=""></span>
+
+                        <span class="leaf">
+                            <svg class="leaf__leaf" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#leaf_icon"></use>
+                            </svg>
+                            <svg class="leaf__arrow" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#leaf_arrow"></use>
+                            </svg>
+                        </span>
+
+                        <span class="link-block__title">Досуговые мероприятия и спорт</span>
+
+                        <span class="link-block__text">Бесплатные студии творчества и занятия спортом — найдите подходящие мероприятия для себя!</span>
+
+                        <span class="link-block__more">Подробнее</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Другие номера</h2>
+
+                <div class="full-width">
+                    <div class="js-scroller swiper scroller">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="room-card">
+                                    <div class="room-card__image"><img src="images/content/rooms/img.jpg" srcset="images/content/rooms/img@2x.jpg 2x" alt=""></div>
+                                    <div class="room-card__info">
+                                        <h3>Коттедж №4</h3>
+
+                                        <div class="room-card__props">
+                                            <div class="room-card__prop">
+                                                <div class="room-card__prop-info">
+                                                    <p class="room-card__prop-title">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#square_icon"></use>
+                                                        </svg>
+                                                        <span>760 м² общей площади + гараж</span>
+                                                    </p>
+                                                    <p class="room-card__prop-text">4 подъезда по 190м²</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="room-card__prop">
+                                                <div class="room-card__prop-info">
+                                                    <p class="room-card__prop-title">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#food_icon"></use>
+                                                        </svg>
+                                                        <span>Без питания</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="room-card__prop">
+                                                <div class="room-card__prop-info">
+                                                    <p class="room-card__prop-title">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#map_pin_icon"></use>
+                                                        </svg>
+                                                        <span>Бронирование только по телефону<br> +7(3452) 687000</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="room-card__badges">
+                                            <div class="room-card__badge">
+                                                <span>6 гостей | от 24 000₽</span>
+                                            </div>
+                                        </div>
+
+                                        <a class="button button--secondary" href="#"><span>Узнать о наличии</span></a>
+
+                                        <a class="room-card__more button button--link" href="#"><span>Подробнее</span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="room-card">
+                                    <div class="room-card__image"><img src="images/content/rooms/img.jpg" srcset="images/content/rooms/img@2x.jpg 2x" alt=""></div>
+                                    <div class="room-card__info">
+                                        <h3>Коттедж №3</h3>
+
+                                        <div class="room-card__props">
+                                            <div class="room-card__prop">
+                                                <div class="room-card__prop-info">
+                                                    <p class="room-card__prop-title">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#square_icon"></use>
+                                                        </svg>
+                                                        <span>300 м² общей площади</span>
+                                                    </p>
+                                                    <p class="room-card__prop-text">6 номеров по 50м²</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="room-card__prop">
+                                                <div class="room-card__prop-info">
+                                                    <p class="room-card__prop-title">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#food_icon"></use>
+                                                        </svg>
+                                                        <span>Без питания</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="room-card__prop">
+                                                <div class="room-card__prop-info">
+                                                    <p class="room-card__prop-title">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#map_pin_icon"></use>
+                                                        </svg>
+                                                        <span>Бронирование только по телефону<br> +7(3452) 687000</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="room-card__badges">
+                                            <div class="room-card__badge">
+                                                <span>6 гостей | от 24 000₽</span>
+                                            </div>
+                                        </div>
+
+                                        <a class="button button--secondary" href="#"><span>Узнать о наличии</span></a>
+
+                                        <a class="room-card__more button button--link" href="#"><span>Подробнее</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="images/logo.svg" alt="Сибирь">
+                </div>
+    
+                <div class="footer__top-phone">
+                    <a href="tel:+73452687000">+7 (3452) 687-000</a>
+                </div>
+            </div>
+    
+            <div class="footer__middle">
+                <div class="footer__contacts">
+                    <div class="footer__contacts-block">
+                        <p class="footer__title">Почта для связи</p>
+    
+                        <div class="footer__emails">
+                            <a class="email" href="mailto:service@sibircentr.ru">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#envelope_icon" />
+                                </svg>
+    
+                                <span>
+                                    <span class="email__address">service@sibircentr.ru</span>
+                                    <span class="email__title">отдел реализации и сервиса</span>
+                                </span>
+                            </a>
+    
+                            <a class="email" href="mailto:office@sibircentr.ru">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#envelope_icon" />
+                                </svg>
+    
+                                <span>
+                                    <span class="email__address">office@sibircentr.ru</span>
+                                    <span class="email__title">приёмная для документов и писем</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__contacts-block">
+                        <p class="footer__title">Мы в мессенджерах</p>
+    
+                        <div class="footer__socials">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш WhatsApp">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#wa_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#tg_icon" />
+                                </svg>
+                            </a>
+                        </div>
+    
+                        <p class="footer__title">Мы в социальных сетях</p>
+    
+                        <div class="footer__socials">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Яндекс.Дзен">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#dzen_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#vk_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Однокласниках">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ok_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на Rutube">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#rt_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы на YouTube">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#yt_icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">Посетителям</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Важная информация</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Услуги онлайн</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Скачать документы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Сертификаты и лицензии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Вопросы - ответы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Реквизиты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Книги и журналы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Обратная связь</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Веб-камера</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Виртуальная экскурсия</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Акции</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Медпрограммы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Налоговый вычет</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Проживание</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Отдых</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Стоимость</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Детям</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Афиша</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Бары и рестораны</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Термальные комплексы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Экскурсии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Платные медуслуги</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--big">
+                            <a href="#">О комплексе</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">О медецинском центре</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Как добраться</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Галерея</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Even & MICE</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Карта территории</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Достопримечательности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <p>Маркетинговая поддержка и разработка сайта <a href="#">VSignal</a></p>
+                <p>Юридическое название компании Акционерное общество "Центр восстановительной медицины и реабилитации "Сибирь". Адрес: 625519, Тюменская область, р-н Тюменский, км 19-ый (ФАД Иркутск-Улан-Удэ-Чита тер), стр. 1. Почтовый адрес: 625519,
+                    Тюменская обл., Тюменский район, с. Червишево</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/simple-slider.js"></script>
+    <script src="js/scroller.js"></script>
+</body>
+
+</html>
