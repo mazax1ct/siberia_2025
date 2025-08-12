@@ -70,6 +70,8 @@
 .room-card {
     border-radius: 12px;
     border: 1px solid var(--border_grey);
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -98,6 +100,9 @@
     }
 
     &__info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
         padding-left: 16px;
         padding-right: 16px;
         padding-bottom: 16px;
@@ -162,6 +167,7 @@
     &__badges {
         display: flex;
         gap: 6px;
+        margin-top: auto;
         margin-bottom: 24px;
         @media(min-width: $hd) {
             gap: 8px;
