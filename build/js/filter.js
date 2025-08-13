@@ -1,5 +1,17 @@
-$(document).on('click', '.js-filter-opener', function (){
-  $('.filter__form').slideToggle();
+$(document).on('click', '.js-filter-opener', function () {
+  if($('body').width() < 1024){
+    $('body').addClass('is-overflow');
+    $('.filter__form').show();
+  } else {
+    $('.filter__form').slideToggle();
+  }
+
+  return false;
+});
+
+$(document).on('click', '.js-filter-closer', function () {
+  $('body').removeClass('is-overflow');
+  $('.filter__form').hide();
   return false;
 });
 

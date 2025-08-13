@@ -9,6 +9,12 @@
         }
     }
 
+    & + .fast-search {
+        @media(min-width: $md) {
+            margin-top: -22px;
+        }
+    }
+
     &__input {
         border-radius: 8px;
         border: 1px solid var(--border_grey);
@@ -73,6 +79,43 @@
             fill: currentColor;
             height: 24px;
             width: 24px;
+        }
+    }
+}
+
+.fast-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 12px;
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            margin-bottom: 32px;
+            @media(min-width: $hd) {
+                margin-bottom: 70px;
+            }
+        }
+    }
+
+    &__button {
+        background-color: transparent;
+        border: 1px solid var(--border_grey);
+        border-radius: 8px;
+        color: var(--black);
+        cursor: pointer;
+        font-family: var(--primary_font);
+        font-size: 16px;
+        font-weight: 400;
+        height: 44px;
+        padding: 8px 12px;
+        text-decoration: none;
+        text-align: center;
+        transition: all 0.3s;
+        @include hover {
+            background-color: var(--leaf_green);
+            border-color: var(--leaf_green);
+            color: #fff;
         }
     }
 }

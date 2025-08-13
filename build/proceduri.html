@@ -505,6 +505,31 @@
                     </div>
                 </div>
 
+                <form class="search-form">
+                    <input class="js-input search-form__input" type="text" name="" value="" autocomplete="off" placeholder="Что вы ищете">
+                    <button class="search-form__button search-form__button--submit" type="submit" title="Искать">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#search_icon"></use>
+                        </svg>
+                    </button>
+
+                    <button class="js-input-clear search-form__button search-form__button--clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <div class="fast-search">
+                    <button class="fast-search__button" type="button">Тело</button>
+                    <button class="fast-search__button" type="button">Волосы</button>
+                    <button class="fast-search__button" type="button">Ногти</button>
+                    <button class="fast-search__button" type="button">Кожа</button>
+                    <button class="fast-search__button" type="button">Общий тонус</button>
+                    <button class="fast-search__button" type="button">Эстетика</button>
+                    <button class="fast-search__button" type="button">Комплекс</button>
+                </div>
+
                 <div class="big-cards-list">
                     <div class="big-card big-card--aligned_start">
                         <div class="big-card__image"><img src="images/content/procedures/img.jpg" srcset="images/content/procedures/img@2x.jpg 2x" alt=""></div>
@@ -875,7 +900,7 @@
     <script src="js/main.js"></script>
 
     <script src="js/scroller-menu.js"></script>
-
+    <script src="js/search.js"></script>
     <script src="js/procedures.js"></script>
 </body>
 

@@ -499,234 +499,251 @@
                             <use xlink:href="images/sprite.svg#filter_icon" />
                         </svg>
                         <span>Фильтры</span>
+                        <span class="filter__opener-qnt">99</span>
                     </button>
 
                     <form class="filter__form" action="">
-                        <div class="filter__form-inner">
-                            <div class="filter__column">
-                                <div class="filter__section">
-                                    <p class="filter__section-title">Количество комнат</p>
+                        <div class="filter__form-top">
+                            <div class="filter__title">Фильтры</div>
 
-                                    <div class="filter__list">
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">1</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="2" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">2</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="filter__section">
-                                    <p class="filter__section-title">Площадь, м²</p>
-
-                                    <input class="js-square-slider" type="text" name="square" value="" />
-                                </div>
-
-                                <div class="filter__section">
-                                    <p class="filter__section-title">Количество гостей</p>
-
-                                    <input class="js-guests-slider" type="text" name="guests" value="" />
-                                </div>
-
-                                <div class="filter__section">
-                                    <p class="filter__section-title">Питание</p>
-
-                                    <div class="filter__list">
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Стандарт</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="2" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Шведский стол</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="2" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Ресторан Здорового питания – программа Детокс</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="2" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Ресторан Здорового питания – программа Детокс</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="filter__column">
-                                <div class="filter__section">
-                                    <p class="filter__section-title">Размер спального места</p>
-
-                                    <div class="filter__list">
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">90x200</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">160x200</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">180x200</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="filter__section">
-                                    <p class="filter__section-title">Количество кроватей</p>
-
-                                    <div class="filter__list">
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">1</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">2</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="filter__section">
-                                    <p class="filter__section-title">Дополнительные места</p>
-
-                                    <div class="filter__list">
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Раскладной диван</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Раскладное кресло</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="filter__section">
-                                    <p class="filter__section-title">Санузел</p>
-
-                                    <div class="filter__list">
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Ванна</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Душевая кабина</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="filter__column">
-                                <div class="filter__section">
-                                    <p class="filter__section-title">Программа</p>
-
-                                    <div class="filter__list">
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">С лечением от 7ми дней</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Без лечения от 2х дней</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Здоровый сон от 7ми дней</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Детокс от 7ми дней</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="filter__section">
-                                    <p class="filter__section-title">Ещё удобства</p>
-
-                                    <div class="filter__list">
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Кофемашина</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Камин</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Набор для ванной</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Увлажнитель воздуха</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Телевизор</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Смарт-ТВ</span>
-                                        </label>
-
-                                        <label class="checkbox">
-                                            <input type="checkbox" value="1" name="">
-                                            <span class="checkbox__icon"></span>
-                                            <span class="checkbox__text">Сбер-портал</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
+                            <button class="js-filter-closer filter__closer" type="button" title="Закрыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_icon" />
+                                </svg>
+                            </button>
                         </div>
 
-                        <button class="filter__apply button button--primary" type="submit">Применить</button>
+                        <div class="filter__form-inner">
+                            <div class="filter__form-columns">
+                                <div class="filter__column">
+                                    <div class="filter__section">
+                                        <p class="filter__section-title">Количество комнат</p>
+
+                                        <div class="filter__list">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">1</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="2" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">2</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__section">
+                                        <p class="filter__section-title">Площадь, м²</p>
+
+                                        <input class="js-square-slider" type="text" name="square" value="" />
+                                    </div>
+
+                                    <div class="filter__section">
+                                        <p class="filter__section-title">Количество гостей</p>
+
+                                        <input class="js-guests-slider" type="text" name="guests" value="" />
+                                    </div>
+
+                                    <div class="filter__section">
+                                        <p class="filter__section-title">Питание</p>
+
+                                        <div class="filter__list">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Стандарт</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="2" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Шведский стол</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="2" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Ресторан Здорового питания – программа Детокс</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="2" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Ресторан Здорового питания – программа Детокс</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filter__column">
+                                    <div class="filter__section">
+                                        <p class="filter__section-title">Размер спального места</p>
+
+                                        <div class="filter__list">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">90x200</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">160x200</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">180x200</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__section">
+                                        <p class="filter__section-title">Количество кроватей</p>
+
+                                        <div class="filter__list">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">1</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">2</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__section">
+                                        <p class="filter__section-title">Дополнительные места</p>
+
+                                        <div class="filter__list">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Раскладной диван</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Раскладное кресло</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__section">
+                                        <p class="filter__section-title">Санузел</p>
+
+                                        <div class="filter__list">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Ванна</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Душевая кабина</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filter__column">
+                                    <div class="filter__section">
+                                        <p class="filter__section-title">Программа</p>
+
+                                        <div class="filter__list">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">С лечением от 7ми дней</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Без лечения от 2х дней</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Здоровый сон от 7ми дней</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Детокс от 7ми дней</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__section">
+                                        <p class="filter__section-title">Ещё удобства</p>
+
+                                        <div class="filter__list">
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Кофемашина</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Камин</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Набор для ванной</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Увлажнитель воздуха</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Телевизор</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Смарт-ТВ</span>
+                                            </label>
+
+                                            <label class="checkbox">
+                                                <input type="checkbox" value="1" name="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">Сбер-портал</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter__form-buttons">
+                                <button class="filter__reset" type="reset">Сбросить</button>
+
+                                <button class="filter__apply button button--primary" type="submit">Применить</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
 
