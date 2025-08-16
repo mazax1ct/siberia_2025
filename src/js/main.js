@@ -89,12 +89,12 @@ $(document).on('click', '.js-search-opener', function () {
   const _this = $(this);
   if(!_this.hasClass('is-active')) {
     $('body').addClass('is-overflow');
-    $('.header__dropdown.search').addClass('is-open');
+    $('.header__dropdown.search-popup').addClass('is-open');
     _this.addClass('is-active');
   } else {
     _this.removeClass('is-active');
     $('body').removeClass('is-overflow');
-    $('.header__dropdown.search').removeClass('is-open');
+    $('.header__dropdown.search-popup').removeClass('is-open');
   }
 
   return false;
@@ -103,15 +103,15 @@ $(document).on('click', '.js-search-opener', function () {
 //закрытие поиска
 $(document).on('click', '.js-search-closer', function () {
   $('body').removeClass('is-overflow');
-  $('.header__dropdown.search').removeClass('is-open');
+  $('.header__dropdown.search-popup').removeClass('is-open');
   $('.js-search-opener').removeClass('is-active');
   return false;
 });
 
 //варианты быстрого поиска
-$(document).on('click', '.search__option', function() {
+$(document).on('click', '.search-option', function() {
   let query = $(this).text();
-  $('.search__input').val(query).focus();
+  $('.search-form__input').val(query).focus();
 });
 
 //аккордион
@@ -124,5 +124,14 @@ $(document).on('click', '.js-accordion-toggler', function () {
     _this.closest('.accordion').find('.accordion__body').slideUp();
     _this.removeClass('is-active');
   }
+  return false;
+});
+
+//табы
+$(document).on('click', '.js-tab-button', function () {
+  $(this).closest('.tabs').find('.js-tab-button').removeClass('is-active');
+  $(this).addClass('is-active');
+  $(this).closest('.tabs').find('.tab').removeClass('is-active');
+  $(this).closest('.tabs').find('.tab[data-tab='+$(this).attr('data-tab')+']').addClass('is-active');
   return false;
 });

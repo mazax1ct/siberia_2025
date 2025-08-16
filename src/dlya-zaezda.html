@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Сибирь</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/bron_head.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <div class="page__banner full-width">
+                <div class="page__banner-inner container">
+                    <div class="page__banner-image">
+                        <img src="images/content/dlya-zaezda/img.jpg" srcset="images/content/dlya-zaezda/img@2x.jpg 2x" alt="">
+                    </div>
+                    <div class="page__banner-text">
+                        <h1>Для заезда</h1>
+                        <p>Обязательно ознакомьтесь со списком документов, необходимых для заезда, проживания и лечения в нашем центре</p>
+                    </div>
+                </div>
+            </div>
+
+            //= template/common/bron.html
+
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Посетителям</a>
+                </li>
+                <li class="breadcrumbs__item">Для заезда</li>
+            </ul>
+
+            <section class="page__section">
+                <h2>Список документов</h2>
+
+                <div class="tabs">
+                    <div class="scroller-menu full-width">
+                        <div class="js-scroller-menu swiper scroller">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="js-tab-button scroller-menu__link is-active" href="javascript:void(0)" data-tab="1">С лечением</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="js-tab-button scroller-menu__link" href="javascript:void(0)" data-tab="2">Без лечения</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        <div class="docs-list">
+                            <div class="docs-list__section">
+                                <h3>Взрослые с 18 лет</h3>
+
+                                <ol>
+                                    <li>Паспорт</li>
+                                    <li>Санаторно-курортная карта<br> <small>Действует 60 дней с момента получения</small></li>
+                                    <li>Справка для бассейна<br> <small>Действует 90 дней</small></li>
+                                    <li>Квитанция об оплате счета или ваучер от туристического агентства<br> <small>При покупке программ на сторонних ресурсах, в т.ч. в туристических агентствах</small></li>
+                                </ol>
+                            </div>
+
+                            <div class="docs-list__section">
+                                <h3>Дети с 3-х до 18 лет</h3>
+
+                                <ol>
+                                    <li>Свидетельство о рождении или паспорт</li>
+                                    <li>Санаторно-курортная карта<br> <small>Действует 60 дней с момента получения</small></li>
+                                    <li>Справка для бассейна<br> <small>Действует 90 дней</small></li>
+                                    <li>Справка об эпидокружении<br> <small>Действует 3 дня. Можно получить в поликлинике по месту жительства</small></li>
+                                    <li>Согласие законного представителя<br> <small>Если ребенок заезжает не с родителями, то Согласие нужно заранее скачать здесь и заполнить до заезда</small></li>
+                                </ol>
+                            </div>
+
+                            <div class="docs-list__section">
+                                <h3>Дети до 3-х лет</h3>
+
+                                <ol>
+                                    <li>Свидетельство о рождении</li>
+                                    <li>Справка об эпидокружении<br> <small>Действует 3 дня. Можно получить в поликлинике по месту жительства</small></li>
+                                </ol>
+                            </div>
+
+                            <div class="docs-list__section">
+                                <h3>Для иностранных граждан</h3>
+
+                                <p>Информацию по документам, необходимым иностранным гражданам, можно получить на <a href="#" target="_blank">сайте Ростуризма</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        <div class="docs-list">
+                            <div class="docs-list__section">
+                                <h3>Взрослые с 18 лет</h3>
+
+                                <ol>
+                                    <li>Паспорт</li>
+                                    <li>Справка для бассейна<br> <small>Действует 90 дней</small></li>
+                                    <li>Квитанция об оплате счета или ваучер от туристического агентства<br> <small>При покупке программ на сторонних ресурсах, в т.ч. в туристических агентствах</small></li>
+                                </ol>
+                            </div>
+
+                            <div class="docs-list__section">
+                                <h3>Дети с 3-х до 18 лет</h3>
+
+                                <ol>
+                                    <li>Свидетельство о рождении или паспорт</li>
+                                    <li>Справка для бассейна<br> <small>Действует 90 дней</small></li>
+                                    <li>Справка об эпидокружении<br> <small>Действует 3 дня. Можно получить в поликлинике по месту жительства</small></li>
+                                    <li>Согласие законного представителя<br> <small>Если ребенок заезжает не с родителями, то Согласие нужно заранее скачать здесь и заполнить до заезда</small></li>
+                                </ol>
+                            </div>
+
+                            <div class="docs-list__section">
+                                <h3>Дети до 3-х лет</h3>
+
+                                <ol>
+                                    <li>Свидетельство о рождении</li>
+                                    <li>Справка об эпидокружении<br> <small>Действует 3 дня. Можно получить в поликлинике по месту жительства</small></li>
+                                </ol>
+                            </div>
+
+                            <div class="docs-list__section">
+                                <h3>Для иностранных граждан</h3>
+
+                                <p>Информацию по документам, необходимым иностранным гражданам, можно получить на <a href="#" target="_blank">сайте Ростуризма</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>На лечение не принимаются:</h2>
+                <ul>
+                    <li>Имеющие противопоказания</li>
+                    <li>Опоздавшие на 2 суток без уважительной причины</li>
+                    <li>Без справок и документов, перечисленных выше</li>
+                </ul>
+            </section>
+
+            <section class="page__section">
+                <h2>Особые указания</h2>
+
+                <div class="note-block note-block--iconed note-block--type_1">
+                    <div class="note-block__icon">
+                        <img src="images/content/note-blocks/disabled.svg" alt="">
+                    </div>
+
+                    <div>
+                        <p>Если человек не может передвигаться самостоятельно и нуждается в индивидуальном уходе, санаторно-курортное лечение возможно только в сопровождении одного из родителей, законного представителя или другого члена семьи с
+                            доверенностью.</p>
+                    </div>
+                </div>
+
+                <div class="note-block note-block--iconed note-block--type_1">
+                    <div class="note-block__icon">
+                        <img src="images/content/note-blocks/attention.svg" alt="">
+                    </div>
+
+                    <div>
+                        <p>Обратите внимание, что при введении ограничительных мероприятий в связи с риском распространения инфекционных заболеваний, в том числе COVID-19, Вам могут быть объявлены ограничения, которые произошли, пока Вы готовились к
+                            поездке в нам или находились в пути. Просим с пониманием относиться к таким ограничениям, так как они накладываются надзорными органами и не зависят от нас. </p>
+                    </div>
+                </div>
+
+                <div class="note-block note-block--iconed note-block--type_2">
+                    <div class="note-block__icon">
+                        <img src="images/content/note-blocks/spa.svg" alt="">
+                    </div>
+
+                    <div>
+                        <p><a href="#" target="_blank">Бассейны Минерал СПА и ТЕРМОРЕЛАКС</a> можно посещать только со справкой для бассейна. Ознакомиться с правилами и рекомендациями о термальных комплексах можно на странице <a href="#"
+                              target="_blank">правил пребывания</a>.</p>
+                    </div>
+                </div>
+
+                <div class="note-block note-block--iconed note-block--centered note-block--type_2">
+                    <div class="note-block__icon">
+                        <img src="images/content/note-blocks/card.svg" alt="">
+                    </div>
+
+                    <div>
+                        <p>При желании купить на месте дополнительные медицинские услуги, потребуется санаторно-курортная карта</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Возьмите с собой</h2>
+
+                <div class="you-need">
+                    <p><img src="images/content/dlya-zaezda/oms.svg" alt=""> Медицинский страховой полис ОМС (взрослый, детский)</p>
+                    <p><img src="images/content/dlya-zaezda/drugs.svg" alt=""> Лекарства, которые Вы постоянно принимаете</p>
+                    <p><img src="images/content/dlya-zaezda/sport_wear.svg" alt=""> Спортивную одежду и обувь для занятий на улице и в зале</p>
+                    <p><img src="images/content/dlya-zaezda/gigiena.svg" alt=""> Предметы личной гигиены</p>
+                    <p><img src="images/content/dlya-zaezda/spa_wear.svg" alt=""> Купальные принадлежности</p>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Как добраться</h2>
+                <p>Санаторий находится в 30 минутах езды от аэропорта</p>
+
+                <div class="accordions">
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span>На автомобиле</span>
+
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+
+                        <div class="accordion__body">
+                            <p>19 километр тракта Тюмень-Курган — далее по указателям. Координаты для навигатора: 56.961888, 65.472595 </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span>На такси</span>
+
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+
+                        <div class="accordion__body">
+                            <p>Заказать автомобильный трансфер можно по телефону 8 (3452) 70-88-88 или по электронной почте taxi-business2006@yandex.ru не менее чем за 24 часа до поездки. Начните фразу со слов: «Природный курорт Сибирь, мне нужен
+                                автомобиль...». Автомобиль подается точно к указанному Вами времени.</p>
+                            <p>Все транспортные средства оснащены бустерами, при предварительном заказе возможна установка детского кресла.</p>
+                            <p>Оплатить поездку можно банковской картой.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span>Стоимость трансфера</span>
+
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+
+                        <div class="accordion__body">
+                            <p>
+                                Автовокзал - "Сибирь" - 1200 рублей<br>
+                                "Сибирь" - Автовокзал   - 1200 рублей<br>
+                                ЖД Вокзал- "Сибирь" - 1200 рублей<br>
+                                "Сибирь" - ЖД Вокзал  - 1200 рублей<br>
+                                Аэропорт "Рощино"- "Сибирь" - 1700 рублей<br>
+                                "Сибирь" - аэропорт "Рощино" - 1700 рублей.
+                            </p>
+                            <p>Доставка пассажиров осуществляется только до КПП Siberia resort & spa, где, в случае необходимости, производится термометрия с предъявлением справок, необходимых для заезда.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Про безопасность</h2>
+                <p>Просим с пониманием отнестись к мерам, предпринимаемым для Вашей безопасности и людей вокруг Вас</p>
+
+                <div class="accordions">
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span>При отсутствии документов</span>
+
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+
+                        <div class="accordion__body">
+                            <p>Мы не принимаем лиц при отсутствии справок и документов, указанных выше</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span>Если вы заболели</span>
+
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+
+                        <div class="accordion__body">
+                            <p>При малейших признаках респираторного или другого заболевания незамедлительно позвонить из номера на медицинский пост по внутренним телефонам: 52-18, 52-19 или по сотовой связи 8-922-000-20-82. Медицинский пост работает
+                                круглосуточно! Медицинские работники придут к Вам в номер.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span>Алкогольные напитки</span>
+
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+
+                        <div class="accordion__body">
+                            <p>Просим Вас воздержаться от распития алкогольных напитков в публичных местах, не предназначенных для этого.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span>Визиты гостей</span>
+
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+
+                        <div class="accordion__body">
+                            <p>На время нахождения в "Сибири" недопустимы визиты родственников и друзей. Вход на территорию для всех категорий граждан, не проживающих в "Сибири", закрыт.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/scripts.html
+    <script src="js/scroller-menu.js"></script>
+</body>
+
+</html>
