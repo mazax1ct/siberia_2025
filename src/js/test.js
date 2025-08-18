@@ -1,12 +1,12 @@
 $(document).on('click', '.js-test-start', function () {
   $('.page').addClass('is-overflow');
-  $('.test__popup').addClass('is-open');
+  $('.test__popup-wrapper').addClass('is-open');
 
   return false;
 });
 
 $(document).on('click', '.js-test-close', function () {
-  $('.test__popup').removeClass('is-open');
+  $('.test__popup-wrapper').removeClass('is-open');
   $('.page').removeClass('is-overflow');
   $('#test_form').trigger('reset');
   $('.test__step').removeClass('is-active');
@@ -21,7 +21,7 @@ $(document).on('click', '.js-test-prev', function () {
   let prevStep = currStep.prev('.test__step');
 
   if(!prevStep.length) {
-    $('.test__popup').removeClass('is-open');
+    $('.test__popup-wrapper').removeClass('is-open');
     $('.page').removeClass('is-overflow');
   }else{
     prevStep.addClass('is-active');
@@ -57,4 +57,25 @@ $('.js-test-slider').ionRangeSlider({
    max: 5,
    from: 3,
    hide_min_max: true
+});
+
+$(document).on('click', '.js-test-finish', function () {
+  $('.test__popup').append('<div class="test-loader"><p><img src="images/content/test/test-loader.svg" alt=""></p><p>Секунду, готовим ваш план</p></div>');
+
+  $.ajax({
+  	url: '/test-result.html',
+  	method: 'get',
+    cache: false,
+  	dataType: 'html',
+  	data: {result: '30'},
+  	success: function(data) {
+  		alert(data);
+  	},
+    error: function( req, status, err ) {
+      console.log( 'что-то пошло не так', status, err );
+    }
+  }).done(function() {
+    $('.test-loader').remove();
+  });
+  return false;
 });
