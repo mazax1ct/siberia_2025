@@ -389,8 +389,17 @@ html {
                 }
             }
 
-            a {
+            .small-card {
                 color: #fff;
+                @include hover {
+                    color: var(--beige);
+                }
+            }
+
+            a {
+                &:not([class]) {
+                    color: #fff;
+                }
             }
         }
 
@@ -402,6 +411,14 @@ html {
             }
             @media(min-width: $hd) {
                 padding-top: 70px;
+            }
+        }
+
+        .container {
+            .page__section {
+                &:last-child {
+                    padding-bottom: 0;
+                }
             }
         }
     }

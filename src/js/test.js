@@ -60,22 +60,60 @@ $('.js-test-slider').ionRangeSlider({
 });
 
 $(document).on('click', '.js-test-finish', function () {
-  $('.test__popup').append('<div class="test-loader"><p><img src="images/content/test/test-loader.svg" alt=""></p><p>Секунду, готовим ваш план</p></div>');
+  $('.test__popup').append('<div class="test-loader"><p><div class="loader"></div></p><p>Секунду, готовим ваш план</p></div>');
 
   $.ajax({
   	url: '/test-result.html',
   	method: 'get',
     cache: false,
   	dataType: 'html',
-  	data: {result: '30'},
+  	data: {result: 'данные'},
   	success: function(data) {
-  		alert(data);
+      setTimeout(function() {
+        $('.test-loader').remove();
+        $('body').removeClass('is-overflow');
+        $('#test_container').find('.test').remove();
+        $('#test_container').append(data);
+
+        $('.js-scroller-ajax').each(function(index, element) {
+            var $this = $(this);
+            $this.addClass("js-instance-ajax" + index);
+
+            swiperAjaxInstances[index] = new Swiper(".js-instance-ajax" + index, {
+              loop: false,
+              freeMode: true,
+              grabCursor: true,
+              slidesPerView: 'auto',
+              spaceBetween: 16,
+              slidesOffsetAfter: 16,
+              slidesOffsetBefore: 16,
+              watchOverflow: true,
+              resistanceRatio: 0,
+
+              breakpoints: {
+                  1200: {
+                      spaceBetween: 20,
+                      slidesOffsetBefore: scrollerSideOffset
+                  }
+              }
+            });
+
+            swiperAjaxInstances[index].on('resize', function () {
+              if ($('body').width() >= 1200) {
+                  scrollerSideOffset = (window.innerWidth - 1170) / 2;
+              }
+              swiperAjaxInstances[index].params.slidesOffsetBefore = scrollerSideOffset;
+              swiperAjaxInstances[index].update();
+            });
+        });
+
+      }, 1000);
   	},
     error: function( req, status, err ) {
-      console.log( 'что-то пошло не так', status, err );
+      setTimeout(function() {
+        console.log( 'что-то пошло не так', status, err );
+      }, 1000);
     }
-  }).done(function() {
-    $('.test-loader').remove();
   });
   return false;
 });
