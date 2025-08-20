@@ -1,3 +1,7 @@
+$(document).ready(function() {
+  $('#test_form')[0].reset();
+});
+
 $(document).on('click', '.js-test-start', function () {
   $('.page').addClass('is-overflow');
   $('.test__popup-wrapper').addClass('is-open');
@@ -35,20 +39,32 @@ $(document).on('click', '.js-test-prev', function () {
   return false;
 });
 
-$(document).on('click', '.js-test-next', function () {
+$(document).on('change', 'label.js-test-next', function () {
   let currStep = $('.test__step.is-active');
-  let nextStep = currStep.next('.test__step');
+  let nextStep = currStep.next('div');
 
-  if(nextStep.length){
-    nextStep.addClass('is-active');
+  if(nextStep.length) {
     currStep.removeClass('is-active');
+    nextStep.addClass('is-active');
   }
 
   if(nextStep.hasClass('js-next-section')){
     $('.test__progress-section.is-active').last().next().addClass('is-active')
   }
+});
 
-  return false;
+$(document).on('click', 'button.js-test-next', function () {
+  let currStep = $('.test__step.is-active');
+  let nextStep = currStep.next('div');
+
+  if(nextStep.length) {
+    currStep.removeClass('is-active');
+    nextStep.addClass('is-active');
+  }
+
+  if(nextStep.hasClass('js-next-section')){
+    $('.test__progress-section.is-active').last().next().addClass('is-active')
+  }
 });
 
 $('.js-test-slider').ionRangeSlider({
@@ -59,22 +75,34 @@ $('.js-test-slider').ionRangeSlider({
    hide_min_max: true
 });
 
-$(document).on('click', '.js-test-finish', function () {
+$(document).on('click', '.js-pre-finish', function () {
+  $('.js-test-finish').prop('disabled', false)
+});
+
+$(document).on('click', '.js-test-finish', function (e) {
+  e.preventDefault();
+
   $('.test__popup').append('<div class="test-loader"><p><div class="loader"></div></p><p>Секунду, готовим ваш план</p></div>');
 
+  let formElem = $("#test_form");
+  let formData = new FormData(formElem[0]);
+
+  console.log(formData);
+
   $.ajax({
-  	url: '/test-result.html',
-  	method: 'get',
+  	url: 'test-result.html',
+  	method: 'GET',
     cache: false,
   	dataType: 'html',
-  	data: {result: 'данные'},
+  	data: formData,
+    processData: false,
+    contentType: false,
   	success: function(data) {
       setTimeout(function() {
         $('.test-loader').remove();
         $('body').removeClass('is-overflow');
         $('#test_container').find('.test').remove();
         $('#test_container').append(data);
-
         $('.js-scroller-ajax').each(function(index, element) {
             var $this = $(this);
             $this.addClass("js-instance-ajax" + index);
@@ -106,7 +134,6 @@ $(document).on('click', '.js-test-finish', function () {
               swiperAjaxInstances[index].update();
             });
         });
-
       }, 1000);
   	},
     error: function( req, status, err ) {
@@ -115,5 +142,4 @@ $(document).on('click', '.js-test-finish', function () {
       }, 1000);
     }
   });
-  return false;
 });

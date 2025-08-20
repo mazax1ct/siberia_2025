@@ -135,3 +135,14 @@ $(document).on('click', '.js-tab-button', function () {
   $(this).closest('.tabs').find('.tab[data-tab='+$(this).attr('data-tab')+']').addClass('is-active');
   return false;
 });
+
+//копирование ссылки
+$(document).on('click', '.js-copy', function() {
+  const _this = $(this);
+  _this.addClass('is-active');
+  navigator.clipboard.writeText($(this).attr('data-text'));
+  setTimeout(function() {
+    _this.removeClass('is-active');
+  }, 1000);
+  return false;
+});

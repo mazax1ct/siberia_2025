@@ -1244,7 +1244,7 @@
                                 </div>
                     
                                 <form id="test_form" class="test__form container">
-                                    <!--<div class="test__step">
+                                    <div class="test__step is-active">
                                         <p class="test__step-title">Питание</p>
                                         <p>Ваш ежедневный рацион можно считать разнообразным</p>
                     
@@ -1968,9 +1968,9 @@
                                                 </span>
                                             </label>
                                         </div>
-                                    </div>-->
+                                    </div>
                     
-                                    <div class="js-next-section test__step is-active">
+                                    <div class="js-next-section test__step">
                                         <p class="test__step-title">О вас</p>
                                         <p>Для того, чтобы результаты были более корректными, расскажите нам немного о себе.<br> Укажите ваш пол:</p>
                     
@@ -2002,7 +2002,7 @@
                                         <p>Укажите ваш возраст:</p>
                     
                                         <div class="test__options">
-                                            <label class="js-test-finish test-option">
+                                            <label class="js-pre-finish test-option">
                                                 <input type="radio" name="16" value="1">
                                                 <span class="test-option__inner">
                                                     <span>18-30</span>
@@ -2012,7 +2012,7 @@
                                                 </span>
                                             </label>
                     
-                                            <label class="js-test-finish test-option">
+                                            <label class="js-pre-finish test-option">
                                                 <input type="radio" name="16" value="2">
                                                 <span class="test-option__inner">
                                                     <span>31-40</span>
@@ -2022,7 +2022,7 @@
                                                 </span>
                                             </label>
                     
-                                            <label class="js-test-finish test-option">
+                                            <label class="js-pre-finish test-option">
                                                 <input type="radio" name="16" value="3">
                                                 <span class="test-option__inner">
                                                     <span>41-54</span>
@@ -2032,7 +2032,7 @@
                                                 </span>
                                             </label>
                     
-                                            <label class="js-test-finish test-option">
+                                            <label class="js-pre-finish test-option">
                                                 <input type="radio" name="16" value="4">
                                                 <span class="test-option__inner">
                                                     <span>55+</span>
@@ -2042,6 +2042,8 @@
                                                 </span>
                                             </label>
                                         </div>
+                    
+                                        <button class="js-test-finish button button--primary button--wide" disabled type="submit">Получить результат</button>
                                     </div>
                                 </form>
                             </div>

@@ -1,0 +1,36 @@
+.copy-button {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        align-items: center;
+        border-radius: 8px;
+        background-color: var(--beige);
+        content: attr(data-popover);
+        color: var(--black);
+        display: flex;
+        font-size: 14px;
+        font-weight: 400;
+        height: 40px;
+        justify-content: center;
+        left: 50%;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        padding-left: 16px;
+        padding-right: 16px;
+        top: 0;
+        transition: top 0.3s, opacity 0.3s, visibility 0.3s;
+        transform: translateX(-50%);
+        visibility: hidden;
+        white-space: nowrap;
+    }
+
+    &.is-active {
+        &::before {
+            opacity: 1;
+            top: calc(100% + 16px);
+            visibility: visible;
+        }
+    }
+}

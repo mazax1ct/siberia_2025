@@ -14,8 +14,16 @@
     }
 
     &__start-image {
+        max-width: 410px;
         @media(max-width: $sm - 0.02px) {
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
         }
     }
 
@@ -45,8 +53,10 @@
         color: #fff;
         display: none;
         left: 0;
+        overflow-y: auto;
         position: fixed;
         right: 0;
+        scrollbar-width: thin;
         top: 0;
         z-index: 11;
         @media(min-width: $md) {
@@ -182,6 +192,10 @@
         margin-left: auto;
         margin-right: auto;
         max-width: 340px;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
     }
 
     .irs {
@@ -191,7 +205,9 @@
     }
 
     .button {
-        max-width: 340px;
+        @media(min-width: $sm) {
+            max-width: 340px;
+        }
     }
 
     &__result {
@@ -211,6 +227,8 @@
         position: relative;
         z-index: 1;
         @media(max-width: $sm - 0.02px) {
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 30px;
         }
 
@@ -252,6 +270,12 @@
 
         h2 {
             margin-bottom: 12px;
+
+            br {
+                @media(max-width: $sm - 0.02px) {
+                    display: none;
+                }
+            }
         }
 
         .button {
@@ -280,6 +304,12 @@
         overflow: hidden;
         clip: rect(0 0 0 0);
         width: 1px;
+
+        &:checked + .test-option__inner {
+            background-color: var(--beige);
+            border-color: var(--beige);
+            color: var(--black);
+        }
     }
 
     &__inner {
@@ -294,7 +324,7 @@
         justify-content: space-between;
         padding: 12px 16px;
         text-align: left;
-        transition: color 0.3s;
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
         @include hover {
             color: var(--beige);
         }
